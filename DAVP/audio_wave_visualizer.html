@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Wave Concepts Visualizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .section h2 {
+            color: #4fc3f7;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        canvas {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .control-group {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .control-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #e1f5fe;
+        }
+        
+        .control-group input[type="range"] {
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        .control-group .value {
+            color: #4fc3f7;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .info-box {
+            background: rgba(76, 175, 80, 0.2);
+            border: 1px solid rgba(76, 175, 80, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: rgba(255, 152, 0, 0.2);
+            border: 1px solid rgba(255, 152, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .db-scale {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+        }
+        
+        .db-bar {
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            color: black;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        button {
+            background: linear-gradient(45deg, #4fc3f7, #29b6f6);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(79, 195, 247, 0.4);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Digital Audio Concepts Visualizer 🎵</h1>
+        
+        <div class="section">
+            <h2>1. Basic Wave Properties</h2>
+            <canvas id="waveCanvas" width="800" height="300"></canvas>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label>Frequency</label>
+                    <input type="range" id="frequency" min="1" max="10" value="2" step="0.1">
+                    <div class="value"><span id="freqValue">2.0</span> Hz</div>
+                </div>
+                
+                <div class="control-group">
+                    <label>Amplitude</label>
+                    <input type="range" id="amplitude" min="10" max="100" value="50">
+                    <div class="value"><span id="ampValue">50</span> units</div>
+                </div>
+                
+                <div class="control-group">
+                    <label>Wave Type</label>
+                    <select id="waveType" style="width: 100%; padding: 5px; border-radius: 5px;">
+                        <option value="sine">Sine Wave (Pure Tone)</option>
+                        <option value="square">Square Wave</option>
+                        <option value="triangle">Triangle Wave</option>
+                        <option value="sawtooth">Sawtooth Wave</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <strong>What you're seeing:</strong><br>
+                • <strong>Frequency</strong> = How many complete waves per second (pitch)<br>
+                • <strong>Amplitude</strong> = Height of the wave (loudness)<br>
+                • <strong>Wavelength</strong> = Distance between wave peaks
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>2. Sampling Demonstration</h2>
+            <canvas id="samplingCanvas" width="800" height="400"></canvas>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label>Signal Frequency</label>
+                    <input type="range" id="signalFreq" min="1" max="20" value="5" step="1">
+                    <div class="value"><span id="sigFreqValue">5</span> Hz</div>
+                </div>
+                
+                <div class="control-group">
+                    <label>Sample Rate</label>
+                    <input type="range" id="sampleRate" min="2" max="50" value="20" step="1">
+                    <div class="value"><span id="sampleRateValue">20</span> samples/sec</div>
+                </div>
+            </div>
+            
+            <div id="nyquistStatus" class="info-box">
+                <strong>Nyquist Check:</strong> <span id="nyquistResult"></span>
+            </div>
+            
+            <div class="warning-box">
+                <strong>Nyquist Theorem:</strong> Sample Rate ≥ 2 × Signal Frequency<br>
+                If violated, you get <strong>aliasing</strong> - the reconstructed signal will be wrong!
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>3. Decibel (dB) Scale Visualization</h2>
+            
+            <div style="margin: 20px 0;">
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 20px; background: #4caf50;">0 dB</div>
+                    <span>Threshold of hearing (quietest sound)</span>
+                </div>
+                
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 60px; background: #8bc34a;">30 dB</div>
+                    <span>Soft whisper</span>
+                </div>
+                
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 120px; background: #cddc39;">60 dB</div>
+                    <span>Normal conversation</span>
+                </div>
+                
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 160px; background: #ffeb3b;">80 dB</div>
+                    <span>Loud radio</span>
+                </div>
+                
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 200px; background: #ffc107;">90 dB</div>
+                    <span>City traffic</span>
+                </div>
+                
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 280px; background: #ff9800;">110 dB</div>
+                    <span>Loud thunder</span>
+                </div>
+                
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 320px; background: #ff5722;">120 dB</div>
+                    <span>Rock concert</span>
+                </div>
+                
+                <div class="db-scale">
+                    <div class="db-bar" style="width: 400px; background: #f44336;">140 dB</div>
+                    <span>Jet engine (hearing damage!)</span>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <strong>Remember:</strong><br>
+                • Every +10 dB = 10× more acoustic power<br>
+                • Every +6 dB ≈ 2× louder to your ears<br>
+                • 120+ dB can cause permanent hearing damage
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>4. Standard Sample Rates</h2>
+            
+            <div class="grid">
+                <div class="control-group">
+                    <label>32 kHz</label>
+                    <div class="value">Broadcasting</div>
+                    <small>Can capture up to 16 kHz</small>
+                </div>
+                
+                <div class="control-group">
+                    <label>44.1 kHz</label>
+                    <div class="value">CD Quality</div>
+                    <small>Can capture up to 22.05 kHz</small>
+                </div>
+                
+                <div class="control-group">
+                    <label>48 kHz</label>
+                    <div class="value">Professional Video</div>
+                    <small>Can capture up to 24 kHz</small>
+                </div>
+                
+                <div class="control-group">
+                    <label>96 kHz</label>
+                    <div class="value">High-Resolution</div>
+                    <small>Can capture up to 48 kHz</small>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <strong>Why 44.1 kHz for CDs?</strong><br>
+                Human hearing: ~20 kHz max → Need 40+ kHz sample rate → 44.1 kHz gives safety margin
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>5. Audio Evolution Timeline</h2>
+            
+            <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 10px;">
+                <div style="display: flex; align-items: center; margin: 15px 0;">
+                    <div style="background: #ff6b6b; width: 60px; height: 20px; border-radius: 10px; margin-right: 15px;"></div>
+                    <span><strong>1857:</strong> Phonautograph (Scott) - Could record, not playback</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin: 15px 0;">
+                    <div style="background: #4ecdc4; width: 80px; height: 20px; border-radius: 10px; margin-right: 15px;"></div>
+                    <span><strong>1877:</strong> Phonograph (Edison) - First record & playback</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin: 15px 0;">
+                    <div style="background: #45b7d1; width: 100px; height: 20px; border-radius: 10px; margin-right: 15px;"></div>
+                    <span><strong>1887:</strong> Gramophone (Berliner) - Flat discs</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin: 15px 0;">
+                    <div style="background: #96ceb4; width: 120px; height: 20px; border-radius: 10px; margin-right: 15px;"></div>
+                    <span><strong>1906:</strong> Vacuum Tube Amplifier (De Forest)</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin: 15px 0;">
+                    <div style="background: #ffeaa7; width: 160px; height: 20px; border-radius: 10px; margin-right: 15px;"></div>
+                    <span><strong>1930s:</strong> Magnetic Tape (Germany)</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin: 15px 0;">
+                    <div style="background: #a29bfe; width: 200px; height: 20px; border-radius: 10px; margin-right: 15px;"></div>
+                    <span><strong>1982:</strong> Compact Disc - Digital Audio for Public!</span>
+                </div>
+            </div>
+        </div>
+        
+        <button onclick="animateWaves()">🎵 Animate All Waves!</button>
+        <button onclick="resetAll()">🔄 Reset Everything</button>
+    </div>
+
+    <script>
+        // Canvas setup
+        const waveCanvas = document.getElementById('waveCanvas');
+        const waveCtx = waveCanvas.getContext('2d');
+        const samplingCanvas = document.getElementById('samplingCanvas');
+        const samplingCtx = samplingCanvas.getContext('2d');
+        
+        let animationId;
+        let time = 0;
+        
+        // Controls
+        const frequencySlider = document.getElementById('frequency');
+        const amplitudeSlider = document.getElementById('amplitude');
+        const waveTypeSelect = document.getElementById('waveType');
+        const signalFreqSlider = document.getElementById('signalFreq');
+        const sampleRateSlider = document.getElementById('sampleRate');
+        
+        // Update displays
+        function updateDisplays() {
+            document.getElementById('freqValue').textContent = parseFloat(frequencySlider.value).toFixed(1);
+            document.getElementById('ampValue').textContent = amplitudeSlider.value;
+            document.getElementById('sigFreqValue').textContent = signalFreqSlider.value;
+            document.getElementById('sampleRateValue').textContent = sampleRateSlider.value;
+            
+            // Nyquist check
+            const signalFreq = parseInt(signalFreqSlider.value);
+            const sampleRate = parseInt(sampleRateSlider.value);
+            const nyquistRate = 2 * signalFreq;
+            
+            const nyquistStatus = document.getElementById('nyquistStatus');
+            const nyquistResult = document.getElementById('nyquistResult');
+            
+            if (sampleRate >= nyquistRate) {
+                nyquistStatus.className = 'info-box';
+                nyquistResult.innerHTML = `✅ GOOD: ${sampleRate} ≥ ${nyquistRate} (2 × ${signalFreq})`;
+            } else {
+                nyquistStatus.className = 'warning-box';
+                nyquistResult.innerHTML = `❌ ALIASING: ${sampleRate} < ${nyquistRate} (2 × ${signalFreq})`;
+            }
+        }
+        
+        // Generate wave function
+        function generateWave(x, freq, amp, type, time) {
+            const phase = 2 * Math.PI * freq * (x / 100 + time);
+            
+            switch(type) {
+                case 'sine':
+                    return amp * Math.sin(phase);
+                case 'square':
+                    return amp * Math.sign(Math.sin(phase));
+                case 'triangle':
+                    return amp * (2 / Math.PI) * Math.asin(Math.sin(phase));
+                case 'sawtooth':
+                    return amp * (2 / Math.PI) * (phase % (2 * Math.PI) - Math.PI);
+                default:
+                    return amp * Math.sin(phase);
+            }
+        }
+        
+        // Draw basic wave
+        function drawWave() {
+            const canvas = waveCanvas;
+            const ctx = waveCtx;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Grid
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.lineWidth = 1;
+            
+            // Horizontal lines
+            for (let i = 0; i <= canvas.height; i += 30) {
+                ctx.beginPath();
+                ctx.moveTo(0, i);
+                ctx.lineTo(canvas.width, i);
+                ctx.stroke();
+            }
+            
+            // Vertical lines
+            for (let i = 0; i <= canvas.width; i += 50) {
+                ctx.beginPath();
+                ctx.moveTo(i, 0);
+                ctx.lineTo(i, canvas.height);
+                ctx.stroke();
+            }
+            
+            // Center line
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height / 2);
+            ctx.lineTo(canvas.width, canvas.height / 2);
+            ctx.stroke();
+            
+            // Wave
+            const freq = parseFloat(frequencySlider.value);
+            const amp = parseInt(amplitudeSlider.value);
+            const type = waveTypeSelect.value;
+            
+            ctx.strokeStyle = '#4fc3f7';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            
+            for (let x = 0; x < canvas.width; x++) {
+                const y = canvas.height / 2 + generateWave(x, freq, amp, type, time);
+                if (x === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
+            ctx.stroke();
+            
+            // Labels
+            ctx.fillStyle = 'white';
+            ctx.font = '14px Arial';
+            ctx.fillText('Amplitude', 10, 20);
+            ctx.fillText('Time →', canvas.width - 60, canvas.height - 10);
+            ctx.fillText('0', 5, canvas.height / 2 + 5);
+        }
+        
+        // Draw sampling demonstration
+        function drawSampling() {
+            const canvas = samplingCanvas;
+            const ctx = samplingCtx;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const signalFreq = parseInt(signalFreqSlider.value);
+            const sampleRate = parseInt(sampleRateSlider.value);
+            
+            // Original signal (continuous)
+            ctx.strokeStyle = '#4fc3f7';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            
+            for (let x = 0; x < canvas.width; x++) {
+                const y = canvas.height / 3 + 60 * Math.sin(2 * Math.PI * signalFreq * x / 100);
+                if (x === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
+            ctx.stroke();
+            
+            // Sample points
+            ctx.fillStyle = '#ff6b6b';
+            const sampleInterval = 100 / sampleRate;
+            
+            for (let x = 0; x < canvas.width; x += sampleInterval) {
+                const y = canvas.height / 3 + 60 * Math.sin(2 * Math.PI * signalFreq * x / 100);
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+            
+            // Reconstructed signal (what we get back)
+            const nyquistRate = 2 * signalFreq;
+            
+            if (sampleRate >= nyquistRate) {
+                // Good reconstruction
+                ctx.strokeStyle = '#4caf50';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                
+                for (let x = 0; x < canvas.width; x++) {
+                    const y = 2 * canvas.height / 3 + 60 * Math.sin(2 * Math.PI * signalFreq * x / 100);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+            } else {
+                // Aliased reconstruction
+                const aliasFreq = Math.abs(sampleRate - signalFreq);
+                ctx.strokeStyle = '#f44336';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                
+                for (let x = 0; x < canvas.width; x++) {
+                    const y = 2 * canvas.height / 3 + 60 * Math.sin(2 * Math.PI * aliasFreq * x / 100);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+            }
+            
+            ctx.setLineDash([]);
+            
+            // Labels
+            ctx.fillStyle = 'white';
+            ctx.font = '14px Arial';
+            ctx.fillText('Original Signal', 10, 25);
+            ctx.fillText('● Sample Points', 10, canvas.height / 2 + 10);
+            ctx.fillText('--- Reconstructed', 10, canvas.height - 20);
+        }
+        
+        // Animation loop
+        function animate() {
+            time += 0.02;
+            drawWave();
+            drawSampling();
+            animationId = requestAnimationFrame(animate);
+        }
+        
+        // Event listeners
+        frequencySlider.addEventListener('input', updateDisplays);
+        amplitudeSlider.addEventListener('input', updateDisplays);
+        signalFreqSlider.addEventListener('input', updateDisplays);
+        sampleRateSlider.addEventListener('input', updateDisplays);
+        
+        // Button functions
+        function animateWaves() {
+            if (animationId) cancelAnimationFrame(animationId);
+            animate();
+        }
+        
+        function resetAll() {
+            if (animationId) cancelAnimationFrame(animationId);
+            time = 0;
+            frequencySlider.value = 2;
+            amplitudeSlider.value = 50;
+            signalFreqSlider.value = 5;
+            sampleRateSlider.value = 20;
+            waveTypeSelect.value = 'sine';
+            updateDisplays();
+            drawWave();
+            drawSampling();
+        }
+        
+        // Initialize
+        updateDisplays();
+        drawWave();
+        drawSampling();
+    </script>
+</body>
+</html>
