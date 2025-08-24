@@ -36,6 +36,43 @@
       - [3DoF (Three Degrees of Freedom)](#3dof-three-degrees-of-freedom)
       - [6DoF (Six Degrees of Freedom)](#6dof-six-degrees-of-freedom)
     - [Emerging Technologies Related to XR \& Industry 4.0](#emerging-technologies-related-to-xr--industry-40)
+  - [Lecture 3: Introduction to 3D Creation](#lecture-3-introduction-to-3d-creation)
+    - [Introduction](#introduction)
+    - [What is 3D modeling?](#what-is-3d-modeling)
+      - [Visual Representation](#visual-representation)
+    - [3D Modeling Methods](#3d-modeling-methods)
+    - [Importance of Computer Graphics](#importance-of-computer-graphics)
+    - [Advantages of CAD](#advantages-of-cad)
+    - [Applications of 3D/CAD Modeling](#applications-of-3dcad-modeling)
+    - [Dimensioning](#dimensioning)
+    - [Scales in Drawing](#scales-in-drawing)
+  - [Lecture 4: Structure of 3D Modeling](#lecture-4-structure-of-3d-modeling)
+    - [Theory of Projection](#theory-of-projection)
+    - [Projection System](#projection-system)
+    - [Classification of Projection Methods](#classification-of-projection-methods)
+    - [Parallel Projection](#parallel-projection)
+    - [Axonometric Projection](#axonometric-projection)
+    - [Oblique Projection](#oblique-projection)
+    - [Convergent Projection](#convergent-projection)
+    - [Perspective Projection](#perspective-projection)
+    - [Perspective Viewing Types](#perspective-viewing-types)
+    - [Principal Planes](#principal-planes)
+    - [Structure of 3D Modeling](#structure-of-3d-modeling)
+    - [Unit Settings in CAD](#unit-settings-in-cad)
+    - [Sketch Entities, Objects, and Classification](#sketch-entities-objects-and-classification)
+    - [Datum Entities](#datum-entities)
+    - [Plane](#plane)
+    - [Axis](#axis)
+    - [Point](#point)
+    - [Sketch Entities in CAD](#sketch-entities-in-cad)
+    - [3D Curves](#3d-curves)
+    - [Surfaces](#surfaces)
+    - [Solids](#solids)
+    - [Regional Operations (Boolean Operations)](#regional-operations-boolean-operations)
+    - [Wireframes](#wireframes)
+    - [Common 3D Modeling Software](#common-3d-modeling-software)
+    - [File Types in CAD](#file-types-in-cad)
+    - [Low Poly and High Poly Models](#low-poly-and-high-poly-models)
 
 
 ## Lecture 1: Introduction
@@ -333,4 +370,341 @@ Degrees of Freedom define the types of movements a device can track.
 - Autonomous vehicles (Self-driving cars)
 
 ***
+
+## Lecture 3: Introduction to 3D Creation  
+*Dr. Kalpana Shankhwar, IIIT Delhi*
+
+---
+
+### Introduction
+- A picture is worth a thousand words.
+- Use of drawing language to convey ideas.
+- Engineering drawing is a “standardized” drawing language.
+- Important for product development:
+  - Product specification
+  - Product drawing
+- Engineering drawing is an effective communication language between engineers.
+- Geometric theorems are essential in engineering drawing.
+
+---
+
+### What is 3D modeling?
+- Constructing drawings on a computer screen using specialized software and hardware is called Computer Aided Drafting (CAD) or 3D modeling.
+- CAD drawings are clearer and more precise than manual drawings.
+- It creates interactive designs representing real-life objects.
+- Allows quick creation and analysis of physical properties of parts and iterative updating of models.
+- Widely used for internal and client presentations.
+- Can be time and cost-efficient.
+
+#### Visual Representation
+- 3D modeling is visually represented in 2D using 3D rendering or visualization techniques.
+
+---
+
+### 3D Modeling Methods
+- **Polygonal Modeling**: Represents points in 3D connected by line segments forming polygon meshes.
+- **Curve Modeling**:
+  - Uses curves to generate surface geometry.
+  - Curves can be parametric (based on geometric/functional relationships) or freeform.
+  - Curves influenced by mathematical equations and designer’s control points.
+- **Digital Sculpting**:
+  - Newer method.
+  - User interacts with the model like sculpting virtual clay.
+  - Enables pushing, pulling, pinching, or twisting of the digital clay.
+
+---
+
+### Importance of Computer Graphics
+- CAD systems rely on Interactive Computer Graphics (ICG).
+- Converts user commands into graphical representations.
+- Supports creating, modifying, storing, and exploring drawings.
+- Also essential in Computer-Aided Manufacturing (CAM) where graphics data is converted to machining data for CNC machines.
+- Computer graphics hardware and software are primary constituents.
+- 3D modeling software is designed to be interactive, intuitive, and user-friendly.
+- Software interface has two main parts:
+  - Graphics window: visual feedback of object design.
+  - Command window: for entering commands.
+
+---
+
+### Advantages of CAD
+- **Accuracy:** Higher accuracy than manual drawing.
+- **Speed:** Faster drawing creation; features like copy, mirror, array, automatic hatching, text, and dimensioning.
+- **Easy Editing:** Drawings can be edited easily; components can be reused.
+- **Standard Libraries:** Standard parts like gears, valves included.
+- **Scaling:** Objects can be scaled up or down automatically.
+- **Better Visualization**
+- **Freedom from manual instruments**
+- **Space Effectiveness**
+
+---
+
+### Applications of 3D/CAD Modeling
+- **Viewing:** Easily create and visualize 3D components and generate multiple views including sectional.
+- **Mechanism:** Model components to simulate real kinematic assembly.
+- **Finite Element Method (FEM):** Numerical method for solving physical problems using differential equations.
+- **Manufacturing:** 
+  - Computer-aided manufacturing via CNC machines,
+  - Robotic applications,
+  - Automated measuring and inspection.
+- **3D Printing:** Physical object creation via layer-wise material addition controlled by computer.
+- **Entertainment:** Character creation in films and TV using 3D sculpting.
+- **Automation:** Programming CAD for automatic component generation with variable parameters.
+- **Fashion:** Virtual clothes design and dynamic visualization.
+- **Medicine:** Design prosthetics and parts for organ repair.
+
+---
+
+### Dimensioning
+- Shows exact size (length, width, height, diameter) on drawings.
+- Uses numerical values with lines, symbols, and notes.
+- Most common measurement unit: millimeters (mm).
+- Symbols for special features like diameter (Ø), radius (R), square (SQ), cylinder (CYL), etc.
+- Dimension elements: dimension line, extension lines, arrowheads, leader, notes.
+- Uses standard rules:
+  - Align system,
+  - Do not mix dimensioning system styles,
+  - Follow preferred dimensioning styles for clarity.
+
+---
+
+### Scales in Drawing
+- Objects drawn to scale: enlarged or reduced proportionally.
+- Scale represented by Representative Fraction (RF) or Scale Factor.
+- RF = (Length on drawing) / (Actual length)
+- Example: A 1.5 m long steel bar shown as 15 cm line on drawing gives RF = 1/10.
+
+---
+
+Thank you!
+
+## Lecture 4: Structure of 3D Modeling  
+*Dr. Kalpana Shankhwar, IIIT Delhi*
+
+---
+
+### Theory of Projection
+- Projection in engineering drawing means creating an image or view of an object.
+- Engineers use various projection techniques to construct views of objects.
+
+---
+
+### Projection System
+- Light rays from a bulb striking an object create a shadow (image) on a screen.
+- The image is larger due to divergent light rays.
+- The observer replaces the light source; lines of sight form the view.
+- The screen is called the Plane of Projection (POP).
+- Lines of sight are called projection lines or projectors.
+- Three basic elements: object, observer, and POP.
+
+---
+
+### Classification of Projection Methods
+- **Multi-view projection**
+- **Orthographic projection**
+- **Axonometric projection**
+- **Parallel projection**
+- **Oblique projection**
+- **Convergent projection**
+- **Perspective projection**
+
+---
+
+### Parallel Projection
+- Projectors are parallel.
+- **Orthographic projection:** Projectors are perpendicular to the POP.
+  - **Multiview projection:** Two or more views on different POPs showing two dimensions per view.
+
+---
+
+### Axonometric Projection
+- One view showing all three dimensions.
+- Object oriented so three perpendicular edges are inclined to POP.
+- Types:
+  - **Isometric:** All three edges equally inclined to POP.
+  - **Dimetric:** Two edges equally inclined.
+  - **Trimetric:** All three edges different inclinations.
+
+---
+
+### Oblique Projection
+- Projectors are parallel but inclined at 30°, 45°, or 60° to POP.
+- One face is parallel to POP called principal face.
+- Types:
+  - **Cavalier Projection**
+  - **Cabinet Projection**
+
+---
+
+### Convergent Projection
+- Projectors converge to a station point (observer’s eye).
+- Parallel edges appear to converge at vanishing points.
+- Object appears smaller with distance.
+- Most common is perspective projection.
+
+---
+
+### Perspective Projection
+- Linear perspective: Size relates proportionally to distance.
+- One, two, or three vanishing points used for different views.
+- Aerial perspective considers atmospheric effects: contrast and color fade with distance to create depth illusion.
+
+---
+
+### Perspective Viewing Types
+- **Three-point perspective:** Three vanishing points on three principal directions.
+- **Two-point perspective:** Two vanishing points, one direction parallel to POP.
+- **One-point perspective:** One vanishing point, two directions parallel to POP.
+
+---
+
+### Principal Planes
+- POP where views are projected.
+- In multiview, different POPs needed for different views.
+- Three mutually perpendicular planes called principal/reference planes (RP):
+  - Horizontal Plane (HP): parallel to ground.
+  - Vertical Plane (VP): perpendicular to ground and HP.
+  - Profile Plane (PP): perpendicular to HP and VP.
+- Reference planes are imaginary and transparent.
+
+---
+
+### Structure of 3D Modeling
+- 3D models consist of entities and features like datum, solids, surfaces, etc.
+- Operations on these features are accessed through CAD software commands via menus and icons.
+
+---
+
+### Unit Settings in CAD
+- CAD has predefined unit sets; users must select units before modeling.
+- Unit systems include:
+  - SI (International System)
+  - MKS (meter-kilogram-second)
+  - IPS (inch-pound-second)
+  - FPS (foot-pound-second)
+  - CGS (centimeter-gram-second)
+- SI base units: meter, kilogram, ampere, kelvin, mole, candela.
+
+---
+
+### Sketch Entities, Objects, and Classification
+- CAD models include sketches, solids, annotations, datums, parameters.
+- Sketches generate solids or surface models.
+- Annotations display dimensions and process info.
+- Objects facilitate drawing generation, analysis, manufacturing planning.
+
+---
+
+### Datum Entities
+- Have no physical mass but assist in model creation and analysis.
+- Include planes, axes, and points.
+- Planes are required to create sketches on flat surfaces.
+
+---
+
+### Plane
+- Imaginary/real flat surface where a straight line lies.
+- Used as sketch planes or reference for measurement.
+- Default CAD planes: Front, Top, Right.
+
+---
+
+### Axis
+- Imaginary infinite straight lines used as sketch/reference geometry or rotational axes.
+
+---
+
+### Point
+- Created in sketches or 3D space.
+- Used for creating geometry or aiding measurement.
+
+---
+
+### Sketch Entities in CAD
+- Basic geometry tools include:
+  - Point
+  - Line
+  - Arc or Circle
+  - Rectangle
+  - Parallelogram
+  - Polygon
+  - Ellipse
+  - Spline
+
+---
+
+### 3D Curves
+- Curves whose points do not lie on a single plane.
+- Created by equations, special CAD tools, or tracing mechanisms.
+- Used for creating objects or defining paths.
+
+---
+
+### Surfaces
+- Imagined as the "skin" of solids.
+- Used in shaping objects like vehicle bodies, airplane wings.
+- Mathematical representation allowing multi-angle viewing.
+
+---
+
+### Solids
+- Created via primitives or by extruding sections along paths.
+- Used to visualize shape, analyze models, and produce drawings.
+
+---
+
+### Regional Operations (Boolean Operations)
+- Used to manipulate regions to create complex shapes.
+- Types:
+  - Union (addition)
+  - Difference (subtraction)
+  - Intersection
+- Volumes after operations follow certain volume formulas involving overlaps.
+
+---
+
+### Wireframes
+- Show basic structure with lines and transparency.
+- Wireframes represent object boundaries with points and connections, not solid.
+
+---
+
+### Common 3D Modeling Software
+- AutoCAD
+- Pro-E (Pro/Engineer)
+- Catia
+- SolidWorks
+- Blender
+- Maya
+- SketchUp
+- 3DS Max
+- Zbrush
+- ArchiCAD
+- Fusion 360
+
+---
+
+### File Types in CAD
+- Contain 3D/2D models including geometry, manufacturing, and material data.
+- **Native formats:** Software-specific files (*.CATPart for CATIA).
+- **Neutral formats:** Interoperable formats like STL, FBX, 3DS, OBJ, STEP.
+  - STL: Popular in 3D printing, rapid prototyping.
+  - FBX: Used in film/video games; geometry plus texture and color.
+  - 3DS: Used in engineering, architecture.
+  - OBJ: Polygonal models for 3D printing.
+  - STEP: Widely accepted cross-industry format for interoperability.
+
+---
+
+### Low Poly and High Poly Models
+- Polygon count affects smoothness, accuracy, and file size.
+- **High Poly Models:**
+  - Photorealistic and detailed.
+  - Complex geometry with many polygons.
+  - Suitable for close inspection but costly to render.
+- **Low Poly Models:**
+  - Faster processing and smaller files.
+  - Suitable for real-time manipulation (games, VR/AR).
+  - Lower cost but less visual detail.
+  - Ideal for applications prioritizing speed and interactivity.
 
