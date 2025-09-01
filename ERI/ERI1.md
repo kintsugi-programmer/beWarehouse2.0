@@ -1,9 +1,9 @@
-## ERI 1
+## ERI1
 - Prof. Dr. Kalpana Shankhwar 
 - This course aims to introduce extended reality (XR/AR, VR, MR) and its applications in Industry 4.0. It covers various topics that are integral parts of XR technology, for example, haptic technology, 3D modeling, tracking, metaverse and digital twin. The main focus of this course is to enable students to develop their own Android/iOS augmented reality (AR) applications. In addition, the students will also get familiar with using Microsoft HoloLens2 AR headset.
 
 ## Table of Contents
-- [ERI 1](#eri-1)
+- [ERI1](#eri1)
 - [Table of Contents](#table-of-contents)
 - [Lecture 1: Introduction](#lecture-1-introduction)
   - [Instructor Information](#instructor-information)

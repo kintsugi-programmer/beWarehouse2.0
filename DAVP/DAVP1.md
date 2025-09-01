@@ -1,4 +1,4 @@
-# DAVP
+# DAVP1
 - Prof. Mr. Aman Samuel
 - This hands-on project-based course will introduce students to the world of Digital Audio and Video Production Workflow. Topics include Studio Mixing techniques, Audio mixing using various DAW, Foley Sounds & Designing, Multitrack Mixing, Video Production Workflow, Hands on Multicam setup and lighting techniques, Chroma Keying, Video Editing with DaVinci Resolve. Students will learn to record and mix audio using industry standard practice and also learn about the video production workflow, multicam shoots using various equipment (gimbal crane, sliders, etc). In this course the students will conduct their own audio-video projects inspired by the current work being done in the field of computer music & video production. Weekly assignments will be given. Students will be evaluated on both technical and creative ability in this course.
 - Classes to be held in: 
@@ -9,7 +9,7 @@
 - Hardcore notes extreme full depth long include prereq for begineers
 
 ## Table of Contents
-- [DAVP](#davp)
+- [DAVP1](#davp1)
   - [Table of Contents](#table-of-contents)
   - [DES 514 Digital Audio Video Production Workflow](#des-514-digital-audio-video-production-workflow)
     - [Assessment Plan (MD Notes – Detailed, Simple Language)](#assessment-plan-md-notes--detailed-simple-language)

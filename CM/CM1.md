@@ -1,4 +1,4 @@
-# CM
+# CM1
 - Dr. Tavpritesh Sethi
 - This objective of this course is to train students in creation of computing solutions that are relevant to medicine. The course will pick timely and relevant topics in computing such as the building blocks of electronic health records, modeling and visualizing diseases, pathogen and human factors involved in spread and the ever increasing role of information management and computing in managing diseases.
 - Dear Students, Quiz 1 will be held on Thursday, 28th August. The syllabus will include all topics covered up to the Tuesday class. The paper will be a combination of subjective and objective questions. Please make sure to carry your ID card.
@@ -15,7 +15,7 @@
   Abhinav	Tuesday	2-3pm	abhinavs@iiitd.ac.in
   ```
 ## Table of Contents
-- [CM](#cm)
+- [CM1](#cm1)
   - [Table of Contents](#table-of-contents)
   - [Computing for Medicine, Lecture 1: Introduction](#computing-for-medicine-lecture-1-introduction)
     - [1. **Course Overview**](#1-course-overview)

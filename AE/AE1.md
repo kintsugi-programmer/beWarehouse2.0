@@ -1,9 +1,9 @@
-# AE 1
+# AE1
 - Applied Ethics
 - This course will introduce students to some of the fundamental debates in Applied Ethics. Applied Ethics offers a way to comprehend and analyse the fundamental moral and ethical problems of our times and generate arguments to justify ethical claims. The course will begin by introducing students to the major ethical theories like consequentialism, deontology, and virtue ethics. It will then demonstrate how these theories can be used to both understand and address some of the major ethical issues. Broad topics to be covered in this course include debates in environmental ethics, ethics of information technology, business ethics, bio ethics, animal rights, euthanasia, same-sex marriage, affirmative action, distributive justice and global poverty, abortion, torture, punishment, terrorism, privacy, surveillance, security, whistleblowing, civil disobedience etc. 
 
 ## Table of Contents
-- [AE 1](#ae-1)
+- [AE1](#ae1)
   - [Table of Contents](#table-of-contents)
   - [Foundations of Moral Philosophy and Argumentation](#foundations-of-moral-philosophy-and-argumentation)
     - [I. Introduction to Moral Philosophy: The Challenge of Gyges's Ring](#i-introduction-to-moral-philosophy-the-challenge-of-gygess-ring)
