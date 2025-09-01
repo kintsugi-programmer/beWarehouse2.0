@@ -5,8 +5,6 @@
   - Classroom: 102 R&D Block,
   - Lab: 102 Audio Studio & 104 Video Studio R&D Block
   - Lab: 407 Gaming Animation Lab Old Academic Block
-- https://notebooklm.google.com/
-- Hardcore notes extreme full depth long include prereq for begineers
 
 ## Table of Contents
 - [DAVP1](#davp1)
