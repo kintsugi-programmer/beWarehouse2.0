@@ -1707,6 +1707,7 @@ Here is a detailed solution to Quiz 1, drawing upon the provided course material
            ↓
          Virus
     ```
+    ![alt text](image.png)
     *   **Explanation:** This graph shows a hierarchical "is-a" relationship, where "Pneumonia" is a specific type of "Infectious Disease," which in turn is a type of "Disease." It also shows a "has-cause" relationship, indicating that a "Virus" can cause "Pneumonia."
 
 **2. SNOMED CT concepts are more than just terms. They carry certain essential properties as discussed in class. Explain the essential properties of a SNOMED CT concept. What do you understand by Fully Specified Name (FSN)?**
