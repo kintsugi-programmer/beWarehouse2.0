@@ -1,78 +1,88 @@
-# ERI
+## ERI
 - [ERI](#eri)
-  - [Lecture 1: Introduction](#lecture-1-introduction)
-    - [Instructor Information](#instructor-information)
-    - [About the Instructor](#about-the-instructor)
-    - [Lab Focus: Emerging Technology Integrated Design \& Manufacturing (ETIDM) Lab](#lab-focus-emerging-technology-integrated-design--manufacturing-etidm-lab)
-    - [Grading Policy](#grading-policy)
-    - [Extended Reality (XR)](#extended-reality-xr)
-      - [Virtual Reality (VR)](#virtual-reality-vr)
-      - [Augmented Reality (AR)](#augmented-reality-ar)
-      - [Mixed Reality (MR)](#mixed-reality-mr)
-    - [History of Virtual Reality](#history-of-virtual-reality)
-    - [Industry 4.0 and XR in Industry](#industry-40-and-xr-in-industry)
-    - [XR Applications in Industry](#xr-applications-in-industry)
-    - [Important XR Devices and Tools Timeline (Recent)](#important-xr-devices-and-tools-timeline-recent)
-    - [Summary: Industrial Revolutions](#summary-industrial-revolutions)
-    - [Additional Notes on XR Technologies](#additional-notes-on-xr-technologies)
-  - [Lecture 2: Introduction to Extended Reality Hardware and Software](#lecture-2-introduction-to-extended-reality-hardware-and-software)
-    - [Overview](#overview)
-    - [Course \& Instructor Details](#course--instructor-details)
-    - [Weekly Topics and Focus Areas](#weekly-topics-and-focus-areas)
-    - [Key Concepts in XR](#key-concepts-in-xr)
-      - [Types of XR](#types-of-xr)
-    - [Haptic Technology](#haptic-technology)
-      - [Types of Haptic Feedback](#types-of-haptic-feedback)
-      - [Devices and Application](#devices-and-application)
-    - [XR Development Platforms](#xr-development-platforms)
-    - [XR Hardware](#xr-hardware)
-      - [Device Types](#device-types)
-      - [Examples](#examples)
-      - [Advantages of AR devices](#advantages-of-ar-devices)
-      - [Disadvantages of AR devices](#disadvantages-of-ar-devices)
-    - [Tracking in XR](#tracking-in-xr)
-      - [Tracking Types](#tracking-types)
-    - [Degrees of Freedom (DoF) in Tracking](#degrees-of-freedom-dof-in-tracking)
-      - [3DoF (Three Degrees of Freedom)](#3dof-three-degrees-of-freedom)
-      - [6DoF (Six Degrees of Freedom)](#6dof-six-degrees-of-freedom)
-    - [Emerging Technologies Related to XR \& Industry 4.0](#emerging-technologies-related-to-xr--industry-40)
-  - [Lecture 3: Introduction to 3D Creation](#lecture-3-introduction-to-3d-creation)
-    - [Introduction](#introduction)
-    - [What is 3D modeling?](#what-is-3d-modeling)
-      - [Visual Representation](#visual-representation)
-    - [3D Modeling Methods](#3d-modeling-methods)
-    - [Importance of Computer Graphics](#importance-of-computer-graphics)
-    - [Advantages of CAD](#advantages-of-cad)
-    - [Applications of 3D/CAD Modeling](#applications-of-3dcad-modeling)
-    - [Dimensioning](#dimensioning)
-    - [Scales in Drawing](#scales-in-drawing)
-  - [Lecture 4: Structure of 3D Modeling](#lecture-4-structure-of-3d-modeling)
-    - [Theory of Projection](#theory-of-projection)
-    - [Projection System](#projection-system)
-    - [Classification of Projection Methods](#classification-of-projection-methods)
-    - [Parallel Projection](#parallel-projection)
-    - [Axonometric Projection](#axonometric-projection)
-    - [Oblique Projection](#oblique-projection)
-    - [Convergent Projection](#convergent-projection)
-    - [Perspective Projection](#perspective-projection)
-    - [Perspective Viewing Types](#perspective-viewing-types)
-    - [Principal Planes](#principal-planes)
-    - [Structure of 3D Modeling](#structure-of-3d-modeling)
-    - [Unit Settings in CAD](#unit-settings-in-cad)
-    - [Sketch Entities, Objects, and Classification](#sketch-entities-objects-and-classification)
-    - [Datum Entities](#datum-entities)
-    - [Plane](#plane)
-    - [Axis](#axis)
-    - [Point](#point)
-    - [Sketch Entities in CAD](#sketch-entities-in-cad)
-    - [3D Curves](#3d-curves)
-    - [Surfaces](#surfaces)
-    - [Solids](#solids)
-    - [Regional Operations (Boolean Operations)](#regional-operations-boolean-operations)
-    - [Wireframes](#wireframes)
-    - [Common 3D Modeling Software](#common-3d-modeling-software)
-    - [File Types in CAD](#file-types-in-cad)
-    - [Low Poly and High Poly Models](#low-poly-and-high-poly-models)
+- [Lecture 1: Introduction](#lecture-1-introduction)
+  - [Instructor Information](#instructor-information)
+  - [About the Instructor](#about-the-instructor)
+  - [Lab Focus: Emerging Technology Integrated Design \& Manufacturing (ETIDM) Lab](#lab-focus-emerging-technology-integrated-design--manufacturing-etidm-lab)
+  - [Grading Policy](#grading-policy)
+  - [Extended Reality (XR)](#extended-reality-xr)
+    - [Virtual Reality (VR)](#virtual-reality-vr)
+    - [Augmented Reality (AR)](#augmented-reality-ar)
+    - [Mixed Reality (MR)](#mixed-reality-mr)
+  - [History of Virtual Reality](#history-of-virtual-reality)
+  - [Industry 4.0 and XR in Industry](#industry-40-and-xr-in-industry)
+  - [XR Applications in Industry](#xr-applications-in-industry)
+  - [Important XR Devices and Tools Timeline (Recent)](#important-xr-devices-and-tools-timeline-recent)
+  - [Summary: Industrial Revolutions](#summary-industrial-revolutions)
+  - [Additional Notes on XR Technologies](#additional-notes-on-xr-technologies)
+- [Lecture 2: Introduction to Extended Reality Hardware and Software](#lecture-2-introduction-to-extended-reality-hardware-and-software)
+  - [Overview](#overview)
+  - [Course \& Instructor Details](#course--instructor-details)
+  - [Weekly Topics and Focus Areas](#weekly-topics-and-focus-areas)
+  - [Key Concepts in XR](#key-concepts-in-xr)
+    - [Types of XR](#types-of-xr)
+  - [Haptic Technology](#haptic-technology)
+    - [Types of Haptic Feedback](#types-of-haptic-feedback)
+    - [Devices and Application](#devices-and-application)
+  - [XR Development Platforms](#xr-development-platforms)
+  - [XR Hardware](#xr-hardware)
+    - [Device Types](#device-types)
+    - [Examples](#examples)
+    - [Advantages of AR devices](#advantages-of-ar-devices)
+    - [Disadvantages of AR devices](#disadvantages-of-ar-devices)
+  - [Tracking in XR](#tracking-in-xr)
+    - [Tracking Types](#tracking-types)
+  - [Degrees of Freedom (DoF) in Tracking](#degrees-of-freedom-dof-in-tracking)
+    - [3DoF (Three Degrees of Freedom)](#3dof-three-degrees-of-freedom)
+    - [6DoF (Six Degrees of Freedom)](#6dof-six-degrees-of-freedom)
+  - [Emerging Technologies Related to XR \& Industry 4.0](#emerging-technologies-related-to-xr--industry-40)
+- [Lecture 3: Introduction to 3D Creation](#lecture-3-introduction-to-3d-creation)
+  - [Introduction](#introduction)
+  - [What is 3D modeling?](#what-is-3d-modeling)
+    - [Visual Representation](#visual-representation)
+  - [3D Modeling Methods](#3d-modeling-methods)
+  - [Importance of Computer Graphics](#importance-of-computer-graphics)
+  - [Advantages of CAD](#advantages-of-cad)
+  - [Applications of 3D/CAD Modeling](#applications-of-3dcad-modeling)
+  - [Dimensioning](#dimensioning)
+  - [Scales in Drawing](#scales-in-drawing)
+- [Lecture 4: Structure of 3D Modeling](#lecture-4-structure-of-3d-modeling)
+  - [Theory of Projection](#theory-of-projection)
+  - [Projection System](#projection-system)
+  - [Classification of Projection Methods](#classification-of-projection-methods)
+  - [Parallel Projection](#parallel-projection)
+  - [Axonometric Projection](#axonometric-projection)
+  - [Oblique Projection](#oblique-projection)
+  - [Convergent Projection](#convergent-projection)
+  - [Perspective Projection](#perspective-projection)
+  - [Perspective Viewing Types](#perspective-viewing-types)
+  - [Principal Planes](#principal-planes)
+  - [Structure of 3D Modeling](#structure-of-3d-modeling)
+  - [Unit Settings in CAD](#unit-settings-in-cad)
+  - [Sketch Entities, Objects, and Classification](#sketch-entities-objects-and-classification)
+  - [Datum Entities](#datum-entities)
+  - [Plane](#plane)
+  - [Axis](#axis)
+  - [Point](#point)
+  - [Sketch Entities in CAD](#sketch-entities-in-cad)
+  - [3D Curves](#3d-curves)
+  - [Surfaces](#surfaces)
+  - [Solids](#solids)
+  - [Regional Operations (Boolean Operations)](#regional-operations-boolean-operations)
+  - [Wireframes](#wireframes)
+  - [Common 3D Modeling Software](#common-3d-modeling-software)
+  - [File Types in CAD](#file-types-in-cad)
+  - [Low Poly and High Poly Models](#low-poly-and-high-poly-models)
+- [Lecture 5: Structure of 3D Modeling](#lecture-5-structure-of-3d-modeling)
+  - [Introduction to 3D Modeling in Computer Graphics](#introduction-to-3d-modeling-in-computer-graphics)
+  - [Physical vs. Synthetic Images](#physical-vs-synthetic-images)
+  - [Core Entities: Object and Viewer](#core-entities-object-and-viewer)
+  - [Imaging Models](#imaging-models)
+  - [Multiview Orthographic Projection](#multiview-orthographic-projection)
+  - [Principal Orthographic Views](#principal-orthographic-views)
+  - [Rules for Projection of Faces and Edges](#rules-for-projection-of-faces-and-edges)
+  - [Hidden Features and Sectional Views](#hidden-features-and-sectional-views)
+  - [Example Exercise \& Solution](#example-exercise--solution)
 
 
 ## Lecture 1: Introduction
@@ -708,3 +718,70 @@ Thank you!
   - Lower cost but less visual detail.
   - Ideal for applications prioritizing speed and interactivity.
 
+## Lecture 5: Structure of 3D Modeling 
+- [ERI Lecture 5](ERI/ERI, Lecture 5.pptx_compressed.pdf)
+- Study .pdf too
+
+### Introduction to 3D Modeling in Computer Graphics  
+**Problem Statement:** Real objects (e.g., a teapot) exhibit curved surfaces, hidden lines, complex shading, perspective distortions, textures, and varied materials (pottery, ceramic, copper, etc.). Achieving realism requires solving these challenges via research in computer graphics.
+
+### Physical vs. Synthetic Images  
+- **Physical Images:** Captured by cameras or digitizers; objects exist in the real world.  
+- **Synthetic Images:** Generated entirely in software by defining 2D/3D primitives (points, lines, polygons) and applying rasterization, shading, and lighting models.  
+
+### Core Entities: Object and Viewer  
+- **Object:** Defined in 3D space with geometric primitives independent of any viewer.  
+- **Viewer:** Human, camera, or digitizer that “sees” the object and defines the image formation process.
+
+### Imaging Models  
+- **Ray Tracing:** Simulates light-ray interactions—reflection, refraction, absorption—with scene objects to produce highly realistic images.  
+- **Basic Ray–Object Interactions:**  
+  - Ray enters camera directly.  
+  - Ray reflects off a mirror.  
+  - Ray refracts through a transparent sphere.  
+  - Ray misses all objects (“goes to infinity”).
+
+### Multiview Orthographic Projection  
+- **Definition:** Projectors are parallel and perpendicular to the projection plane (POP). Multiple views are drawn on planes at right angles.  
+- **Principal Planes:**  
+  - VP (Vertical Plane) → Front View  
+  - HP (Horizontal Plane) → Top View  
+  - PP (Profile Plane) → Side View  
+- **First-Angle vs. Third-Angle Projection:**  
+  - *First-Angle:* Object lies between observer and plane; FV above XY, TV below.  
+  - *Third-Angle:* Plane lies between observer and object; FV below XY, TV above.  
+
+### Principal Orthographic Views  
+1. **Front View (FV):** Observer looks at the front face; drawn on VP.  
+2. **Top View (TV):** Observer looks from above; drawn on HP.  
+3. **Side Views (SV):**  
+   - Left-Hand Side View (LHSV) or Right-Hand Side View (RHSV) on PP.  
+4. **Bottom View (BV):** Observer looks from below.  
+5. **Rear View (RV):** Observer looks from the back.
+
+### Rules for Projection of Faces and Edges  
+1. Face ⟂ viewing direction → True shape and size visible.  
+2. Face ∥ viewing direction → Edge (line view).  
+3. Face inclined → Foreshortened view (true shape not visible).  
+4. Edge ⟂ viewing direction → True length visible.  
+5. Edge ∥ viewing direction → Point view.  
+6. Edge inclined → Foreshortened length between projected endpoints.
+
+### Hidden Features and Sectional Views  
+- **Hidden Features:** Internal/external geometry not visible in a given view; shown with dashed lines.  
+- **Limitations:** Excessive dashed lines clutter drawings.  
+- **Sectional Views:** Cut planes (vertical, horizontal, profile, auxiliary) slice the object to reveal internal features.  
+  - **Vertical Section:** Plane perpendicular to HP cutting front/back.  
+  - **Horizontal Section:** Plane parallel to HP cutting top/bottom.  
+  - **Profile Section:** Plane parallel to PP cutting side features.  
+  - **Auxiliary Section:** Any nonprincipal plane used to reveal inclined faces.  
+- **Hatching:** Sectioned surfaces are filled with 45° hatch lines to denote cut material.
+
+### Example Exercise & Solution  
+- [ERI Lecture 5](ERI/ERI, Lecture 5.pptx_compressed.pdf)
+- Provided an exercise with a composite object having vertical, horizontal, and profile cut planes.  
+- Sectional front, top, and side views illustrate internal geometry, dimensions, and relationships.
+
+***
+
+**Key Takeaway:** Understanding projection methods, viewing rules, and sectional techniques is essential for accurately representing an object’s three-dimensional depth and internal features in engineering and design documentation.
