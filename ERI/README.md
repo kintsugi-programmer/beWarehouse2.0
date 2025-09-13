@@ -88,6 +88,23 @@
   - [Rules for Projection of Faces and Edges](#rules-for-projection-of-faces-and-edges)
   - [Hidden Features and Sectional Views](#hidden-features-and-sectional-views)
   - [Example Exercise \& Solution](#example-exercise--solution)
+- [Lecture 6: User Interface Elements in Unity](#lecture-6-user-interface-elements-in-unity)
+  - [**Content Overview**](#content-overview)
+  - [**Introduction to Unity UI**](#introduction-to-unity-ui)
+    - [**Canvas**](#canvas)
+    - [**Render Modes for Canvas**](#render-modes-for-canvas)
+  - [**Basic Layout Components**](#basic-layout-components)
+    - [**Rect Transform**](#rect-transform)
+    - [**Anchors**](#anchors)
+  - [**Visual Components**](#visual-components)
+  - [**Interaction Components**](#interaction-components)
+  - [**Class Activities (Demos) - Practical Application for Beginners**](#class-activities-demos---practical-application-for-beginners)
+    - [**Class Activity 5: UI Element: Button (Scene Switching)**](#class-activity-5-ui-element-button-scene-switching)
+    - [**Class Activity 6: UI Element: Slider (Object Scaling)**](#class-activity-6-ui-element-slider-object-scaling)
+    - [**Class Activity 7: UI Element: Toggle (Enable/Disable Object)**](#class-activity-7-ui-element-toggle-enabledisable-object)
+    - [**Class Activity 8: UI Element: Scrollbar (Text Scrolling)**](#class-activity-8-ui-element-scrollbar-text-scrolling)
+    - [**Class Activity 9: UI Element: Dropdown (Option Selection)**](#class-activity-9-ui-element-dropdown-option-selection)
+    - [**Class Activity 10: UI Element: InputField (Text Entry Display)**](#class-activity-10-ui-element-inputfield-text-entry-display)
 
 
 ## Lecture 1: Introduction
@@ -790,3 +807,244 @@ Thank you!
 ***
 
 **Key Takeaway:** Understanding projection methods, viewing rules, and sectional techniques is essential for accurately representing an object’s three-dimensional depth and internal features in engineering and design documentation.
+
+## Lecture 6: User Interface Elements in Unity
+
+This resource provides a detailed overview of User Interface (UI) elements within the Unity development environment, specifically tailored for Extended Reality (XR) applications in Industry 4.0. It begins by explaining the Canvas as the fundamental container for UI elements and differentiates between three render modes for positioning these elements. The document then describes basic layout components like Rect Transform and anchors, crucial for responsive UI design. Finally, it outlines and demonstrates various visual and interaction components such as Panels, Text, Images, Buttons, Sliders, Toggles, Scrollbars, Dropdowns, and Input Fields, offering step-by-step class activities for practical application of each.
+
+---
+
+### **Content Overview**
+The lecture covers the following key areas:
+*   **Canvas**
+*   **Basic Layout**
+*   **Visual Components**
+*   **Interaction Components**
+*   **Demo (Class Activities)**
+
+---
+
+### **Introduction to Unity UI**
+
+The **Unity user interface** is the most commonly used toolkit for creating UIs in various applications and games. At the core of Unity's UI system is the **Canvas**.
+
+#### **Canvas**
+A **Canvas** is a fundamental **rectangular area** that acts as a container for all UI elements. When you create a UI element, such as an **Image**, via the menu path `GameObject > UI > Image`, a Canvas is automatically generated in your scene if one doesn't already exist.
+
+#### **Render Modes for Canvas**
+The Canvas has three primary render modes that dictate how UI elements are displayed relative to the game world:
+
+1.  **Screen Space – Overlay**
+    *   **Description:** This mode places UI elements directly **on top of the scene**, meaning they are always visible and rendered last, "overlaying" everything else in the game world.
+    *   **Behavior on Resize:** If the screen's size or resolution changes, the Canvas will **automatically adjust its size** to match these changes, ensuring UI elements maintain their relative positions and scale on the screen.
+
+2.  **Screen Space - Camera**
+    *   **Description:** Similar to "Screen Space - Overlay," but with a crucial difference: the Canvas is positioned at a **specified distance in front of a designated Camera**.
+    *   **Rendering Impact:** The UI elements are rendered by this specific camera, which means that the **camera's settings (e.g., field of view, culling mask)** directly influence the appearance of the UI.
+    *   **Depth Interaction:** A key feature here is that **other game objects in the scene can be rendered in front of the UI**. This allows for more dynamic interactions where 3D objects can occlude or interact with UI elements.
+
+3.  **World Space**
+    *   **Description:** In this mode, the Canvas behaves like **any other 3D object within your game scene**. It exists in the 3D world, rather than being a flat overlay on the screen.
+    *   **Manual Sizing:** The **size of the Canvas can be set manually** using its **Rect Transform** component.
+    *   **3D Placement:** UI elements within a World Space Canvas will render **in front of or behind other objects in the scene** based on their actual 3D placement.
+    *   **Use Case:** This mode is particularly useful for UIs that are intended to be an **integral part of the game world**, such as interactive displays on a computer screen within a game, health bars above characters, or signs in a virtual environment.
+
+---
+
+### **Basic Layout Components**
+
+Unity's UI system uses specialized components for layout and positioning.
+
+#### **Rect Transform**
+*   **Core Component:** The **Rect Transform** is a specialized transform component used exclusively for **all UI elements**, replacing the standard `Transform` component.
+*   **Function:** It provides properties for controlling the position, size, and anchoring of UI elements within a Canvas, making it suitable for 2D layout.
+
+#### **Anchors**
+*   **Layout Concept:** Anchors are a layout concept integrated into Rect Transforms.
+*   **Visual Representation:** They appear as **four small triangular handles** in the Scene View.
+*   **Parent-Child Relationship:** If a UI element's parent is also a Rect Transform, the **child Rect Transform can be anchored to its parent** in various ways.
+*   **Examples:** A child element can be anchored to the **center of its parent**, or to **one of its corners**, ensuring it maintains its relative position even if the parent's size changes. This is crucial for creating responsive UI layouts that adapt to different screen sizes and aspect ratios.
+
+---
+
+### **Visual Components**
+
+These components are primarily for displaying information or decorative elements without direct user interaction (though they can be part of interactive elements).
+*   **Panel**
+*   **Text**
+*   **Image**
+
+---
+
+### **Interaction Components**
+
+Interaction components are the building blocks for user input. They are designed to **handle various interaction events** such as mouse clicks, touch events, or input from keyboards or controllers.
+
+*   **Button**
+    *   **Function:** Buttons control the **response to a user's click** (or touch) and are typically used to **initiate or confirm an action**. For example, a "Start" button to begin a game or a "Confirm" button in a dialog box.
+
+*   **Slider**
+    *   **Function:** A slider allows the user to **vary a decimal number value** within a predefined **minimum and maximum range** by dragging its handle.
+    *   **Event:** It has an `OnValueChanged UnityEvent`, which allows you to define actions that happen when the slider's value changes. This is useful for things like volume control or adjusting an object's size.
+
+*   **Toggle**
+    *   **Function:** A toggle control acts like a **checkbox**, allowing the user to **switch an option on or off**.
+    *   **Event:** Similar to the Slider, it has an `OnValueChanged UnityEvent` to define actions when its state (on/off) changes.
+
+*   **Scrollbar**
+    *   **Function:** The scrollbar control enables users to **scroll through content (like an image or text) that is too large to fit completely** within its display area.
+
+*   **Dropdown**
+    *   **Function:** A dropdown presents a **list of options** from which the user can **choose a single one**. When clicked, it expands to show the list, and selecting an item updates the displayed choice.
+
+*   **Input Field**
+    *   **Function:** An input field allows the user to **enter text**, which can then be used to initiate or complete an action.
+    *   **Event:** It features a `UnityEvent` that defines what happens once the user has finished editing the text (e.g., pressing Enter or clicking away).
+
+---
+
+### **Class Activities (Demos) - Practical Application for Beginners**
+
+The lecture includes several class activities to demonstrate the practical application of these UI elements.
+
+#### **Class Activity 5: UI Element: Button (Scene Switching)**
+This example demonstrates how to use buttons to switch between different scenes in Unity.
+
+**Objective:** Create multiple scenes and use buttons to navigate between them.
+**Scenes Involved:** Sample Scene, Scene 1, Scene 2, Scene 3.
+**Buttons Used:** Start, Next, End.
+
+**Steps for Beginners:**
+1.  **Create a Panel:** Start by creating a `Panel` (a visual container) and set its color to **red with a transparent background**. Panels are good for organizing UI elements.
+2.  **Create a Button:** Make a `Button` as a child of this red panel.
+    *   Set its **Height to 50**.
+    *   Set its **scale to 2**.
+3.  **Name the Button:** Change the text displayed on the button to **"Start"** using the text component of the button.
+4.  **Create a Scene Manager Object:** Create an **empty GameObject** in your scene and name it **"SceneManager"**. This object will hold the script responsible for scene loading.
+5.  **Create a C# Script:** Create a new C# script and name it **"LoadScene"**. This script will contain the logic to load different scenes.
+6.  **Attach Script:** Drag and drop the "LoadScene" script onto the "SceneManager" GameObject in the Inspector.
+7.  **Add On Click Event to Button:** Select your "Start" button. In its Inspector, find the `Button` component and locate the **"On Click ()" event list**. Click the **"+" symbol** to add a new event.
+8.  **Link Scene Manager:** Drag the **"SceneManager" GameObject** from your Hierarchy into the empty object slot (Runtime Only) that appeared in the "On Click ()" event list.
+9.  **Select Scene Loading Function:** From the dropdown menu next to the "SceneManager" object, find the **"LoadScene" (the script you created)** and select the function within it that handles scene loading (e.g., `SceneLoader`, which you would implement in your script).
+10. **Set Scene Index:** In the numerical input field that appears, **enter "1"**. This corresponds to the index of "Scene 1" in your build settings.
+11. **Create "Scene 1":** Create a new Unity scene and save it as "Scene 1".
+12. **Repeat for "Next" Button:** Duplicate the panel and button setup, but for "Scene 1," make the **panel color green**, name the button **"Next,"** and set its scene index to **"2"** (for "Scene 2").
+13. **Repeat for "End" Button:** Similarly, create "Scene 2" with a **blue panel**, name the button **"End,"** and set its scene index to **"3"** (for "Scene 3").
+14. **Create "Scene 3":** Create a final blank scene and name it "Scene 3".
+15. **Add Scenes to Build Settings:** Go to `File > Build Settings`. Drag all your created scenes ("Sample Scene," "Scene 1," "Scene 2," "Scene 3") into the **"Scenes in Build" space**. This assigns them numerical indices (0, 1, 2, 3) that you used for the buttons.
+16. **Test:** Hit the **Play button** and click your "Start," "Next," and "End" buttons to verify scene switching.
+
+---
+
+#### **Class Activity 6: UI Element: Slider (Object Scaling)**
+This example shows how to use a slider to dynamically change the size of a 3D object.
+
+**Objective:** Use a `Slider` to vary the size of a GameObject.
+
+**Steps for Beginners:**
+1.  **Create a Scene:** Start by creating a new Unity Scene and name it **"SliderExample"**.
+2.  **Add a Panel:** Add a `Panel` to your scene. Set its color to **transparent black**. This acts as a background for your UI.
+3.  **Add a Slider:** Underneath the panel (as a child), add a `Slider`.
+    *   Set the slider's fill color to **yellow**.
+    *   Set the handle color to **green**.
+4.  **Import 3D Object:** Import a 3D model, such as **"HelloKitty"**, into your project's `Assets` section. Then, drag this "HelloKitty" GameObject onto your Unity scene. This is the object whose scale will be controlled.
+5.  **Create a Script:** Create a new C# script and name it **"ScaleObject"**. This script will contain the logic to adjust the object's scale.
+6.  **Attach Script:** Drag the "ScaleObject" script to the Inspector of the **"HelloKitty" GameObject**.
+7.  **Link Slider Event:** Select your Slider. In its Inspector, find the `Slider` component and locate the **"OnValueChanged (Single)" event**.
+    *   Drag the **"HelloKitty" GameObject** (the one with your "ScaleObject" script attached) to the empty object slot in the "OnValueChanged" event list.
+    *   From the dropdown menu, select **`ScaleObject.AdjustScale`** (you would have implemented this function in your "ScaleObject" script to take a float value and set the object's scale).
+8.  **Set Slider Range:** Set the **Min Value of the Slider to 5** and the **Max Value to 15**. This means the "HelloKitty" object's scale will vary between 5 and 15 units.
+9.  **Test:** Hit the **Play button** and drag the slider from left to right. Observe how the size of the "HelloKitty" GameObject increases as you drag.
+
+---
+
+#### **Class Activity 7: UI Element: Toggle (Enable/Disable Object)**
+This example demonstrates how to use a toggle to enable or disable a GameObject.
+
+**Objective:** Use a `Toggle` control to enable and disable a 3D object.
+
+**Steps for Beginners:**
+1.  **Create a Toggle:** Create a `Toggle` UI element from the UI menu, making it a child object of a `Panel` (or directly under the Canvas).
+2.  **Configure Toggle Text:** To ensure good quality for the toggle's label text, adjust its `Text` settings:
+    *   Set **Width = 300**.
+    *   Set **Height = 150**.
+    *   Check the **"Best Fit" option**. These settings ensure the text is clear and readable.
+3.  **Create 3D Object:** Create a **"Cube"** from the 3D object menu (GameObject > 3D Object > Cube).
+    *   Attach a **material with a red color** to the Cube. This makes it easily visible.
+4.  **Create a Script:** Create a new C# script named **"ToggleExample"**. This script will contain the logic to enable/disable the cube.
+5.  **Attach Script:** Drag the "ToggleExample" script onto the **"Cube" GameObject** in the Hierarchy.
+6.  **Link Toggle Event:** Select your `Toggle` UI element. In its Inspector, find the `Toggle` component and locate the **"On Value Changed (Boolean)" event**.
+    *   Drag the **"Cube" GameObject** (the one with the "ToggleExample" script) to the empty object slot in the event list.
+    *   From the dropdown menu, select **`ToggleExample.Toggle_Changed`** (you would implement this function in your script to take a boolean value and set the cube's active state).
+7.  **Test:** Hit the **Play button**. Check (turn on) and uncheck (turn off) the toggle and observe how the "Cube" GameObject is enabled and disabled in the scene.
+
+---
+
+#### **Class Activity 8: UI Element: Scrollbar (Text Scrolling)**
+This example illustrates how to use a scrollbar to scroll through a large block of text.
+
+**Objective:** Apply a `Scrollbar` to scroll through text that exceeds the display area.
+
+**Steps for Beginners:**
+1.  **Create and Resize Panel:** Create a `Panel` UI element and **resize it to cover the entire Game view**.
+    *   Add a **"Mask" component** to this panel from the `Add Component` menu. The Mask component will hide any child elements that extend beyond the panel's boundaries, creating the scrollable effect.
+2.  **Create TextContainer (Panel with Scroll Rect):** Create another `Panel` (or an empty GameObject with a Rect Transform) and name it **"TextContainer"**. This will hold the scrollable text and the scrollbar.
+    *   **Match the borders of "TextContainer" with the borders of the outer "Panel"**.
+    *   Add a **"Scroll Rect" component** to "TextContainer". This component manages the scrolling behavior.
+3.  **Create Scrollbar:** Create a `Scrollbar` UI element from the UI menu, making it a child of **"TextContainer"**.
+4.  **Create Text Element:** Create a `Text` UI element from the UI menu, also making it a child of **"TextContainer"**.
+5.  **Add Text Content:** Add any **random text with at least 12 lines** into the `Text` UI component.
+    *   Match its borders with the "Panel" (the `TextContainer` in this case).
+    *   **Drag the `Text` element downwards** so that a portion of it extends beyond the "TextContainer's" visible area. This ensures there's content to scroll through.
+6.  **Set Scrollbar Direction:** Select the `Scrollbar` and set its **direction to "Bottom to Top"**. This means scrolling up will move the text upwards, revealing content that was previously at the bottom.
+7.  **Set Canvas UI Scale Mode:** Select the main `Canvas` in your scene. In its Inspector, set the **UI Scale Mode to "Scale with Screen Size"**. This helps your UI adapt to different screen resolutions.
+8.  **Link Scroll Rect Content:** Select the **"TextContainer"** GameObject (the one with the "Scroll Rect" component).
+    *   Drag the **"Text" UI element** into the **"Content" section** of the "Scroll Rect" component. This tells the Scroll Rect what content it needs to scroll.
+9.  **Link Vertical Scrollbar:** Drag the **"Scrollbar" UI element** into the **"Vertical Scrollbar" section** of the "Scroll Rect" component. This connects the visual scrollbar to the scrolling behavior of the content.
+10. **Test:** Hit the Play button and try dragging the scrollbar handle to scroll through the long text content.
+
+---
+
+#### **Class Activity 9: UI Element: Dropdown (Option Selection)**
+This example demonstrates the application of the `Dropdown` UI element.
+
+**Objective:** Use a `Dropdown` to allow users to select from a list of options and display the choice.
+
+**Steps for Beginners:**
+1.  **Create Dropdown:** Create a **"Dropdown – TextMeshPro"** UI element from the UI menu. (TextMeshPro is an advanced text solution for Unity, often preferred for better text rendering).
+2.  **Resize Dropdown:** Resize the dropdown element to a **width of 350** and a **height of 70**.
+3.  **Customize Options:** In the Inspector of the `Dropdown` component, find the **"Options" section**.
+    *   Change the default text for option A, B, and C to **"Your favorite color," "Your favorite band," and "Your favorite city"**, respectively. You can add more options if needed.
+4.  **Write C# Script:** Write a new C# script (e.g., named "DropdownScript") that will handle the dropdown's value change and update a display text.
+5.  **Create Empty GameObject:** Create an **empty GameObject** in your scene and attach the "DropdownScript" to it. This GameObject will act as the controller for the dropdown.
+6.  **Create Display Text:** Create a **"Text – TextMeshPro"** UI element from the UI menu. Make it a child of the `GameObject` you created in the previous step. This text element will display the chosen option.
+7.  **Link Text to Script:** Select your "GameObject" (the one with the script). In its Inspector, you'll need a public variable in your "DropdownScript" (e.g., `public TextMeshProUGUI outputText;`). Drag the **"Text (TMP)" UI element** you just created to the corresponding **"output section"** of your script in the Inspector.
+8.  **Link Dropdown Event:** Select your `Dropdown` UI element. In its Inspector, find the `Dropdown` component and locate the **"On Value Changed (Int32)" option**.
+    *   Drag the **"GameObject" (your script controller)** to the empty object slot in the event list.
+    *   From the dropdown menu, select **`DropdownScript.HandleInputData`** (you would implement this function in your script to take the integer index of the selected option and update the display text).
+9.  **Test:** Hit the **Play button**. Select different options from the dropdown to verify that the corresponding text is displayed by your "Text (TMP)" element.
+
+---
+
+#### **Class Activity 10: UI Element: InputField (Text Entry Display)**
+This example demonstrates the application of the `InputField` UI element.
+
+**Objective:** Use an `InputField` to allow the user to enter text and then display that text on the Canvas.
+
+**Steps for Beginners:**
+1.  **Create Input Field:** Create an `Input Field` UI element from the UI menu.
+    *   Change its **background color** for better visibility.
+2.  **Set Canvas Scale Mode:** Select your main `Canvas` in the scene. In its Inspector, set the **Canvas scalar settings to "Scale with screen size"**. This helps the Input Field and other UI elements adapt to different screen resolutions.
+3.  **Write a Script:** Write a C# script (e.g., named "InputFieldDisplay") that will handle reading text from the InputField and displaying it on another Text element.
+4.  **Attach Script to Main Camera:** Attach this "InputFieldDisplay" script to the **"Main Camera"** GameObject in your scene. (While it can be attached to any GameObject, the Main Camera is often a convenient place for global UI scripts).
+5.  **Create Display Text:** Create a `Text` UI element under the Canvas and name it **"InputText"**. This will be where the entered text is displayed.
+    *   Set its **Width to 1000** and **Height to 150**.
+    *   Keep the **font size at 24**.
+    *   Check the **"Best Fit" option**. These settings provide a large, clear area for displaying text.
+6.  **Link Display Text to Script:** Select the "Main Camera" (where your script is attached). In its Inspector, you'll need a public variable in your script (e.g., `public TextMeshProUGUI newText;` or `public Text newText;` depending on your setup). Drag the **"InputText" UI element** to the corresponding **"NewText" option** of your script in the Inspector.
+7.  **Link Input Field Event:** Select your `Input Field` UI element. In its Inspector, find the `Input Field` component and locate the **"On End Edit (String)" event**. This event triggers when the user finishes editing the text (e.g., by pressing Enter or clicking outside the field).
+    *   Drag the **"Main Camera" GameObject** (the one with your script) to the empty object slot in the event list.
+    *   From the dropdown menu, select **`InputFieldDisplay.ReadStringInput`** (you would implement this function in your script to take the entered string and update the "InputText" element).
+8.  **Test:** Hit the **Play button**. Type any text into the `Input Field` and then press Enter (or click away). Observe that the entered text is now displayed on your "InputText" UI element on the Canvas.
+
+---
