@@ -105,6 +105,28 @@
     - [**Class Activity 8: UI Element: Scrollbar (Text Scrolling)**](#class-activity-8-ui-element-scrollbar-text-scrolling)
     - [**Class Activity 9: UI Element: Dropdown (Option Selection)**](#class-activity-9-ui-element-dropdown-option-selection)
     - [**Class Activity 10: UI Element: InputField (Text Entry Display)**](#class-activity-10-ui-element-inputfield-text-entry-display)
+- [Lecture 7: Augmented Reality with Vuforia: Tracking and Targets](#lecture-7-augmented-reality-with-vuforia-tracking-and-targets)
+  - [1. Introduction to Extended Reality and Tracking](#1-introduction-to-extended-reality-and-tracking)
+    - [1.1 AR Tracking Methods](#11-ar-tracking-methods)
+    - [1.2 Vuforia Engine](#12-vuforia-engine)
+    - [1.3 Supported Devices](#13-supported-devices)
+  - [2. Vuforia Targets and Tracking Methods](#2-vuforia-targets-and-tracking-methods)
+    - [2.1 Image Target](#21-image-target)
+      - [2.1.1 Attributes for an Ideal Image Target](#211-attributes-for-an-ideal-image-target)
+      - [2.1.2 Physical Properties of Image Targets](#212-physical-properties-of-image-targets)
+    - [2.2 Multi Target](#22-multi-target)
+    - [2.3 Object Tracking Methods](#23-object-tracking-methods)
+      - [2.3.1 Object Target](#231-object-target)
+      - [2.3.2 Model Target](#232-model-target)
+      - [2.3.3 Model Target from 3D Scan](#233-model-target-from-3d-scan)
+    - [2.4 Cylinder Targets](#24-cylinder-targets)
+    - [2.5 Ground Plane](#25-ground-plane)
+    - [2.6 Area Targets](#26-area-targets)
+  - [3. Vuforia Installation Steps (Unity)](#3-vuforia-installation-steps-unity)
+    - [A. Unity and SDK Installation](#a-unity-and-sdk-installation)
+    - [B. AR Camera and License Setup](#b-ar-camera-and-license-setup)
+    - [C. Adding a Target and Virtual Object](#c-adding-a-target-and-virtual-object)
+    - [D. Testing and Configuration](#d-testing-and-configuration)
 
 
 ## Lecture 1: Introduction
@@ -1048,3 +1070,139 @@ This example demonstrates the application of the `InputField` UI element.
 8.  **Test:** Hit the **Play button**. Type any text into the `Input Field` and then press Enter (or click away). Observe that the entered text is now displayed on your "InputText" UI element on the Canvas.
 
 ---
+
+## Lecture 7: Augmented Reality with Vuforia: Tracking and Targets
+- see slides
+
+This academic presentation material, authored by Dr. Kalpana Shankhwar, outlines the principles and applications of Augmented Reality (AR) using the Vuforia Engine within the context of Extended Reality in Industry 4.0 (ERI). The core of the source explains Vuforia Engine as an Software Development Kit (SDK) for building AR applications, detailing various AR tracking methods, such as sensor-based and vision-based techniques. A significant portion of the text is dedicated to describing the different types of trackable targets supported by Vuforia, including Image Target, Multi Target, Object Target, Model Target, Cylinder Target, Ground Plane, and Area Target. Furthermore, the material provides practical, step-by-step instructions for installing and configuring Vuforia within the Unity game engine to create a basic AR application.
+
+***
+
+### 1. Introduction to Extended Reality and Tracking
+
+**Extended Reality in Industry 4.0 (ERI)** covers AR applications, tools, and technologies.
+
+#### 1.1 AR Tracking Methods
+Several methods are used for tracking in Augmented Reality:
+*   Sensor based tracking
+*   Vision based tracking
+*   Optical tracking
+*   Acoustic tracking
+*   Magnetic tracking
+*   Inertial tracking
+*   Marker based tracking
+*   Marker less tracking
+
+#### 1.2 Vuforia Engine
+The **Vuforia Engine** is a software development toolkit (SDK) designed for building augmented reality (AR) applications.
+
+It achieves AR by offering a variety of trackable targets. The engine recognizes these targets to bring virtual objects into the real world. This recognition enables the user to interact with the virtual objects in AR.
+
+#### 1.3 Supported Devices
+Vuforia supports AR applications on the following devices:
+*   iPhone
+*   iPad
+*   Android
+*   Universal Windows Platform (UWP) devices
+*   Eyewear
+
+***
+
+### 2. Vuforia Targets and Tracking Methods
+
+Vuforia offers various targets for tracking, including: Image target, Cylinder target, Multi target, Model target, Object target (3D scanned), VuMark, Area target, Ground plane, and Cloud recognition.
+
+#### 2.1 Image Target
+An Image target represents images that the Vuforia engine can detect and track.
+
+*   **Detection Process:** The Vuforia engine detects and tracks the physical image captured by the camera. It does this by comparing the natural features of the camera image against a target resource database.
+*   **Augmentation:** Once the image target is detected, the engine tracks the physical image and augments virtual content over the real image.
+*   **Formats:** Image targets can be used directly from the image assets of the Vuforia engine package. Alternatively, they can be created with Vuforia Target Manager using JPG or PNG images in RGB or grayscale.
+
+##### 2.1.1 Attributes for an Ideal Image Target
+An ideal image target should exhibit the following attributes:
+*   It should be **rich in detail**.
+*   It should have **good contrast**.
+*   It should contain **no repetitive patterns**.
+*   It should have an **organic shape with round and soft details** (Fig. 3e).
+*   It can be a **Non-Rectangular image target** (Fig. 3f).
+*   It should display **feature distribution** (Fig. 3g).
+
+##### 2.1.2 Physical Properties of Image Targets
+The physical properties of the printed target are important for tracking:
+*   **Print Material:** Flexible pieces of paper should be avoided to keep the object in focus. A hard material, such as card stock, plastic, or paper fixed to a non-flexible surface, should be used to ensure the marker's flatness.
+*   **Size:** The printed image target should be at least **12 centimetres in width** with a reasonable height. The target's size varies depending on the distance from the camera. The size of the target should ideally be **1/10 of the distance** between the target and the camera.
+*   **Surface Finish:** Printed image targets should **not be glossy**. Glossy reflection, which can occur under certain light angles, may cover a large portion of the original texture of the printed image.
+
+#### 2.2 Multi Target
+Multi targets are combinations of image targets arranged in a **geometrical arrangement**, such as boxes or cuboids.
+*   **Tracking Advantage:** This arrangement allows the object to be detected and tracked from all sides. Due to the three-dimensional arrangement, all faces of a multi target can be tracked simultaneously.
+
+#### 2.3 Object Tracking Methods
+Object tracking allows the camera to detect physical objects based on their geometry and then overlay virtual content onto the real object. There are three types:
+
+##### 2.3.1 Object Target
+*   **Creation:** Object targets are created by scanning the physical object from all directions. During scanning, the physical object is placed on a printed image target.
+*   **Usage:** The generated object data file is uploaded onto the Vuforia Target Manager and is then used for tracking the real object.
+
+##### 2.3.2 Model Target
+*   **Requirements:** This method requires both a **CAD model** of an object and its physical counterpart.
+*   **Creation:** The CAD model is imported into the Model Target Generator to generate the model target.
+*   **Usage:** Vuforia uses the model target to detect the real object and augment virtual content onto it.
+
+##### 2.3.3 Model Target from 3D Scan
+*   **Purpose:** This is used when the CAD model of the object is not available.
+*   **Creation:** A mesh can be created from a 3D scan. Model targets are generated from the 3D scan of the real object using hardware-aided scanning, such as an **occipital structure sensor**.
+
+#### 2.4 Cylinder Targets
+Cylinder targets enable the camera to detect and track image targets that are wrapped into a cylindrical or conical shape.
+*   **Suitable Objects:** Examples of suitable objects include soda cans, coffee cups, drum containers, and beverage bottles.
+*   **Tracking Scope:** Vuforia can track the sides, flat top, and bottom of the cylinder target.
+
+#### 2.5 Ground Plane
+The Vuforia ground plane feature enables digital content to be placed on horizontal surfaces in the environment, such as floors and tables.
+*   **Capabilities:** It supports the detection and tracking of these surfaces. It also allows for placing virtual content in mid-air using an **Anchor point**.
+
+#### 2.6 Area Targets
+Area target is an environment tracking feature that enables tracking and augmenting areas and spaces.
+*   **Creation:** A 3D scanning device is required to scan the environment. Suitable devices include the **Matterport Pro2 3D camera** or ARKit devices with **LiDAR sensors**.
+*   **Usage:** Once the area targets are created, virtual content can be augmented onto the stationary objects within the scanned environment.
+
+***
+
+### 3. Vuforia Installation Steps (Unity)
+
+The following steps detail the process for installing and configuring Vuforia within Unity:
+
+#### A. Unity and SDK Installation
+1.  Install Unity version 2020.3.1f1 (or later 19.2) or the latest version of Unity. Ensure you check the **Android build support** option.
+2.  Go to the webpage link: `https://library.vuforia.com/articles/Solution/vuforia-engine-package-ho sting-for-unity.html`.
+3.  Find the option under `Assets > Import Package > Custom Package`.
+4.  Navigate to the location where the Vuforia SDK has been downloaded.
+5.  Select the SDK package and hit "open".
+6.  Click on “Import”.
+7.  Select “Update”.
+
+#### B. AR Camera and License Setup
+8.  After importing Vuforia to Unity, locate the Vuforia option in the “GameObject” menu.
+9.  Delete the “Main Camera” from the scene.
+10. Add the **“AR Camera”** from the Vuforia menu.
+11. Click **“Open Vuforia engine configuration”** under the “AR camera” gameobject.
+12. Click the “Add license” button.
+13. To obtain the license key, register on the Vuforia engine developer portal.
+14. Log in to your Vuforia account and click “Get Development Key”.
+15. Create the development key using any License name, uncheck the box for terms and conditions, and then click confirm.
+16. Copy the License key and paste it into Unity.
+
+#### C. Adding a Target and Virtual Object
+17. Add “Image target” –> `Marker_Vuforia` to the `Assets > Resources` under the Project.
+18. Add the Image Target from `GameObject > Vuforia Engine > Image Target`.
+19. Choose `”Marker_Vuforia”` or any other marker image and drag it to the Image.
+20. Create a gameobject, such as a “Cube,” and make it a **child** of the “Image Target”.
+21. Change the Transform values of the “Cube” to adjust the marker borders.
+22. Use the printed marker or download the marker image on a cellphone.
+
+#### D. Testing and Configuration
+23. Hit the play button and hold the marker in front of your device’s camera to track the virtual gameobject (Cube).
+24. To disable the “Extending tracking,” check the “Tracked” option from the “Image Target”.
+25. For **multiple object tracking**, enter the required number of Image targets in the **“Max Simultaneous Tracked Images”** section of “Vuforia Configuration”.
