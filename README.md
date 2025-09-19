@@ -7,8 +7,8 @@
   - [ERI1.pdf](/ERI/ERI1.pdf) [COMPLETED] 
 - [DAVP](/DAVP/README.md)
   - [DAVP1.pdf](/DAVP/DAVP1.pdf) [COMPLETED] [HIGHLIGHTED]
-  - [DAVP2.pdf](/DAVP/DAVP2.pdf) [COMPLETED] 
-  - [DAVP3.pdf](/DAVP/DAVP3.pdf) [COMPLETED] 
+  - [DAVP2.pdf](/DAVP/DAVP2.pdf) [COMPLETED] [HIGHLIGHTED]
+  - [DAVP3.pdf](/DAVP/DAVP3.pdf) [COMPLETED] [HIGHLIGHTED]
 - [CM](/CM/README.md)
   - [CM1.pdf](/CM/CM1.pdf) [COMPLETED] [HIGHLIGHTED]
   - [CM2.pdf](/CM/CM2.pdf)
