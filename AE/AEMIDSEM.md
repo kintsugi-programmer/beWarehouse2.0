@@ -1,12 +1,12 @@
-# AE 
+# AE MIDSEM
 - Applied Ethics
 - Prof. Manohar Kumar
 - This course will introduce students to some of the fundamental debates in Applied Ethics. Applied Ethics offers a way to comprehend and analyse the fundamental moral and ethical problems of our times and generate arguments to justify ethical claims. The course will begin by introducing students to the major ethical theories like consequentialism, deontology, and virtue ethics. It will then demonstrate how these theories can be used to both understand and address some of the major ethical issues. Broad topics to be covered in this course include debates in environmental ethics, ethics of information technology, business ethics, bio ethics, animal rights, euthanasia, same-sex marriage, affirmative action, distributive justice and global poverty, abortion, torture, punishment, terrorism, privacy, surveillance, security, whistleblowing, civil disobedience etc. 
 
 ## Table of Contents
-- [AE](#ae)
+- [AE MIDSEM](#ae-midsem)
   - [Table of Contents](#table-of-contents)
-  - [Foundations of Moral Philosophy and Argumentation](#foundations-of-moral-philosophy-and-argumentation)
+  - [1 Foundations of Moral Philosophy and Argumentation](#1-foundations-of-moral-philosophy-and-argumentation)
     - [I. Introduction to Moral Philosophy: The Challenge of Gyges's Ring](#i-introduction-to-moral-philosophy-the-challenge-of-gygess-ring)
     - [II. Ancient Philosophical Theories of Morality](#ii-ancient-philosophical-theories-of-morality)
       - [A. Relativism](#a-relativism)
@@ -20,7 +20,7 @@
       - [D. Kant (Deontology)](#d-kant-deontology)
     - [IV. Evaluating Philosophical Arguments](#iv-evaluating-philosophical-arguments)
       - [A. Moral Skepticism and Its Arguments](#a-moral-skepticism-and-its-arguments)
-  - [The Ethics of Torture: Ticking Bombs and Dirty Harry](#the-ethics-of-torture-ticking-bombs-and-dirty-harry)
+  - [2 The Ethics of Torture: Ticking Bombs and Dirty Harry](#2-the-ethics-of-torture-ticking-bombs-and-dirty-harry)
     - [The Debate Over Torture: A Comprehensive Overview](#the-debate-over-torture-a-comprehensive-overview)
       - [I. Arguments in Favor of Torture (Proponents: Bentham, Dershowitz, Steinhoff)](#i-arguments-in-favor-of-torture-proponents-bentham-dershowitz-steinhoff)
       - [II. Arguments Against Torture (Opponents: Luban, Twining \& Twining, Rule Utilitarianism)](#ii-arguments-against-torture-opponents-luban-twining--twining-rule-utilitarianism)
@@ -28,13 +28,13 @@
       - [IV. Critiques of Dershowitz's Torture Warrants](#iv-critiques-of-dershowitzs-torture-warrants)
       - [V. Ways a State Can Respond to Terrorism](#v-ways-a-state-can-respond-to-terrorism)
       - [VI. Historical and Psychological Context](#vi-historical-and-psychological-context)
-  - [Defining Morality: Reason, Impartiality, and Hard Cases](#defining-morality-reason-impartiality-and-hard-cases)
+  - [3 Defining Morality: Reason, Impartiality, and Hard Cases](#3-defining-morality-reason-impartiality-and-hard-cases)
     - [What Is Morality?](#what-is-morality)
     - [Case Studies and Moral Arguments](#case-studies-and-moral-arguments)
     - [The Nature of Morality: Reason and Impartiality](#the-nature-of-morality-reason-and-impartiality)
     - [The Minimum Conception of Morality](#the-minimum-conception-of-morality)
     - [The Conscientious Moral Agent](#the-conscientious-moral-agent)
-  - [Foundations of Ethical Thought](#foundations-of-ethical-thought)
+  - [4 Foundations of Ethical Thought](#4-foundations-of-ethical-thought)
     - [I. Division of Ethics and Terminology](#i-division-of-ethics-and-terminology)
     - [II. Normative Ethical Theory](#ii-normative-ethical-theory)
     - [III. Meta-ethics](#iii-meta-ethics)
@@ -46,10 +46,10 @@
       - [C. Deontology](#c-deontology)
       - [D. Virtue Theory](#d-virtue-theory)
     - [V. Integration of Theories](#v-integration-of-theories)
-  - [An Introduction to Moral Philosophy and Argument](#an-introduction-to-moral-philosophy-and-argument)
+  - [5 An Introduction to Moral Philosophy and Argument](#5-an-introduction-to-moral-philosophy-and-argument)
     - [Chapter 1: A Short Introduction to Moral Philosophy](#chapter-1-a-short-introduction-to-moral-philosophy)
     - [Chapter 2: Some Basic Points about Arguments](#chapter-2-some-basic-points-about-arguments)
-  - [Equality: Beyond Race, Sex, and Ability](#equality-beyond-race-sex-and-ability)
+  - [6 Equality: Beyond Race, Sex, and Ability](#6-equality-beyond-race-sex-and-ability)
     - [Equality and Its Implications](#equality-and-its-implications)
       - [Weakening Consensus and Controversies](#weakening-consensus-and-controversies)
       - [The Search for a Factual Basis of Equality](#the-search-for-a-factual-basis-of-equality)
@@ -80,22 +80,22 @@
       - [Legal Context and Ethical Conclusion](#legal-context-and-ethical-conclusion)
     - [A Concluding Note: Equality and Disability](#a-concluding-note-equality-and-disability)
         - [Alleged Contradiction with Arguments for Abortion/Euthanasia](#alleged-contradiction-with-arguments-for-abortioneuthanasia)
-  - [The Ethics of Wealth: Obligation to the Poor](#the-ethics-of-wealth-obligation-to-the-poor)
+  - [7 The Ethics of Wealth: Obligation to the Poor](#7-the-ethics-of-wealth-obligation-to-the-poor)
     - [**I. Some Facts About Poverty**](#i-some-facts-about-poverty)
     - [**II. Some Facts About Affluence**](#ii-some-facts-about-affluence)
     - [**III. The Moral Equivalent of Murder?**](#iii-the-moral-equivalent-of-murder)
     - [**IV. The Obligation to Assist**](#iv-the-obligation-to-assist)
     - [**V. Objections to the Argument**](#v-objections-to-the-argument)
-  - [AE BFS](#ae-bfs)
-    - [1 Foundations of Moral Philosophy and Argumentation](#1-foundations-of-moral-philosophy-and-argumentation)
-    - [2 The Ethics of Torture: Ticking Bombs and Dirty Harry](#2-the-ethics-of-torture-ticking-bombs-and-dirty-harry)
-    - [3 Defining Morality: Reason, Impartiality, and Hard Cases](#3-defining-morality-reason-impartiality-and-hard-cases)
-    - [4 Foundations of Ethical Thought](#4-foundations-of-ethical-thought)
-    - [5 An Introduction to Moral Philosophy and Argument](#5-an-introduction-to-moral-philosophy-and-argument)
-    - [6 Equality: Beyond Race, Sex, and Ability](#6-equality-beyond-race-sex-and-ability)
-    - [7 The Ethics of Wealth: Obligation to the Poor](#7-the-ethics-of-wealth-obligation-to-the-poor)
+  - [8 AE BFS](#8-ae-bfs)
+    - [1 Foundations of Moral Philosophy and Argumentation](#1-foundations-of-moral-philosophy-and-argumentation-1)
+    - [2 The Ethics of Torture: Ticking Bombs and Dirty Harry](#2-the-ethics-of-torture-ticking-bombs-and-dirty-harry-1)
+    - [3 Defining Morality: Reason, Impartiality, and Hard Cases](#3-defining-morality-reason-impartiality-and-hard-cases-1)
+    - [4 Foundations of Ethical Thought](#4-foundations-of-ethical-thought-1)
+    - [5 An Introduction to Moral Philosophy and Argument](#5-an-introduction-to-moral-philosophy-and-argument-1)
+    - [6 Equality: Beyond Race, Sex, and Ability](#6-equality-beyond-race-sex-and-ability-1)
+    - [7 The Ethics of Wealth: Obligation to the Poor](#7-the-ethics-of-wealth-obligation-to-the-poor-1)
 
-## Foundations of Moral Philosophy and Argumentation
+## 1 Foundations of Moral Philosophy and Argumentation
 This source introduces moral philosophy by exploring foundational theories and the structure of philosophical arguments. It begins with Plato's "Ring of Gyges" thought experiment, which questions why individuals should be moral if they face no consequences, setting the stage for discussions on relativism and divine command theory. The text then examines Aristotle's virtue ethics and the subsequent natural law theory, which connects morality to inherent purposes in nature. Transitioning to modern thought, the source presents Hobbes's social contract theory, defining morality as rules people agree upon for mutual benefit, and utilitarianism, which advocates for actions that maximize overall happiness. Finally, it addresses Kant's categorical imperative, emphasizing actions based on universalizable maxims and treating humanity as an end in itself. The document concludes by explaining the components of sound arguments, distinguishing validity from truth, and demonstrating how to critique arguments through a discussion of moral skepticism.
 Here are comprehensive notes on the key concepts and arguments presented in the provided source material, "A Short Introduction to Moral Philosophy" and "Some Basic Points about Arguments" by James Rachels:
 
@@ -256,7 +256,7 @@ Summary of Argument Evaluation Principles
     *   Don't overvalue an argument simply because you agree with its conclusion.
     *   An unsound argument only means it fails to prove its conclusion; the conclusion might still be true, but this argument offers no support. 
 
-## The Ethics of Torture: Ticking Bombs and Dirty Harry
+## 2 The Ethics of Torture: Ticking Bombs and Dirty Harry
 The provided texts explore the complex ethical debate surrounding the use of torture, particularly in "ticking bomb" scenarios where lives are at stake. Alan Dershowitz advocates for the controlled use of nonlethal torture, suggesting judicial torture warrants to ensure accountability and prevent greater harm, drawing parallels to other morally difficult but accepted actions like the death penalty or shooting down a hijacked plane. David Luban critically challenges this "liberal ideology of torture," arguing that ticking bomb hypotheticals are unrealistic intellectual frauds that, if embraced, would inevitably lead to a normalized "torture culture" with devastating psychological and societal consequences. Conversely, Uwe Steinhoff supports the moral justification of interrogative torture in rare, extreme cases like the "Dirty Harry" scenario, even without absolute certainty, but firmly opposes Dershowitz's idea of legalizing torture warrants due to concerns about institutionalization and the brutalization of enforcers.
 
 Here are comprehensive notes on the debate surrounding torture, drawing from the provided sources:
@@ -364,7 +364,7 @@ The Israeli government, through a commission in the late 1980s, identified three
 *   **Modern "Off-the-Books" Practices**: US law enforcement has reportedly facilitated torture by allied repressive regimes and engaged in physical abuse post-9/11. Threats of prison rape by prosecutors have been condemned by the Canadian Supreme Court as an abuse of process.
 *   **Stanford Prison Experiment**: This psychological study demonstrated how individuals assigned roles of "guards" quickly escalated to abusive behavior, highlighting how a shift in norms can normalize and increase violence.
 
-## Defining Morality: Reason, Impartiality, and Hard Cases
+## 3 Defining Morality: Reason, Impartiality, and Hard Cases
 This philosophical text explores the fundamental nature of morality by examining challenging ethical dilemmas. It begins by establishing that moral philosophy investigates how we ought to live and the reasons behind our actions. The discussion then presents three compelling case studies—Baby Theresa, Jodie and Mary, and Tracy Latimer—each highlighting complex situations with divided opinions from parents, doctors, and ethicists. Through these examples, the text analyzes various moral arguments and principles, such as the "Benefits Argument," the "Wrongness of Using People as Means," the "Sanctity of Human Life," and the "Slippery Slope Argument." Ultimately, the text proposes a "minimum conception of morality" which mandates that moral judgments must be supported by sound reasoning and require the impartial consideration of every individual's interests.
 
 Here are comprehensive notes on the nature of morality, drawing from the provided sources:
@@ -455,7 +455,7 @@ While not every ethical theory fully accepts this minimum conception, most moral
 ---
 
 
-## Foundations of Ethical Thought
+## 4 Foundations of Ethical Thought
 This chapter, "Theories of Ethics" by Stephen L. Darwall, introduces the division of ethics into meta-ethics and normative ethics, with a focus on applied or "case ethics." It explains that normative theories, such as contractarianism, contractualism, consequentialism, and deontology, offer frameworks for evaluating ethical judgments by providing principles and concepts. The text contrasts contractarianism's self-interested agreement on moral rules with contractualism's grounding in mutual respect and the notion of principles that cannot be reasonably rejected. Furthermore, it distinguishes consequentialism, which assesses actions based on their non-moral outcomes, from deontological theories, which prioritize agent-relative duties and principles, regardless of consequences. Finally, the chapter presents virtue ethics as an approach centered on character and the idea of what a virtuous person would do, often serving as a complementary or alternative perspective to conduct-focused moral theories.
 
 ### I. Division of Ethics and Terminology
@@ -624,7 +624,7 @@ Virtue ethics is **orthogonal** to contractarianism/contractualism, consequentia
 
 Ultimately, there is no alternative but to pursue philosophical ethics, integrating normative ethics and meta-ethics to form a comprehensive outlook.
 
-## An Introduction to Moral Philosophy and Argument
+## 5 An Introduction to Moral Philosophy and Argument
 
 This document introduces fundamental concepts in moral philosophy, beginning with the ancient Greek idea of Gyges's ring to question why individuals should act morally when they can escape consequences. It then explores various historical ethical frameworks, including Relativism, which ties morality to social customs, and Divine Command Theory, which bases ethics on religious decrees. The text progresses to Aristotle's virtue ethics and the subsequent Natural Law theory, explaining how they connect morality to inherent purposes. Finally, it presents modern ethical theories: Social Contract Theory, which posits morality as an agreement for mutual benefit, and Utilitarianism, advocating for actions that produce the greatest happiness. The document concludes by outlining how to evaluate philosophical arguments through logical validity and factual premises, especially in the context of Moral Skepticism.
 
@@ -761,7 +761,7 @@ Evaluating philosophical ideas requires examining the arguments that support the
 *   **Overall Conclusion on Arguments**: The main arguments for Moral Skepticism discussed are not sound. To evaluate philosophical ideas, always consider the reasons for and against them, distinguishing sound arguments (valid with true premises) from unsound ones.
 
 
-## Equality: Beyond Race, Sex, and Ability
+## 6 Equality: Beyond Race, Sex, and Ability
 The provided text examines the concept of equality, distinguishing between factual differences among humans and the ethical principle of equal consideration of interests. It critiques common justifications for equality, such as shared intelligence or moral personality, arguing that no natural characteristic is equally possessed by all. Instead, the author posits that ethical judgements necessitate considering the interests of all affected parties impartially, irrespective of traits like race, sex, or ability. This principle, the text explains, serves as a robust defence against racism, sexism, and even hypothetical intelligence-based hierarchies, though it does not mandate identical treatment. Finally, the discussion extends to affirmative action and the treatment of individuals with disabilities, contending that preferential measures can align with equal consideration of interests, particularly where systemic disadvantages exist, and that a preference for life without disability is not inherently prejudiced.
 
 Here are depth notes, ensuring no information loss and 100% information, drawing comprehensively from the provided sources:
@@ -1019,7 +1019,7 @@ An alleged contradiction arises with arguments presented later in the book that 
 *   While social conditions certainly make life much harder for disabled people than necessary, the claim that "social conditions disable them, not their physical or intellectual condition" twists a simple truth into a "sweeping falsehood". The abilities to walk, see, hear, be free from pain, and communicate effectively are **"genuine benefits" under virtually any social conditions**. Acknowledging this does not deny the richness of lives led by those who triumph over disabilities, nor is it prejudiced to prefer, for oneself or one's children, not to face such immense hurdles.
 *   
 
-## The Ethics of Wealth: Obligation to the Poor
+## 7 The Ethics of Wealth: Obligation to the Poor
 This academic text, "Rich and Poor" by Peter Singer, explores the profound ethical implications of global wealth disparity, particularly the contrast between absolute poverty and absolute affluence. Singer argues that affluent individuals and nations have a moral obligation to assist those in extreme poverty, positing that if one can prevent something bad from happening without sacrificing anything of comparable moral significance, one ought to do so. The author systematically addresses common objections to this duty, examining whether inaction is morally equivalent to direct harm, and scrutinises issues such as identifiable victims, responsibility, property rights, and the potential impact of aid on population growth. Ultimately, Singer advocates for a shift in public ethics, suggesting a progressive scale for charitable giving as a realistic and effective means to collectively alleviate extreme poverty, rather than requiring individual "moral heroism."
 
 Here are super depth notes, providing a comprehensive and detailed overview of the provided source material, ensuring no information loss and 100% information retention:
@@ -1210,7 +1210,7 @@ The text delves into the stark contrast between extreme poverty and absolute aff
             *   **Impact of Proposed Scale**: If widely adopted in the affluent world, it could raise **$1.5 trillion each year**. This is **eight times what the UN task force (Jeffrey Sachs) calculated was needed to meet the Millennium Development Goals** ($187.5 billion). These goals included halving poverty/hunger, reducing child deaths by two-thirds (saving 6 million lives annually), and universal primary schooling.
             *   **Final Conclusion**: The argument's high standard is demanding only because so few with the ability to help are doing so significantly. If most helped, individual contributions would be modest. The need is to change public ethics so that giving a significant amount becomes an "elementary part of what it is to live an ethical life" for anyone who can afford luxuries (e.g., even a bottle of water if safe drinking water is free).
 
-## AE BFS
+## 8 AE BFS
 
 ### 1 Foundations of Moral Philosophy and Argumentation
 
