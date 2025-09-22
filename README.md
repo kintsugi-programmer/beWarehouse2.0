@@ -23,7 +23,7 @@
 ```
 Generate a structured glossary of key terms and concepts from Applied Ethics and Philosophy, based strictly on the assigned readings. For each entry, include: (a) a concise but academically precise definition, (b) the main philosopher(s), school of thought, or tradition linked to the concept as presented in the readings, and (c) at least one case study, thought experiment, or real-world example drawn directly from the readings that illustrates the concept in practice. Organize the output in three columns — Term/Concept → Definition & Key Thinkers → Case Study/Example — with enough detail to serve as a compact academic cheat sheet. Ensure coverage of both theoretical foundations (ancient, modern, contemporary ethics) and applied issues (e.g., bioethics, justice, rights, global challenges) as they appear in the reading material.
 ```
-## Notes
+## CM Notes
 ```
 Create super depth notes in Markdown (.md) format with 100% information preserved, no loss. Use simple grammar and keep everything clear, direct, and well-structured. using headings, subheadings,paragraphs, statements and code blocks when needed. Include every detail, definition, example, and step exactly from the source. transform the given content into clean, readable .md format.
 ```
