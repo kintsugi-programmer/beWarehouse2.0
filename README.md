@@ -4,18 +4,20 @@
   - [AE1.pdf](/AE/AE1.pdf) [COMPLETED] 
   - [AE2.pdf](/AE/AE2.pdf) [COMPLETED]
   - [AEMIDSEM.pdf](/AE/AEMIDSEM.pdf) [COMPLETED]
+  - [AE3.pdf](/AE/AE3.pdf) [COMPLETED]
+  - [AEENDSEM.pdf](/AE/AEENDSEM.pdf) [COMPLETED]
 - [ERI](/ERI/README.md)
   - [ERI1.pdf](/ERI/ERI1.pdf) [COMPLETED] 
 - [DAVP](/DAVP/README.md)
-  - [DAVP1.pdf](/DAVP/DAVP1.pdf) [COMPLETED] [HIGHLIGHTED]
-  - [DAVP2.pdf](/DAVP/DAVP2.pdf) [COMPLETED] [HIGHLIGHTED]
-  - [DAVP3.pdf](/DAVP/DAVP3.pdf) [COMPLETED] [HIGHLIGHTED]
-  - [DAVP4.pdf](/DAVP/DAVP4.pdf) [COMPLETED] [HIGHLIGHTED]
+  - [DAVP1.pdf](/DAVP/DAVP1.pdf) [COMPLETED] 
+  - [DAVP2.pdf](/DAVP/DAVP2.pdf) [COMPLETED] 
+  - [DAVP3.pdf](/DAVP/DAVP3.pdf) [COMPLETED]
+  - [DAVP4.pdf](/DAVP/DAVP4.pdf) [COMPLETED]
 - [CM](/CM/README.md)
-  - [CM1.pdf](/CM/CM1.pdf) [COMPLETED] [HIGHLIGHTED]
-  - [CM2.pdf](/CM/CM2.pdf)
+  - [CM1.pdf](/CM/CM1.pdf) [COMPLETED]
+  - [CM2.pdf](/CM/CM2.pdf) [COMPLETED]
 
-> [COMPLETED] [HIGHLIGHTED]
+> [COMPLETED]
 
 
 ## Prompts
