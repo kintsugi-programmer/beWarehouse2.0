@@ -1,0 +1,94 @@
+What is sound fundamentally defined as in physics?,A pressure wave created by a vibrating object.
+Who is credited with first inventing sound recording in 1857?,Edouard-Léon Scott de Martinville in France.
+What device did Thomas Edison invent in 1877 for recording and playing back sound?,The Phonograph.
+"The gramophone, invented by Emile Berliner in 1887, was an improvement over the phonograph because it used _____ instead of cylinders.",flat discs
+The process of converting continuous audio signals into discrete time signals is known as _____.,sampling
+"According to the Nyquist Theorem, what is the minimum sampling rate required to accurately digitise an analog signal?",At least twice the highest frequency component of the signal ($F_s \ge 2f_{max}$).
+What is the term for the distortion that occurs if the sampling rate is less than twice the highest analog frequency component?,Aliasing or foldover.
+What are the two standard sampling frequencies established by the Audio Engineering Society (AES)?,44.1 kHz and 48 kHz.
+In what year did digital sound become publicly available through the Compact Disc (CD)?,1982.
+What are the three fundamental building blocks of a picture's structure?,"Story, Sound, and Visuals."
+What are the seven basic visual components that give structure to pictures?,"Space, line, shape, tone, colour, movement, and rhythm."
+"In visual structure, what does the Principle of Contrast refer to?","Difference, such as the maximum contrast of tone between black and white."
+"In visual structure, what does the Principle of Affinity refer to?","Similarity, such as adjacent grey tones on a grey scale."
+What is 'deep space' in the context of visual composition?,The illusion of a three-dimensional world on a two-dimensional screen surface.
+The illusion of depth on a two-dimensional surface is created and controlled using _____.,depth cues
+"In perspective drawing, what is the term for the point at which parallel lines appear to converge?",A vanishing point (VP).
+What kind of camera move creates relative movement and illusory depth?,"Dolly in/out, track left/right, or boom up/down."
+What kind of camera move maintains flat space because it does not create relative movement?,"Pan, tilt, or zoom."
+"In visual composition, warm colours (red, orange, yellow) generally seem _____ to the viewer.",closer
+"In visual composition, cool colours (blue, green) generally appear _____ from the viewer.",farther away
+What is 'limited space' in visual composition?,"A combination of deep and flat space cues, using frontal planes but maintaining visual separation between them."
+What is 'ambiguous space' in visual composition?,A space where the viewer is unable to understand the actual size or spatial relationships of objects in the picture.
+"Who demonstrated that the single shot is the basic unit for film construction, establishing the principle of editing?",Edwin S. Porter.
+Who is acknowledged as the 'Father of Film editing' in modern times for contributions like parallel editing and shot variation?,David Wark Griffith (D.W. Griffith).
+"What is the French term for connecting individual pieces of film into a cohesive whole, often to manipulate time?",Montage.
+The Soviet Montage Theory was founded by whom at the Moscow Film School?,Lev Kuleshov.
+What is the Kuleshov effect?,"The technique of evoking emotion through the juxtaposition of contrasting images, making the audience infer a specific meaning."
+"According to Sergei Eisenstein, what are the five types of montage?","Metric, Rhythmic, Tonal, Overtonal, and Intellectual."
+"What type of montage involves cutting to the next shot after a specific number of frames, regardless of on-screen action?",Metric Montage.
+What type of montage uses the combination of shots to evoke a different intellectual idea or concept each time?,Intellectual Montage.
+"In DaVinci Resolve, which 'Page' is where 90 to 95% of the editing process typically occurs?",The Edit Page.
+What is the keyboard shortcut for making a cut in a selected clip on the DaVinci Resolve timeline?,Command + B (or Ctrl + B).
+"In DaVinci Resolve, what is the term for deleting a blank space on the timeline, causing all subsequent clips to move to the left?",Ripple Delete.
+"In DaVinci Resolve's Inspector panel, which tab is used to adjust a clip's zoom, rotation, and position?",The Video tab.
+What should you do in DaVinci Resolve if your computer is lagging during playback?,Lower the Timeline Playback Resolution to Half or Quarter.
+What is a 'log clip' in video footage?,"A clip with a grey and flat colour profile, which is ideal for colour correction and grading."
+"In DaVinci Resolve's colour wheels, which wheel primarily controls the shadows or dark parts of the video?",Lift.
+"In DaVinci Resolve's colour wheels, which wheel primarily controls the midtones, such as skin tones?",Gamma.
+"In DaVinci Resolve's colour wheels, which wheel primarily controls the highlights or bright parts of the video?",Gain.
+"In DaVinci Resolve, the _____ page is used for advanced audio mixing and includes tools like a compressor.",Fairlight
+"What is the editing technique of slightly zooming in on alternating clips to create a dynamic look, suggesting a second camera was used?",Punching in.
+What is the term for supplemental footage used to visually illustrate the story being told in the main footage (A-roll)?,B-roll.
+"In DaVinci Resolve, how can you paste specific attributes (like zoom and colour correction) from one clip to multiple others?","Copy the source clip (Cmd+C), select the target clips, and use Paste Attributes (Option+V)."
+"In video editing, a _____ is used to set a starting and ending point for an animation, with the software animating the frames in between.",keyframe
+"In DaVinci Resolve, which page is best for rotoscoping tasks, such as cutting a subject out of the background?",The Fusion Page.
+"Which tracker in DaVinci Resolve's Fusion page looks at an area to calculate an average movement, similar to the Color Page tracker?",The Planar Tracker.
+"Which tracker in DaVinci Resolve's Fusion page requires selecting two specific points to determine an object's movement, rotation, and scale?",The Point Tracker.
+"In DaVinci Resolve's Point Tracker, what 'Operation' setting is used to make one object (like a logo) follow the tracked motion?",Match Move.
+The task of putting text or an object behind a moving subject in the foreground is known as _____.,occlusion
+What is the unit for a decibel (dB) primarily a measure of?,A ratio that compares the value of one unit with another on a logarithmic scale.
+The camera is described as an imperfect imitation of the _____.,human eye
+What are the two main types of image sensors used in digital cameras?,CCD (charge coupled device) and CMOS (complementary metal oxide semiconductor).
+"The phenomenon that causes a viewer to perceive separate pictures, or frames, as continuous movement is called _____.",persistence of vision
+What are the three basic characteristics of a camera lens?,"Focal length, focus range, and aperture settings."
+What does a longer focal length do to the subject in the frame?,"It creates a greater enlargement of the subject, with a narrower field of view."
+What is the difference between a prime lens and a zoom lens?,"Prime lenses have a fixed focal length, while zoom lenses have a variable focal length."
+What is the variable opening built into a lens to control the amount of light that strikes the sensor?,The aperture or iris.
+The calibrated sizes of the aperture opening are labelled with numbers called _____.,f-stops
+Moving from f/2.8 to f/4 on a lens aperture does what to the amount of light entering?,It halves the amount of light allowed to pass through the lens.
+"The term 'stop down' means to _____ the aperture, which increases the f-stop number.",close
+The range from the camera that subjects appear in acceptable focus is known as _____.,Depth of Field (DOF)
+A wider aperture (lower f-stop number) results in a _____ depth of field.,shallower
+What is the general rule of thumb for setting shutter speed in relation to frames per second (FPS) for filmmaking?,"The shutter speed should be double the frames per second (e.g., 1/48 or 1/50 for 24 FPS)."
+Term: Composition (in visual media),"The placement of various objects, settings, and characters within the boundaries of the frame."
+What is the term for the empty space in the direction a character is facing in a frame?,Lead room.
+"As a rule for setting head room, a person's eyes should be placed on or very near the _____ horizontal third line of the screen.",top
+What is the shot type where the subject matter comfortably fills the frame with appropriate head room?,Long shot (LS).
+"A classic head and shoulders shot, framing about one-third of the subject, is known as a _____.",Close-up (CU)
+What is the purpose of the key light in a three-point lighting setup?,"It is the primary and brightest light source, acting like the sun."
+What is the purpose of the fill light in a three-point lighting setup?,"To soften shadows created by the key light, providing approximately half its intensity."
+What is the purpose of the back light in a three-point lighting setup?,"To cast a rim of light on the subject, separating them from the background."
+"What is the typical intensity ratio between the key, fill, and back lights in three-point lighting?","A 2:1 ratio, where the key and back light have an intensity of 2 and the fill light has an intensity of 1."
+"In audio production, what is the difference between gain and volume?","Gain controls the input level of a signal before processing, while volume controls the output level after processing."
+What is the primary function of an audio compressor?,To manage the dynamics of a sound by reducing the difference between its loudest and quietest parts.
+"In an audio compressor, what does the 'threshold' control set?",The specific volume level at which the compressor becomes active and starts to reduce the signal.
+"In a compressor, a 'soft knee' setting allows for a _____ transition into compression.",smoother and more gradual
+What does the 'attack time' on a compressor determine?,How long it takes for the signal to become fully compressed after exceeding the threshold.
+What does a compressor 'ratio' of 4:1 mean?,"For every 4 dB the signal exceeds the threshold, it will be attenuated down to only 1 dB above the threshold."
+"A compressor with a very high ratio (e.g., 20:1 or ∞:1) is known as a _____.",limiter
+What does the 'side chain' input on a compressor allow you to do?,"Control the compression of one signal using the dynamics of a separate, external signal."
+Which microphone polar pattern is sensitive to sound from all directions (360 degrees)?,Omnidirectional.
+"Which microphone polar pattern captures sound from the front and back, but is acoustically dead at the sides?",Figure-of-8 (Bidirectional).
+"Which microphone polar pattern, the most common unidirectional type, primarily picks up sound from the front and rejects sound from the rear?",Cardioid.
+The phenomenon where the bass response of a directional microphone increases as it is moved closer to the sound source is called the _____.,proximity effect
+Highly directional shotgun microphones typically use a _____ or supercardioid polar pattern.,hypercardioid
+What is the function of a low-pass filter in audio equalization?,It allows low frequencies to pass through while reducing (attenuating) high frequencies.
+What is the function of a high-pass filter in audio equalization?,It allows high frequencies to pass through while reducing (attenuating) low frequencies.
+A _____ filter is a very narrow band-stop filter used to surgically remove a specific problematic frequency like electrical hum.,notch
+"In the REAPER DAW, what is the keyboard shortcut to split a selected media item at the edit cursor?",S.
+What is the recommended common plugin chain order for processing voice-over audio?,"Noise Gate, De-esser, Compressor, then EQ."
+"In filmmaking, what is the smallest unit of action that describes a single thought?",A beat.
+"What is the term for the central subject of a story, through whose eyes the audience experiences the narrative?",The protagonist.
+What is the term for the event that propels the protagonist into an active pursuit of their 'object of desire'?,The inciting incident.
+What is the term for the point of maximum emotional intensity or conflict in a story?,The climax.
