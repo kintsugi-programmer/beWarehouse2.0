@@ -16,9 +16,9 @@
 - [CM](/CM/README.md)
   - [CM1.pdf](/CM/CM1.pdf) [COMPLETED]
   - [CM2.pdf](/CM/CM2.pdf) [COMPLETED]
+- [GDD](/GDD/README.md)
 
 > [COMPLETED]
-
 
 ## Prompts
 - perplexity + notebooklm = boom for coding
