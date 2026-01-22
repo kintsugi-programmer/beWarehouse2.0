@@ -17,6 +17,7 @@
   - [CM1.pdf](/CM/CM1.pdf) [COMPLETED]
   - [CM2.pdf](/CM/CM2.pdf) [COMPLETED]
 - [GDD](/GDD/README.md)
+- [DAIDP](/DAIDP/README.md)
 
 > [COMPLETED]
 
@@ -29,6 +30,10 @@ Generate a structured glossary of key terms and concepts from Applied Ethics and
 ### Notes
 ```
 Create super depth notes in Markdown (.md) format with 100% information preserved, no loss. Use simple grammar and keep everything clear, direct, and well-structured. using headings, subheadings,paragraphs, statements and code blocks when needed. Include every detail, definition, example, and step exactly from the source. transform the given content into clean, readable .md format.
+
+Create super depth notes in Markdown (.md) format with 100% information preserved, no loss. Use simple grammar and keep everything clear, direct, and well-structured. using headings, subheadings,paragraphs, statements and code blocks when needed. Include every detail, definition, example, and step exactly from the source. transform the given content into clean, readable .md format.
+and no #, just nested - lines plaintext, add bold wherever necessary
+
 ```
 ### Videos
 ```
