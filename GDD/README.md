@@ -1752,3 +1752,217 @@ Instead of "Complex as Simple" for a house with a door:
     2.  Set Simulate Physics (Mesh) = True.
     3.  `Add Impulse` (Direction: Arrow Forward Vector * 50,000).
     4.  **Reset:** Delay $\rightarrow$ Simulate Physics False $\rightarrow$ `Attach Component To Component` (Reattach to Capsule) $\rightarrow$ Reset Rotation/Location.
+
+## 9. Blueprint Visual Scripting
+
+![alt text](image-8.png)
+
+### What are Blueprints?
+Blueprints are a **Visual Scripting System** designed to create gameplay elements and logic.
+
+**Core Characteristics:**
+*   **Node-based programming:** Logic is constructed by visually connecting nodes.
+*   **No C++ code required:** Eliminates the need for traditional text-based programming.
+*   **Visual logic flow:** Makes the execution path easy to read and understand.
+*   **Rapid prototyping:** Speeds up the development and testing process.
+*   **Designer-friendly:** Accessible to team members without a formal programming background.
+
+#### Key Components
+*   **Nodes**: Represent individual actions or commands.
+*   **Pins**: Serve as the connection points between different nodes.
+*   **Variables**: Used for data storage.
+*   **Events**: Triggers that start a specific chain of logic.
+*   **Functions**: Self-contained blocks of reusable logic.
+
+---
+
+### Level Blueprint vs. Class Blueprint
+
+There are two primary types of Blueprints, each serving a distinct purpose in game development.
+
+#### Level Blueprint
+*   **Scope:** Restricted to one specific level only.
+*   **Purpose:** Handles level-specific events and custom logic.
+*   **Access Method:** `Blueprints → Open Level Blueprint`.
+*   **Common Examples:**
+    1.  Opening doors when the level starts.
+    2.  Triggering cinematic cutscenes.
+    3.  Managing level sequences.
+
+#### Class Blueprint
+*   **Scope:** Completely reusable across all levels in a project.
+*   **Purpose:** Acts as templates and defines behaviors for specific objects.
+*   **Access Method:** `Content Browser → Create Blueprint`.
+*   **Common Examples:**
+    1.  Player character controls.
+    2.  Pickable or interactable items.
+    3.  Enemy AI behavior.
+
+---
+
+### Level Blueprint Examples
+
+#### 1. Automatic Door with Trigger Box
+This script opens a door automatically when a player enters a specified area.
+
+```text
+1. Event: Actor Begin Overlap (TriggerBox)
+   └─> Other Actor: Player Character
+
+2. Action: Timeline - "Door Open"
+   └─> Set Relative Location (Door)
+       • Start: Z = 0
+       • End: Z = 200
+       • Duration: 1.5 seconds
+
+3. Event: Actor End Overlap (TriggerBox)
+   └─> Reverse Timeline
+```
+
+#### 2. Toggle Light with Key Press
+This script turns a light on and off when the player presses a specific key.
+
+```text
+1. Event: F Key Pressed
+
+2. Variable: IsLightOn (Boolean) = false
+
+3. Logic Flow:
+   └─> Branch (IsLightOn)
+       ├─> True: Set Light Intensity = 0
+       │         Set IsLightOn = false
+       │
+       └─> False: Set Light Intensity = 5000
+                  Set IsLightOn = true
+
+4. Target: Reference to PointLight1 in level
+```
+
+---
+
+### Class Blueprint Examples
+
+#### 1. Collectible Health Pack
+This script handles the behavior of a health pack that the player can pick up to restore health.
+
+**Required Components:**
+*   **Static Mesh:** The visual model of the health pack.
+*   **Sphere Collision:** The invisible trigger area for the pickup.
+
+**Variables:**
+*   `HealAmount` (Float) = 25.0
+*   `RotationSpeed` (Float) = 90.0
+
+```text
+Event: Component Begin Overlap
+└─> Cast to Character (Other Actor)
+    ├─> Success:
+    │   └─> Add Health (Character, HealAmount)
+    │       └─> Destroy Actor (Self)
+    │
+    └─> Fail: Do Nothing
+```
+
+#### 2. Continuously Rotating Platform
+This script makes a platform spin continuously at a steady rate.
+
+**Required Components:**
+*   **Static Mesh:** The platform's 3D mesh.
+
+**Variables:**
+*   `RotationSpeed` (Vector) = (0, 0, 45) *(Represents X, Y, Z rotation per second)*
+
+```text
+Event: Event Tick (Delta Seconds)
+└─> Get Actor Rotation
+    └─> Add (Rotation, RotationSpeed * Delta Seconds)
+        └─> Set Actor Rotation
+```
+> **Note:** Multiplying by `Delta Seconds` ensures that the rotation remains smooth and independent of the game's frame rate.
+
+#### 3. Pressable Button with Custom Event
+This script creates an interactive button that triggers customizable events.
+
+**Variables:**
+*   `IsPressed` (Boolean) = false
+*   `PressedLocation` (Vector) = (0, 0, -5)
+
+```text
+Event: Actor On Clicked
+└─> Branch (NOT IsPressed)
+    └─> True:
+        ├─> Set IsPressed = true
+        ├─> Add Relative Location (PressedLocation)
+        └─> Call Custom Event: OnButtonPressed
+```
+
+**Custom Event: OnButtonPressed Details:**
+*   Can be explicitly overridden in child blueprints to create variations.
+*   Use an **Event Dispatcher** to communicate this action to a Level Blueprint.
+
+---
+
+### Blueprint Best Practices
+
+To maintain clean, efficient, and bug-free logic, follow these best practices across three core areas:
+
+#### Organization
+*   Use **comments** to explain sections of logic.
+*   Group related nodes together visually.
+*   Name variables clearly and descriptively.
+*   Create **functions** for any logic that needs to be reused.
+*   Use folders within the *My Blueprint* panel to keep assets categorized.
+
+#### Performance
+*   Avoid placing heavy or complex logic inside the **Event Tick** node.
+*   Use **timers** for tasks that need to repeat at intervals.
+*   Cache references to objects instead of searching for them repeatedly.
+*   Use **pure functions** whenever possible (functions that only output data without modifying state).
+*   Minimize the use of **Cast** nodes, as they can be computationally expensive.
+
+#### Debugging
+*   Utilize **Print String** nodes to display values on screen.
+*   Set **breakpoints** to pause execution and inspect the flow.
+*   Watch specific variables to see how their values change in real-time.
+*   Enable **Execute pins** to visually trace execution paths.
+*   Test logic incrementally rather than all at once.
+
+---
+
+### Essential Blueprint Nodes
+
+| Node Type | Purpose | Example Use |
+| :--- | :--- | :--- |
+| **Event Begin Play** | Runs exactly once when the actor spawns. | Initialize variables, spawn visual effects. |
+| **Event Tick** | Runs continuously, firing every single frame. | Continuous movement, making an object look at the player. |
+| **Branch** | Handles standard if/else logic flow. | Check specific conditions, switch between states. |
+| **Cast To** | Checks the object type to ensure compatibility. | Get the player reference, verify a character's identity. |
+| **Set Timer** | Handles delayed or repeated execution. | Respawn item pickups, manage ability cooldowns. |
+| **Print String** | Outputs debug text directly to the screen. | Show current variable values, test logic triggers. |
+| **Get/Set** | Reads (Get) or writes (Set) data to variables. | Access player health, modify position, update game states. |
+
+---
+
+### Variables & Data Types
+
+Variables store different kinds of information necessary for game logic. They are divided into Basic and Advanced types.
+
+#### Basic Types
+*   **Boolean:** Stores `true` or `false` values.
+    *   *Examples:* `IsAlive`, `CanJump`
+*   **Integer:** Stores whole numbers without decimals.
+    *   *Examples:* `Score`, `AmmoCount`
+*   **Float:** Stores decimal numbers.
+    *   *Examples:* `Health`, `Speed`
+*   **String:** Stores plain text.
+    *   *Examples:* `PlayerName`, `Message`
+
+#### Advanced Types
+*   **Vector:** Stores 3D coordinates (X, Y, Z).
+    *   *Examples:* `Location`, `Velocity`
+*   **Rotator:** Stores 3D rotation data (Pitch, Yaw, Roll).
+    *   *Examples:* `ActorRotation`
+*   **Object Reference:** Stores a direct link to a specific actor in the game world.
+    *   *Examples:* `TargetEnemy`, `DoorRef`
+*   **Array:** Stores a list or collection of multiple items.
+    *   *Examples:* `Inventory`, `EnemyList`
