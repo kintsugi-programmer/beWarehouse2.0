@@ -384,3 +384,115 @@ As $\langle k \rangle$ (or $p$) increases, the network structure changes drastic
 *   **Average Degree:** $\langle k \rangle = 2L/N$
 *   **Clustering (Local):** $C_i = 2L_i / (k_i(k_i-1))$
 *   **Power Law Normalization:** $\int_{k_{min}}^{\infty} P(k) dk = 1$
+
+## NS MidSem
+
+- **1. Core Concepts and Network Building Blocks**
+  - **What is a Complex System?**
+    - Imagine a massive machine made of many tiny, smart parts. A complex system consists of a **large number of sophisticated functional elements**.
+    - These elements are intricately connected to perform specific tasks.
+    - **The Golden Rule**: If you take a small group (a subset) of these elements out of the system, they **cannot** execute the tasks on their own. They rely on the entire network!
+  - **Why did Network Science Emerge?**
+    - The field of network science blew up because of two main forces:
+      - **Availability of network maps**: We finally had the data and technology to map out massive networks.
+      - **Universality of network characteristics**: Scientists discovered that different networks (like the internet, social groups, and biology) all share the same universal rules.
+  - **Metcalfe's Law**
+    - This law helps us measure how much a network is worth.
+    - It states that the value of a network is **proportional to the square of the number of its nodes**. (For example, if a network has 10 users, its value is tied to 100!).
+  - **Understanding Average Degree (`<k>`)**
+    - The "degree" of a node is simply how many connections it has.
+    - For an undirected and unweighted graph, the formula for the average degree of the whole network is: **`2L / N`**.
+      - `L` stands for the total Number of edges (links).
+      - `N` stands for the total Number of nodes.
+  - **Complete Graphs vs. Sparse Networks**
+    - **Complete Graph**: A network where every single node is connected directly to every other node.
+      - The average degree (`<k>`) is **`N - 1`** (since each node connects to all other nodes).
+      - The total number of edges (`L`) is **`N(N - 1) / 2`**.
+    - **Sparse Network**: A network with very few connections compared to what is possible.
+      - Rule 1: **`L << L_max`** (The actual links are much, much less than the maximum possible links).
+      - Rule 2: **`<k> << N - 1`** (The average degree is much, much less than the maximum possible degree).
+      - **Real-world fact**: Real-world graphs are known to be **Sparse and having a Scale-Free Degree Distribution**.
+  - **Directed vs. Undirected Graphs**
+    - **Undirected Graphs**: Connections go both ways automatically (like being friends). Examples include the Actor Network, Co-authorship Networks, and Protein interaction networks.
+    - **Directed Graphs**: Connections have a strict direction (like a one-way street). Example: A **Phone call network** (because a call is initiated by one person to another). Therefore, a phone call network is **NOT** an undirected graph.
+  - **What is a Sink Node?**
+    - In a directed graph, a **sink** is a "dead end." It is a node where arrows only point *in*, and nothing points *out*.
+    - Mathematically, it is a node with an out-degree of zero: **`k_out = 0`**.
+
+- **2. Understanding Paths in a Network**
+  - **Self-Avoiding Path**
+    - This is a path that **does not intersect itself**. It simply goes from point A to point B without ever crossing its own tracks.
+  - **Hamiltonian Path**
+    - This is a path that **visits every node exactly once**. You have to stop at every single destination, but you cannot visit any destination twice!
+  - **Eulerian Path**
+    - This is a path that **traverses each link exactly once**. You have to travel down every single road, but you cannot use the same road twice.
+    - *Historical Puzzle*: The famous "Konigsberg Bridge Problem" asked if an Eulerian path was possible in the city of Konigsberg. The answer was no, because the Konigsberg graph had **four nodes with an odd number of links**. (For an Eulerian path to work, you can only have 0 or exactly 2 nodes with an odd number of connections).
+
+- **3. Specific Network Models and Mathematical Rules**
+  - **Scale-Free Networks**
+    - These are networks dominated by a few massive "hubs" (like major airports).
+    - Mathematical limits: They have been shown to be absolutely **non-existent** if their degree exponent (`γ` or gamma) is **`γ < 2`**.
+    - The standard deviation of a scale-free degree distribution is mathematically **Infinity**.
+    - If you are tasked with plotting power laws for these networks, the advised strategy is to **Use a Log-Log Plot**.
+  - **Random Networks (Erdős-Rényi / Gilbert Models)**
+    - If you have a large network (large `N`) with very few average connections (small `<k>`), the degree distribution of the random graph will take the shape of a **Poisson Distribution**.
+    - **The Critical Point**: A random network is said to have achieved the 'critical point' when its average degree is exactly one: **`<k> = 1`**.
+    - *Example Calculation*: Imagine a real-world graph has 101 nodes and 2525 edges. If you build its random network counterpart using the Gilbert `G(N,p)` strategy, the probability (`p`) that any two nodes connect to each other is **`0.5`**.
+  - **Watts and Strogatz Model**
+    - This model explores the "small-world" phenomenon.
+    - When implementing their strategy to randomize a "k-regular graph", the number of laps that one needs to take is **`k/2`**.
+    - In their famous 1998 Nature paper, they investigated the C. elegans Neuronal Network, North America's Power Grid, and the Actors' Network.
+    - They did **NOT** investigate the **Yeast Protein Interaction Network**.
+  - **Finding Shortest Paths**
+    - **Breadth First Search (BFS)**: An algorithm used for finding the shortest path between two nodes. Its computational complexity is **`O(N + L)`** (where N = Number of nodes, L = Number of edges).
+    - **Adjacency Matrix Method**: While calculating the shortest paths starting from an adjacency matrix is highly elegant, it **is not preferred for large networks due to its inefficiency**.
+  - **Error and Attack Tolerance**
+    - To figure out how tough a complex network is against random errors or targeted attacks, scientists investigate two main measures:
+      - **Size of the giant component**
+      - **Average size of the fragmented clusters**.
+
+- **4. Real-World Case Studies and Experiments**
+  - **Dunbar's Number**
+    - This rule suggests there is a brain limit to how many stable social relationships a human can handle.
+    - *Question*: If the human brain is capable of meaningfully perceiving and processing up to "190 pair-wise relationships", what is the maximum number of people an organization should have to achieve the best interpersonal relationships?
+    - *Answer*: **20**. (Because choosing pairs from 20 people results in exactly 190 combinations!).
+  - **Spread of Obesity in Social Networks**
+    - **Homophily**: This term refers to **"The tendency for people to choose relationships with people who have similar attributes."**
+    - A person is officially defined as obese in this research if he/she has a Body Mass Index (BMI) of **`>= 30`**.
+    - The highest "Probability That an Ego Will Become Obese with an Alter Who May Become Obese" was found in a relationship with a **Mutual friend**.
+  - **Small World Phenomena**
+    - The first ever experiment to investigate the "small world" phenomena (the idea that everyone is connected by a few steps) was conducted by **Stanley Milgram**.
+  - **The Capture of Saddam Hussein**
+    - The military used social network maps to track him down.
+    - However, it is an INCORRECT inference to say that **Saddam Hussein was the hub of his scale-free network**. (He was actually intentionally isolated, not a hub!).
+  - **Food and Recipes Networks**
+    - The "flavor network" discussed in the 'Network Science' book is a **Monopartite, Weighted** graph representation of recipes data.
+  - **Indian Railways Network (IRN)**
+    - In a 2002 study by Sen et al., two railway stations are said to be connected/linked if **at least one train stops at both the stations**.
+  - **Airport Network of India (ANI)**
+    - In a 2008 study by Bagler, the link between two airports was defined as **the number of flights per week**.
+
+- **5. Subjective Practice Problems (For deeper learning and solving)**
+  - *These are subjective questions taken exactly from the source to practice solving real test scenarios.*
+  - **Definitions and Illustrations**: Define and provide a simple illustration of each of the following: (a) Self-avoiding path, (b) Eulerian path, and (c) Hamiltonian path.
+  - **Real-World Examples**: Write one real-world example for each of the following types of networks. Clearly state what is a node, an edge, and what constitutes the weight/direction: (a) Bipartite Networks, (b) Weighted Networks, and (c) Directed Network.
+  - **Food and Recipes Constructs**: In the example of networks related to Food and Recipes, describe what the (a) mono-partite, (b) bi-partite, and (c) tri-partite networks that one could construct would look like. Clearly explain each of these networks.
+  - **Algorithm Details**: Briefly explain the Breadth First Search (BFS) strategy used for finding the shortest path between nodes `i` and `j`. What is the computational complexity of the BFS algorithm?
+  - **Watts and Strogatz Condition**: When implementing the Watts and Strogatz strategy, what is the condition/constraint on the 'number of nodes (n)' for generating a k-regular graph?
+  - **Matrix Formalism Problem**:
+    - Let `A` be the `N x N` adjacency matrix of an undirected unweighted network, without self-loops.
+    - Let `1` be a column vector of `N` elements, all equal to 1. (In other words `1 = (1, 1, ..., 1)^T`, where the superscript `T` indicates the transpose operation).
+    - *Task*: Use matrix formalism (multiplicative constants, multiplication row by column, matrix operations like transpose and trace, etc., but **avoid the sum symbol Σ**) to write expressions for:
+      - (a) The vector `k` whose elements are the degrees `k_i` of all nodes `i = 1, 2, ..., N`.
+      - (b) The total number of links, `L`, in the network.
+      - (c) The number of triangles `T` present in the network, where a triangle means three nodes, each connected by links to the other two (Hint: you can use the trace of a matrix).
+      - (d) The vector `k_nn` whose element `i` is the sum of the degrees of node `i`'s neighbors.
+      - (e) The vector `k_nnn` whose element `i` is the sum of the degrees of node `i`'s second neighbors.
+  - **Erdős-Rényi Mathematical Problem**:
+    - Consider an Erdős-Rényi network with `N = 3,000` nodes, connected to each other with probability `p = 10^-3`.
+    - *Tasks*:
+      - (a) What is the expected number of links, `<L>`?
+      - (b) Which regime does the network belong to?
+      - (c) Calculate the probability `p_c` so that the network is at the critical point.
+      - (d) Given the linking probability `p = 10^-3`, calculate the number of nodes `N_cr` so that the network has only one component.
+      - (e) For the network in (d), calculate the average degree `<k_cr>` and the average distance between two randomly chosen nodes `<d>`.
