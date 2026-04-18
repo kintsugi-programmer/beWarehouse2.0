@@ -1,0 +1,945 @@
+Symptom_1,Symptom_2,Weight
+nausea,vomiting,9
+fatigue,high fever,9
+abdominal pain,vomiting,8
+loss of appetite,yellowing of eyes,7
+loss of appetite,vomiting,7
+fatigue,vomiting,7
+yellowish skin,abdominal pain,7
+loss of appetite,fatigue,7
+high fever,vomiting,6
+loss of appetite,nausea,6
+loss of appetite,abdominal pain,6
+fatigue,nausea,6
+loss of appetite,yellowish skin,6
+headache,vomiting,6
+yellowish skin,vomiting,6
+yellowish skin,yellowing of eyes,6
+chills,high fever,6
+malaise,fatigue,6
+fatigue,headache,5
+nausea,headache,5
+headache,high fever,5
+fatigue,abdominal pain,5
+yellowing of eyes,nausea,5
+yellowing of eyes,fatigue,5
+yellowing of eyes,vomiting,5
+yellowing of eyes,abdominal pain,5
+yellowish skin,fatigue,5
+yellowish skin,dark urine,5
+yellowish skin,nausea,5
+malaise,high fever,5
+dark urine,abdominal pain,5
+fatigue,chills,5
+nausea,abdominal pain,5
+cough,high fever,4
+malaise,chills,4
+cough,chest pain,4
+loss of appetite,malaise,4
+chills,headache,4
+fatigue,cough,4
+loss of appetite,dark urine,4
+fatigue,lethargy,4
+loss of appetite,joint pain,4
+chills,vomiting,4
+loss of appetite,high fever,4
+sweating,vomiting,4
+fatigue,sweating,4
+dark urine,fatigue,4
+fatigue,weight loss,4
+vomiting,diarrhoea,4
+nausea,high fever,4
+nausea,joint pain,4
+dark urine,vomiting,4
+dark urine,yellowing of eyes,4
+vomiting,joint pain,4
+chest pain,phlegm,3
+chills,muscle pain,3
+chills,sweating,3
+breathlessness,high fever,3
+phlegm,high fever,3
+chest pain,sweating,3
+vomiting,muscle pain,3
+swelled lymph nodes,high fever,3
+malaise,swelled lymph nodes,3
+high fever,muscle pain,3
+high fever,sweating,3
+breathlessness,chest pain,3
+loss of appetite,itching,3
+fatigue,excessive hunger,3
+breathlessness,sweating,3
+chest pain,high fever,3
+chest pain,chills,3
+dark urine,joint pain,3
+cough,chills,3
+cough,phlegm,3
+headache,muscle pain,3
+nausea,muscle pain,3
+abdominal pain,high fever,3
+fatigue,itching,3
+itching,skin rash,3
+chest pain,vomiting,3
+nausea,diarrhoea,3
+fatigue,joint pain,3
+high fever,skin rash,3
+abdominal pain,joint pain,3
+fatigue,chest pain,3
+excessive hunger,irritability,3
+fatigue,phlegm,3
+excessive hunger,blurred and distorted vision,3
+malaise,cough,3
+abdominal pain,itching,3
+malaise,chest pain,3
+yellowish skin,joint pain,3
+fatigue,swelled lymph nodes,3
+loss of appetite,mild fever,3
+malaise,headache,3
+yellowing of eyes,joint pain,3
+dark urine,nausea,3
+malaise,phlegm,3
+breathlessness,fatigue,3
+nausea,chills,3
+breathlessness,cough,3
+fatigue,irritability,3
+yellowish skin,itching,3
+chills,phlegm,3
+fatigue,red spots over body,2
+restlessness,weight loss,2
+malaise,yellowing of eyes,2
+swelled lymph nodes,mild fever,2
+swelled lymph nodes,chest pain,2
+swelled lymph nodes,headache,2
+swelled lymph nodes,chills,2
+malaise,vomiting,2
+fatigue,skin rash,2
+excessive hunger,headache,2
+muscle pain,joint pain,2
+chest pain,headache,2
+loss of balance,dizziness,2
+itching,high fever,2
+yellowing of eyes,itching,2
+fatigue,fast heart rate,2
+fatigue,diarrhoea,2
+fatigue,abnormal menstruation,2
+abdominal pain,diarrhoea,2
+yellowish skin,high fever,2
+skin rash,joint pain,2
+yellowing of eyes,mild fever,2
+fatigue,mood swings,2
+malaise,itching,2
+loss of balance,headache,2
+malaise,lethargy,2
+fatigue,muscle pain,2
+malaise,mild fever,2
+malaise,red spots over body,2
+malaise,skin rash,2
+chills,diarrhoea,2
+continuous sneezing,chills,2
+swelled lymph nodes,phlegm,2
+phlegm,sweating,2
+cough,vomiting,2
+muscle pain,diarrhoea,2
+malaise,muscle pain,2
+cough,sweating,2
+cough,swelled lymph nodes,2
+red spots over body,skin rash,2
+loss of appetite,lethargy,2
+loss of appetite,muscle pain,2
+headache,skin rash,2
+fatigue,restlessness,2
+fatigue,obesity,2
+irritability,headache,2
+nausea,sweating,2
+dark urine,high fever,2
+blurred and distorted vision,irritability,2
+fatigue,blurred and distorted vision,2
+blurred and distorted vision,headache,2
+high fever,weight loss,2
+dark urine,itching,2
+high fever,mild fever,2
+high fever,red spots over body,2
+high fever,joint pain,2
+swelling joints,painful walking,2
+sweating,diarrhoea,2
+vomiting,weight loss,2
+sweating,weight loss,2
+sweating,fast heart rate,2
+yellowing of eyes,high fever,2
+excessive hunger,restlessness,2
+excessive hunger,weight loss,2
+depression,irritability,2
+high fever,diarrhoea,2
+headache,red spots over body,2
+breathlessness,malaise,2
+loss of appetite,chills,2
+loss of appetite,swelled lymph nodes,2
+loss of appetite,skin rash,2
+loss of appetite,red spots over body,2
+loss of appetite,headache,2
+malaise,sweating,2
+fatigue,mild fever,2
+excessive hunger,sweating,2
+irritability,abnormal menstruation,2
+breathlessness,chills,2
+irritability,sweating,2
+itching,vomiting,2
+lethargy,itching,2
+breathlessness,vomiting,2
+mood swings,abnormal menstruation,2
+vomiting,mild fever,2
+breathlessness,phlegm,2
+mood swings,irritability,2
+fatigue,family history,2
+headache,diarrhoea,2
+headache,sweating,2
+enlarged thyroid,cold hands and feets,1
+enlarged thyroid,dizziness,1
+enlarged thyroid,brittle nails,1
+chills,rusty sputum,1
+enlarged thyroid,puffy face and eyes,1
+enlarged thyroid,weight gain,1
+abdominal pain,indigestion,1
+abdominal pain,internal itching,1
+chills,shivering,1
+chills,watering from eyes,1
+enlarged thyroid,irritability,1
+chills,fast heart rate,1
+abdominal pain,belly pain,1
+chills,throat irritation,1
+chills,loss of smell,1
+chills,weight loss,1
+abdominal pain,constipation,1
+abdominal pain,weight loss,1
+chills,blood in sputum,1
+chills,constipation,1
+chills,belly pain,1
+chills,abdominal pain,1
+chills,skin rash,1
+chills,red spots over body,1
+chills,pain behind the eyes,1
+chills,joint pain,1
+chills,back pain,1
+chills,mild fever,1
+stiff neck,acidity,1
+enlarged thyroid,abnormal menstruation,1
+nausea,coma,1
+nausea,blurred and distorted vision,1
+nausea,drying and tingling lips,1
+nausea,irritability,1
+nausea,palpitations,1
+nausea,loss of balance,1
+nausea,unsteadiness,1
+neck pain,back pain,1
+neck pain,dizziness,1
+neck pain,loss of balance,1
+neck pain,joint pain,1
+neck pain,knee pain,1
+neck pain,painful walking,1
+blurred and distorted vision,irregular sugar level,1
+blurred and distorted vision,lethargy,1
+blurred and distorted vision,obesity,1
+blurred and distorted vision,restlessness,1
+blurred and distorted vision,weight loss,1
+blurred and distorted vision,acidity,1
+blurred and distorted vision,indigestion,1
+blurred and distorted vision,visual disturbances,1
+blurred and distorted vision,drying and tingling lips,1
+nausea,stomach bleeding,1
+nausea,mild fever,1
+irregular sugar level,weight loss,1
+nausea,constipation,1
+anxiety,nausea,1
+anxiety,palpitations,1
+anxiety,slurred speech,1
+anxiety,sweating,1
+anxiety,vomiting,1
+slurred speech,blurred and distorted vision,1
+slurred speech,drying and tingling lips,1
+slurred speech,headache,1
+slurred speech,irritability,1
+slurred speech,nausea,1
+slurred speech,palpitations,1
+slurred speech,sweating,1
+slurred speech,vomiting,1
+muscle wasting,extra marital contacts,1
+muscle wasting,high fever,1
+nausea,itching,1
+nausea,back pain,1
+nausea,pain behind the eyes,1
+nausea,red spots over body,1
+nausea,skin rash,1
+nausea,belly pain,1
+blurred and distorted vision,palpitations,1
+blurred and distorted vision,sweating,1
+blurred and distorted vision,vomiting,1
+dehydration,diarrhoea,1
+chest pain,lack of concentration,1
+chest pain,loss of balance,1
+chest pain,blood in sputum,1
+chest pain,mild fever,1
+chest pain,weight loss,1
+chest pain,loss of smell,1
+chest pain,muscle pain,1
+chest pain,throat irritation,1
+chest pain,fast heart rate,1
+chest pain,rusty sputum,1
+loss of balance,lack of concentration,1
+loss of balance,back pain,1
+loss of balance,unsteadiness,1
+loss of balance,vomiting,1
+pain during bowel movements,bloody stool,1
+pain during bowel movements,constipation,1
+pain during bowel movements,pain in anal region,1
+knee pain,joint pain,1
+knee pain,painful walking,1
+irregular sugar level,obesity,1
+irregular sugar level,restlessness,1
+chest pain,dizziness,1
+chest pain,acidity,1
+lethargy,weight gain,1
+lethargy,red spots over body,1
+dehydration,sunken eyes,1
+dehydration,vomiting,1
+lethargy,irregular sugar level,1
+lethargy,obesity,1
+lethargy,restlessness,1
+lethargy,weight loss,1
+lethargy,headache,1
+lethargy,high fever,1
+lethargy,mild fever,1
+lethargy,skin rash,1
+lethargy,puffy face and eyes,1
+lethargy,abdominal pain,1
+lethargy,receiving blood transfusion,1
+lethargy,yellow urine,1
+lethargy,abnormal menstruation,1
+lethargy,brittle nails,1
+lethargy,cold hands and feets,1
+lethargy,dizziness,1
+lethargy,enlarged thyroid,1
+lethargy,irritability,1
+chest pain,ulcers on tongue,1
+irritability,brittle nails,1
+abdominal pain,headache,1
+coma,joint pain,1
+blister,high fever,1
+blister,red sore around nose,1
+blister,skin rash,1
+headache,dizziness,1
+headache,lack of concentration,1
+headache,acidity,1
+headache,visual disturbances,1
+headache,mild fever,1
+headache,joint pain,1
+headache,pain behind the eyes,1
+headache,constipation,1
+headache,drying and tingling lips,1
+headache,unsteadiness,1
+foul smell of urine,burning micturition,1
+prominent veins on calf,cramps,1
+prominent veins on calf,swollen blood vessels,1
+sunken eyes,diarrhoea,1
+sunken eyes,vomiting,1
+red sore around nose,high fever,1
+red sore around nose,skin rash,1
+unsteadiness,vomiting,1
+extra marital contacts,high fever,1
+high fever,pain behind the eyes,1
+coma,vomiting,1
+coma,high fever,1
+abdominal pain,mild fever,1
+continuous feel of urine,foul smell of urine,1
+stomach bleeding,high fever,1
+stomach bleeding,joint pain,1
+stomach bleeding,vomiting,1
+painful walking,joint pain,1
+painful walking,muscle weakness,1
+restlessness,obesity,1
+restlessness,abnormal menstruation,1
+restlessness,diarrhoea,1
+restlessness,fast heart rate,1
+restlessness,muscle weakness,1
+restlessness,sweating,1
+obesity,weight loss,1
+obesity,cramps,1
+obesity,prominent veins on calf,1
+obesity,swollen blood vessels,1
+rusty sputum,fast heart rate,1
+rusty sputum,high fever,1
+rusty sputum,sweating,1
+blackheads,skin rash,1
+brittle nails,abnormal menstruation,1
+brittle nails,cold hands and feets,1
+brittle nails,dizziness,1
+continuous feel of urine,burning micturition,1
+high fever,constipation,1
+high fever,fast heart rate,1
+cold hands and feets,abnormal menstruation,1
+cold hands and feets,dizziness,1
+vomiting,swelling of stomach,1
+vomiting,drying and tingling lips,1
+swollen blood vessels,cramps,1
+weight loss,mild fever,1
+weight loss,diarrhoea,1
+weight loss,fast heart rate,1
+red spots over body,mild fever,1
+red spots over body,joint pain,1
+red spots over body,muscle pain,1
+dizziness,lack of concentration,1
+dischromic  patches,skin rash,1
+fast heart rate,diarrhoea,1
+muscle pain,skin rash,1
+muscle pain,mild fever,1
+ulcers on tongue,acidity,1
+pain in anal region,constipation,1
+visual disturbances,acidity,1
+skin rash,mild fever,1
+skin rash,silver like dusting,1
+joint pain,diarrhoea,1
+joint pain,mild fever,1
+joint pain,silver like dusting,1
+diarrhoea,constipation,1
+vomiting,constipation,1
+vomiting,skin rash,1
+vomiting,red spots over body,1
+sweating,muscle weakness,1
+abnormal menstruation,dizziness,1
+abnormal menstruation,diarrhoea,1
+abnormal menstruation,fast heart rate,1
+abnormal menstruation,muscle weakness,1
+abnormal menstruation,sweating,1
+abnormal menstruation,weight loss,1
+history of alcohol consumption,swelling of stomach,1
+history of alcohol consumption,vomiting,1
+sweating,muscle pain,1
+sweating,mild fever,1
+sweating,drying and tingling lips,1
+vomiting,ulcers on tongue,1
+muscle weakness,diarrhoea,1
+muscle weakness,fast heart rate,1
+muscle weakness,weight loss,1
+burning micturition,skin rash,1
+pain behind the eyes,joint pain,1
+pain behind the eyes,muscle pain,1
+pain behind the eyes,red spots over body,1
+pain behind the eyes,skin rash,1
+pain behind the eyes,vomiting,1
+vomiting,acidity,1
+stomach bleeding,coma,1
+bloody stool,pain in anal region,1
+bloody stool,constipation,1
+indigestion,vomiting,1
+blood in sputum,vomiting,1
+blood in sputum,weight loss,1
+belly pain,constipation,1
+belly pain,diarrhoea,1
+belly pain,headache,1
+belly pain,high fever,1
+belly pain,vomiting,1
+irritability,acidity,1
+irritability,indigestion,1
+irritability,visual disturbances,1
+anxiety,headache,1
+irritability,cold hands and feets,1
+irritability,dizziness,1
+irritability,weight gain,1
+irritability,diarrhoea,1
+irritability,fast heart rate,1
+irritability,muscle weakness,1
+irritability,restlessness,1
+irritability,weight loss,1
+irritability,drying and tingling lips,1
+irritability,palpitations,1
+irritability,vomiting,1
+shivering,watering from eyes,1
+blood in sputum,sweating,1
+blood in sputum,phlegm,1
+blood in sputum,mild fever,1
+loss of smell,muscle pain,1
+abdominal pain,muscle pain,1
+abdominal pain,receiving blood transfusion,1
+abdominal pain,yellow urine,1
+abdominal pain,coma,1
+abdominal pain,stomach bleeding,1
+abdominal pain,fluid overload,1
+abdominal pain,history of alcohol consumption,1
+abdominal pain,swelling of stomach,1
+loss of smell,headache,1
+loss of smell,high fever,1
+loss of smell,phlegm,1
+blood in sputum,high fever,1
+loss of smell,throat irritation,1
+puffy face and eyes,abnormal menstruation,1
+puffy face and eyes,brittle nails,1
+puffy face and eyes,cold hands and feets,1
+puffy face and eyes,dizziness,1
+puffy face and eyes,irritability,1
+puffy face and eyes,weight gain,1
+fluid overload,history of alcohol consumption,1
+fluid overload,swelling of stomach,1
+fluid overload,vomiting,1
+indigestion,internal itching,1
+indigestion,acidity,1
+scurring,skin rash,1
+indigestion,headache,1
+bruising,obesity,1
+bruising,prominent veins on calf,1
+bruising,swollen blood vessels,1
+weakness of one body side,headache,1
+weakness of one body side,vomiting,1
+back pain,dizziness,1
+back pain,headache,1
+back pain,high fever,1
+back pain,joint pain,1
+back pain,muscle pain,1
+back pain,pain behind the eyes,1
+back pain,red spots over body,1
+back pain,skin rash,1
+back pain,vomiting,1
+internal itching,vomiting,1
+phlegm,mild fever,1
+phlegm,vomiting,1
+phlegm,weight loss,1
+phlegm,headache,1
+phlegm,muscle pain,1
+phlegm,fast heart rate,1
+phlegm,rusty sputum,1
+scurring,blackheads,1
+bruising,cramps,1
+skin peeling,skin rash,1
+skin peeling,silver like dusting,1
+itching,burning micturition,1
+indigestion,visual disturbances,1
+palpitations,drying and tingling lips,1
+palpitations,headache,1
+palpitations,sweating,1
+palpitations,vomiting,1
+throat irritation,headache,1
+throat irritation,high fever,1
+throat irritation,muscle pain,1
+throat irritation,phlegm,1
+itching,dischromic  patches,1
+itching,weight loss,1
+skin peeling,joint pain,1
+itching,headache,1
+itching,mild fever,1
+itching,red spots over body,1
+itching,receiving blood transfusion,1
+itching,yellow urine,1
+weight gain,abnormal menstruation,1
+weight gain,brittle nails,1
+weight gain,cold hands and feets,1
+weight gain,dizziness,1
+yellow urine,receiving blood transfusion,1
+anxiety,irritability,1
+stomach pain,acidity,1
+anxiety,drying and tingling lips,1
+receiving unsterile injections,lethargy,1
+passage of gases,indigestion,1
+passage of gases,internal itching,1
+passage of gases,vomiting,1
+nodal skin eruptions,dischromic  patches,1
+nodal skin eruptions,itching,1
+nodal skin eruptions,skin rash,1
+receiving unsterile injections,abdominal pain,1
+receiving unsterile injections,dark urine,1
+receiving unsterile injections,fatigue,1
+receiving unsterile injections,itching,1
+receiving unsterile injections,malaise,1
+loss of appetite,weight loss,1
+receiving unsterile injections,receiving blood transfusion,1
+receiving unsterile injections,yellow urine,1
+receiving unsterile injections,yellowing of eyes,1
+receiving unsterile injections,yellowish skin,1
+altered sensorium,headache,1
+altered sensorium,vomiting,1
+altered sensorium,weakness of one body side,1
+continuous sneezing,shivering,1
+continuous sneezing,watering from eyes,1
+continuous sneezing,chest pain,1
+passage of gases,abdominal pain,1
+loss of appetite,sweating,1
+swollen extremeties,depression,1
+loss of appetite,back pain,1
+swollen extremeties,enlarged thyroid,1
+swollen extremeties,fatigue,1
+swollen extremeties,irritability,1
+swollen extremeties,lethargy,1
+swollen extremeties,mood swings,1
+swollen extremeties,puffy face and eyes,1
+swollen extremeties,weight gain,1
+loss of appetite,indigestion,1
+loss of appetite,internal itching,1
+loss of appetite,passage of gases,1
+loss of appetite,pain behind the eyes,1
+loss of appetite,phlegm,1
+loss of appetite,diarrhoea,1
+loss of appetite,receiving blood transfusion,1
+loss of appetite,receiving unsterile injections,1
+loss of appetite,yellow urine,1
+loss of appetite,family history,1
+loss of appetite,coma,1
+loss of appetite,stomach bleeding,1
+loss of appetite,blood in sputum,1
+loss of appetite,chest pain,1
+loss of appetite,cough,1
+continuous sneezing,cough,1
+continuous sneezing,fatigue,1
+continuous sneezing,headache,1
+malaise,back pain,1
+hip joint pain,painful walking,1
+yellow crust ooze,blister,1
+yellow crust ooze,high fever,1
+yellow crust ooze,red sore around nose,1
+yellow crust ooze,skin rash,1
+small dents in nails,inflammatory nails,1
+small dents in nails,joint pain,1
+small dents in nails,silver like dusting,1
+small dents in nails,skin peeling,1
+small dents in nails,skin rash,1
+malaise,joint pain,1
+continuous sneezing,high fever,1
+malaise,nausea,1
+malaise,pain behind the eyes,1
+malaise,abdominal pain,1
+malaise,dark urine,1
+malaise,receiving blood transfusion,1
+malaise,yellow urine,1
+malaise,blood in sputum,1
+malaise,weight loss,1
+malaise,loss of smell,1
+malaise,sinus pressure,1
+hip joint pain,neck pain,1
+hip joint pain,knee pain,1
+hip joint pain,joint pain,1
+yellowish skin,swelling of stomach,1
+continuous sneezing,loss of smell,1
+continuous sneezing,malaise,1
+continuous sneezing,muscle pain,1
+continuous sneezing,phlegm,1
+continuous sneezing,sinus pressure,1
+continuous sneezing,swelled lymph nodes,1
+continuous sneezing,throat irritation,1
+yellowish skin,weight loss,1
+yellowish skin,diarrhoea,1
+yellowish skin,mild fever,1
+yellowish skin,muscle pain,1
+yellowish skin,lethargy,1
+yellowish skin,malaise,1
+yellowish skin,receiving blood transfusion,1
+yellowish skin,yellow urine,1
+yellowish skin,family history,1
+yellowish skin,coma,1
+yellowish skin,stomach bleeding,1
+yellowish skin,distention of abdomen,1
+yellowish skin,fluid overload,1
+yellowish skin,history of alcohol consumption,1
+swollen extremeties,dizziness,1
+swollen extremeties,cold hands and feets,1
+anxiety,blurred and distorted vision,1
+redness of eyes,cough,1
+breathlessness,mild fever,1
+breathlessness,swelled lymph nodes,1
+breathlessness,weight loss,1
+breathlessness,yellowing of eyes,1
+breathlessness,fast heart rate,1
+breathlessness,rusty sputum,1
+redness of eyes,chest pain,1
+redness of eyes,chills,1
+redness of eyes,congestion,1
+redness of eyes,continuous sneezing,1
+redness of eyes,fatigue,1
+breathlessness,blood in sputum,1
+redness of eyes,headache,1
+redness of eyes,high fever,1
+redness of eyes,loss of smell,1
+redness of eyes,malaise,1
+redness of eyes,muscle pain,1
+redness of eyes,phlegm,1
+redness of eyes,runny nose,1
+redness of eyes,sinus pressure,1
+redness of eyes,swelled lymph nodes,1
+redness of eyes,throat irritation,1
+breathlessness,loss of appetite,1
+breathlessness,mucoid sputum,1
+swollen extremeties,brittle nails,1
+movement stiffness,muscle weakness,1
+stiff neck,depression,1
+stiff neck,excessive hunger,1
+stiff neck,headache,1
+stiff neck,indigestion,1
+stiff neck,irritability,1
+stiff neck,visual disturbances,1
+stiff neck,movement stiffness,1
+stiff neck,muscle weakness,1
+stiff neck,painful walking,1
+stiff neck,swelling joints,1
+movement stiffness,painful walking,1
+breathlessness,family history,1
+movement stiffness,swelling joints,1
+swollen legs,bruising,1
+swollen legs,cramps,1
+swollen legs,fatigue,1
+swollen legs,obesity,1
+swollen legs,prominent veins on calf,1
+swollen legs,swollen blood vessels,1
+patches in throat,extra marital contacts,1
+patches in throat,high fever,1
+patches in throat,muscle wasting,1
+weakness in limbs,back pain,1
+weakness in limbs,dizziness,1
+weakness in limbs,loss of balance,1
+runny nose,cough,1
+congestion,malaise,1
+congestion,muscle pain,1
+congestion,phlegm,1
+congestion,runny nose,1
+congestion,sinus pressure,1
+congestion,swelled lymph nodes,1
+congestion,throat irritation,1
+runny nose,chest pain,1
+runny nose,chills,1
+runny nose,continuous sneezing,1
+runny nose,fatigue,1
+weakness in limbs,neck pain,1
+runny nose,headache,1
+runny nose,high fever,1
+runny nose,loss of smell,1
+runny nose,malaise,1
+runny nose,muscle pain,1
+runny nose,phlegm,1
+runny nose,sinus pressure,1
+runny nose,swelled lymph nodes,1
+runny nose,throat irritation,1
+swollen extremeties,abnormal menstruation,1
+congestion,loss of smell,1
+congestion,high fever,1
+congestion,headache,1
+congestion,fatigue,1
+swelling joints,hip joint pain,1
+swelling joints,joint pain,1
+swelling joints,knee pain,1
+swelling joints,neck pain,1
+swelling joints,muscle weakness,1
+acute liver failure,abdominal pain,1
+acute liver failure,coma,1
+acute liver failure,dark urine,1
+acute liver failure,fatigue,1
+acute liver failure,high fever,1
+acute liver failure,joint pain,1
+acute liver failure,loss of appetite,1
+acute liver failure,nausea,1
+acute liver failure,stomach bleeding,1
+acute liver failure,vomiting,1
+acute liver failure,yellowing of eyes,1
+acute liver failure,yellowish skin,1
+congestion,chest pain,1
+congestion,chills,1
+congestion,continuous sneezing,1
+congestion,cough,1
+malaise,throat irritation,1
+malaise,fast heart rate,1
+malaise,rusty sputum,1
+mood swings,puffy face and eyes,1
+swelled lymph nodes,muscle pain,1
+swelled lymph nodes,sinus pressure,1
+swelled lymph nodes,throat irritation,1
+family history,high fever,1
+family history,nausea,1
+mood swings,brittle nails,1
+mood swings,cold hands and feets,1
+mood swings,dizziness,1
+mood swings,enlarged thyroid,1
+mood swings,lethargy,1
+mood swings,weight gain,1
+swelled lymph nodes,weight loss,1
+mood swings,diarrhoea,1
+mood swings,excessive hunger,1
+mood swings,fast heart rate,1
+mood swings,muscle weakness,1
+mood swings,restlessness,1
+mood swings,sweating,1
+mood swings,weight loss,1
+stiff neck,blurred and distorted vision,1
+stomach pain,chest pain,1
+stomach pain,ulcers on tongue,1
+swelled lymph nodes,loss of smell,1
+swelled lymph nodes,vomiting,1
+depression,acidity,1
+cough,headache,1
+pus filled pimples,blackheads,1
+pus filled pimples,scurring,1
+pus filled pimples,skin rash,1
+cough,acidity,1
+cough,stomach pain,1
+cough,ulcers on tongue,1
+cough,family history,1
+cough,blood in sputum,1
+cough,mild fever,1
+cough,weight loss,1
+cough,loss of smell,1
+swelled lymph nodes,sweating,1
+cough,muscle pain,1
+cough,sinus pressure,1
+cough,throat irritation,1
+cough,fast heart rate,1
+cough,rusty sputum,1
+swelled lymph nodes,itching,1
+swelled lymph nodes,lethargy,1
+swelled lymph nodes,red spots over body,1
+swelled lymph nodes,skin rash,1
+swelled lymph nodes,blood in sputum,1
+stomach pain,vomiting,1
+stomach pain,burning micturition,1
+stomach pain,itching,1
+toxic look (typhos),chills,1
+excessive hunger,fast heart rate,1
+excessive hunger,muscle weakness,1
+excessive hunger,anxiety,1
+excessive hunger,drying and tingling lips,1
+excessive hunger,nausea,1
+excessive hunger,palpitations,1
+excessive hunger,slurred speech,1
+excessive hunger,vomiting,1
+toxic look (typhos),abdominal pain,1
+toxic look (typhos),belly pain,1
+toxic look (typhos),constipation,1
+stomach pain,skin rash,1
+toxic look (typhos),diarrhoea,1
+toxic look (typhos),headache,1
+toxic look (typhos),high fever,1
+toxic look (typhos),nausea,1
+toxic look (typhos),vomiting,1
+distention of abdomen,abdominal pain,1
+distention of abdomen,fluid overload,1
+distention of abdomen,history of alcohol consumption,1
+distention of abdomen,swelling of stomach,1
+distention of abdomen,vomiting,1
+excessive hunger,diarrhoea,1
+excessive hunger,abnormal menstruation,1
+excessive hunger,visual disturbances,1
+excessive hunger,indigestion,1
+sinus pressure,chest pain,1
+sinus pressure,chills,1
+sinus pressure,headache,1
+sinus pressure,high fever,1
+sinus pressure,loss of smell,1
+sinus pressure,muscle pain,1
+sinus pressure,phlegm,1
+sinus pressure,throat irritation,1
+irritation in anus,bloody stool,1
+irritation in anus,constipation,1
+irritation in anus,pain during bowel movements,1
+irritation in anus,pain in anal region,1
+spinning movements,headache,1
+spinning movements,loss of balance,1
+spinning movements,nausea,1
+spinning movements,unsteadiness,1
+spinning movements,vomiting,1
+excessive hunger,irregular sugar level,1
+excessive hunger,lethargy,1
+excessive hunger,obesity,1
+excessive hunger,acidity,1
+fatigue,slurred speech,1
+fatigue,palpitations,1
+fatigue,drying and tingling lips,1
+dark urine,weight loss,1
+increased appetite,polyuria,1
+increased appetite,restlessness,1
+increased appetite,weight loss,1
+spotting  urination,burning micturition,1
+spotting  urination,itching,1
+spotting  urination,skin rash,1
+spotting  urination,stomach pain,1
+bladder discomfort,burning micturition,1
+bladder discomfort,continuous feel of urine,1
+bladder discomfort,foul smell of urine,1
+dark urine,diarrhoea,1
+yellowing of eyes,yellow urine,1
+dark urine,mild fever,1
+dark urine,muscle pain,1
+dark urine,lethargy,1
+dark urine,receiving blood transfusion,1
+dark urine,yellow urine,1
+dark urine,coma,1
+dark urine,stomach bleeding,1
+yellowing of eyes,diarrhoea,1
+yellowing of eyes,muscle pain,1
+yellowing of eyes,lethargy,1
+increased appetite,obesity,1
+increased appetite,lethargy,1
+increased appetite,irregular sugar level,1
+increased appetite,fatigue,1
+depression,blurred and distorted vision,1
+depression,excessive hunger,1
+depression,headache,1
+depression,indigestion,1
+depression,visual disturbances,1
+depression,abnormal menstruation,1
+depression,brittle nails,1
+depression,cold hands and feets,1
+depression,dizziness,1
+depression,enlarged thyroid,1
+depression,fatigue,1
+depression,lethargy,1
+depression,mood swings,1
+depression,puffy face and eyes,1
+depression,weight gain,1
+mucoid sputum,cough,1
+mucoid sputum,family history,1
+mucoid sputum,fatigue,1
+mucoid sputum,high fever,1
+increased appetite,blurred and distorted vision,1
+increased appetite,excessive hunger,1
+yellowing of eyes,receiving blood transfusion,1
+yellowing of eyes,family history,1
+fatigue,anxiety,1
+fatigue,rusty sputum,1
+fatigue,constipation,1
+fatigue,toxic look (typhos),1
+fatigue,receiving blood transfusion,1
+fatigue,yellow urine,1
+fatigue,coma,1
+fatigue,stomach bleeding,1
+fatigue,blood in sputum,1
+fatigue,loss of smell,1
+fatigue,sinus pressure,1
+fatigue,throat irritation,1
+fatigue,bruising,1
+yellowing of eyes,coma,1
+fatigue,cramps,1
+fatigue,prominent veins on calf,1
+fatigue,swollen blood vessels,1
+fatigue,brittle nails,1
+fatigue,cold hands and feets,1
+fatigue,dizziness,1
+fatigue,enlarged thyroid,1
+fatigue,puffy face and eyes,1
+fatigue,weight gain,1
+fatigue,muscle weakness,1
+fatigue,belly pain,1
+fatigue,pain behind the eyes,1
+fatigue,back pain,1
+fatigue,irregular sugar level,1
+yellowing of eyes,stomach bleeding,1
+yellowing of eyes,blood in sputum,1
+yellowing of eyes,chest pain,1
+yellowing of eyes,chills,1
+yellowing of eyes,cough,1
+yellowing of eyes,phlegm,1
+yellowing of eyes,sweating,1
+yellowing of eyes,swelled lymph nodes,1
+yellowing of eyes,weight loss,1
+inflammatory nails,joint pain,1
+inflammatory nails,silver like dusting,1
+inflammatory nails,skin peeling,1
+inflammatory nails,skin rash,1
+polyuria,blurred and distorted vision,1
+polyuria,excessive hunger,1
+polyuria,fatigue,1
+polyuria,irregular sugar level,1
+polyuria,lethargy,1
+polyuria,obesity,1
+polyuria,restlessness,1
+polyuria,weight loss,1
+diarrhoea,mild fever,1

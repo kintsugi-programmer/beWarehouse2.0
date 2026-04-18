@@ -1,0 +1,130 @@
+NETWORK SCIENCE ASSIGNMENT REPORT  
+> Team: Siddhant Bali (2022496) & Siddharth Bhaskar (2022498)
+Source notebook: 2022496_2022498.ipynb  
+
+Q1: Network Representation and Basic Analysis
+
+Methods:
+- Loaded the Email-Eu-core edge list file.
+- Converted it into an undirected graph by storing both (u,v) and (v,u).
+- Built an adjacency matrix using numpy (binary 0/1 representation).
+- Computed number of nodes (N), number of edges (L), density, average degree and degree distribution.
+
+Results:
+- Nodes (N): 1005  
+- Edges (L): 25571  
+- Adjacency matrix shape: (1005, 1005)  
+- Density: 0.050684822897464864  
+- Average degree <k>: 50.88756218905473  
+- Scaled degree distribution plot generated and saved.
+
+Observations:
+- The network is sparse since density << 1.
+- Only a small fraction of possible edges actually exist.
+- Degree distribution is right-skewed, meaning few nodes have very high degree while most are small.
+- This already hints that the network is heterogeneous (not uniform).
+
+
+Q2: Directed Graph Analysis
+
+Methods:
+- Used the same Email-Eu-core dataset but treated edges as directed.
+- Computed in-degree and out-degree manually (no graph libraries).
+- Constructed and plotted in-degree and out-degree distributions.
+
+Results:
+- Total nodes: 1005  
+- Total directed edges: 25571  
+- Sample in-degree: [(0, 32), (1, 51), (2, 77), (3, 62), (4, 74)]  
+- Sample out-degree: [(0, 41), (1, 1), (2, 84), (3, 56), (4, 89)]  
+- Distribution plot saved.
+
+Observations:
+- In-degree and out-degree are not symmetric.
+- Some nodes send many emails, some receive many.
+- Most nodes have low degree, only a few act as hubs.
+- The heavy-tail pattern again appears.
+
+
+Q3: Weighted Network Analysis
+
+Methods:
+- Loaded the OpenFlights (US airport) dataset.
+- Considered it as weighted (edge weight = number of flights).
+- Redefined degree using strength (sum of weights).
+- Computed weighted degree distribution.
+- Computed weighted clustering coefficient using Barrat formulation.
+- Plotted clustering vs degree.
+
+Results:
+- Nodes loaded: 3330  
+- Strength computed for all nodes.
+- Weighted degree distribution plotted.
+- Weighted clustering computed.
+- Clustering vs degree plot generated.
+
+Observations:
+- Strength distribution is highly heterogeneous.
+- A few airports dominate the total traffic.
+- Clustering decreases as degree increases.
+- This matches hub-and-spoke structure seen in real transport networks.
+- Large hubs connect distant regions which are not necessarily connected among themselves.
+
+
+Q4: Gilbert Random Graph Comparison
+
+Methods:
+- Loaded Facebook combined network (undirected, unweighted).
+- Computed p for Gilbert model using same N and L.
+- Generated one random instance and also averaged over 100 runs.
+- Compared degree distributions (real vs random).
+
+Results:
+- Real graph nodes (N): 4039  
+- Real graph edges (L): 88234  
+- Computed p: 0.010819963503439287  
+- Real vs random plot saved.
+- Average over 100 runs plot saved.
+
+Observations:
+- Real network shows heavy-tailed / broad distribution.
+- Gilbert model gives narrow binomial/Poisson-like shape.
+- Even after 100 runs, random model does not resemble real one.
+- This clearly shows real networks are not purely random.
+- More advanced generative models are needed to capture hubs and clustering.
+
+
+Q5: BFS Implementation from Scratch
+
+Methods:
+- Implemented BFS using adjacency list and collections.deque.
+- No recursion used.
+- Stored distance, parent and layer information.
+- Tested on small example graph.
+
+Results:
+- Source node: A  
+- Distances: A:0, B:1, C:1, D:2, E:2, F:2, G:3  
+- Parents: A:None, B:A, C:A, D:B, E:B, F:C, G:E  
+- Layers:  
+  Layer 0: [A]  
+  Layer 1: [B, C]  
+  Layer 2: [D, E, F]  
+  Layer 3: [G]
+
+Observations:
+- BFS correctly finds shortest paths in unweighted graph.
+- Parent dictionary forms a valid BFS tree.
+- Layers show outward expansion from source.
+- Time complexity: O(V + E)
+- Space complexity: O(V)
+- Implementation behaves as expected.
+
+
+Overall Reflection
+
+Across all questions, we moved from simple structural representation (edge list, adjacency matrix) to more advanced ideas like directionality, weights, clustering and random graph comparison.
+
+One clear theme across results is heterogeneity — real networks consistently show heavy-tailed behavior, hubs and non-random structure.
+
+The assignment demonstrates why naive random models are insufficient and why structural properties like clustering and strength matter in real-world systems.

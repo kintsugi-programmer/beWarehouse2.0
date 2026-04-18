@@ -1,0 +1,57 @@
+yo heres the full breakdown for the assignment lol
+
+q1: watts-strogatz small world
+
+ok so the big idea here is that you start with a ring of nodes where everyone is connected to their neighbors, and then you randomly rewire some edges. as you increase the rewiring probability p, the network goes from being completely regular to random, with a sweet spot in the middle.
+
+when you add just a tiny bit of randomness, something cool happens. you suddenly get both high clustering AND short paths at the same time. thats the small-world effect you see in real life. think about it, your friends probably know each other (high clustering) but you can still reach anyone in the world in like 6 hops (short paths).
+
+we used 1000 nodes, each connected to 10 neighbors, and tested rewiring probabilities from 0.0001 to 1.0. we measured clustering coefficient and path length, normalized by the baseline at p=0. basically we created the graph, got its stats, divided by the regular network values, and plotted the results.
+
+the pseudocode goes like this: we make a watts-strogatz graph with our params, check if its connected and take the biggest component if not, then calculate average clustering and path length. we do this for all the different p values and plot C/C0 and L/L0 on a log scale.
+
+the results were pretty neat. at tiny p values clustering stays high but path length drops fast. around p=0.1 or so everything converges to random network territory. this is why social networks work so well irl.
+
+q2: barabasi-albert model
+
+this is all about the "rich get richer" phenomenon. new nodes prefer to connect to nodes that already have a lot of connections. thats why influencers keep getting more followers, why the web has hubs, why some proteins interact with everything.
+
+we built the BA model from scratch and ran it 100 times. we started with 5 fully connected nodes and kept adding 500 more nodes, each making 3 connections. the connection probability was basically degree divided by total degree.
+
+the pseudocode is straightforward. start with a complete graph of m0 nodes, then for each new node calculate the connection probabilities based on existing degrees, pick m nodes using weighted random choice, and connect them up.
+
+after running 100 simulations we got an average clustering coefficient of around 0.055 and average path length of around 3.21. the low clustering makes sense because preferential attachment creates tree-like structures without many triangles. but the short path length shows the small-world effect kicking in. with 500 nodes and avg path length of 3 you can get from anywhere to anywhere pretty fast.
+
+q3: modified BA with alpha
+
+here we pushed the "rich get richer" effect even further. instead of probability being proportional to degree, we made it proportional to degree raised to some power alpha.
+
+for alpha=1 you get standard BA. for alpha=2 the bias gets stronger. alpha=3 and 4 create extreme hub dominance where one or two nodes connect to everything.
+
+the magic happens in the probability calculation. we take all the degrees, raise them to the alpha power, normalize, and then use those as probabilities for the weighted random choice. thats it, thats the whole modification.
+
+the results were dramatic. at alpha=1 we got clustering of 0.036 and path of 3.44. but at alpha=2 clustering jumped all the way to 0.962 and path dropped to 1.99. thats a huge jump! alpha=3 gave clustering of 0.994 and alpha=4 gave 0.997. at higher alphas the network basically becomes a star shape with one mega hub.
+
+q4: network robustness
+
+this question asks what happens when nodes in a network fail. we tested two failure modes against two network types. the failure modes were random deletion and targeted deletion. the network types were random (erdos-renyi) and scale-free (barabasi-albert).
+
+random deletion simulates hardware failures or random accidents. we just shuffle all the nodes, remove them in batches, and measure how the giant component size and path length change. targeted deletion simulates a coordinated attack on important nodes. we sort nodes by degree (highest first), remove in batches from the top, and measure the same things.
+
+the results were very different for different network types. random networks handle random failures well and degrade gradually. both the giant component size and path length change smoothly. but scale-free networks are surprisingly robust against random failures (because hubs are unlikely to be randomly chosen) but get completely crushed by targeted attacks (remove a few hubs and the whole network falls apart).
+
+this is why the internet is designed to be somewhat random. a random server going down barely affects anything, but a coordinated attack on major internet hubs would be devastating.
+
+q5: yeast protein interactome
+
+here we analyzed real biological data instead of generated networks. we looked at the yeast protein interaction network with 1966 proteins and 2705 interactions. some of these proteins are "essential" which means if they break the yeast dies.
+
+we loaded the interaction data from a file, computed degrees to find hub proteins, downloaded a list of essential genes from an online database, and checked if high-degree proteins are more likely to be essential.
+
+the top hub proteins were YLR291C with 89 connections, YNL189W with 81, YLR423C with 80, YIR038C with 50, and so on.
+
+the key findings were that the network follows a power-law degree distribution (scale-free), high-degree proteins are more likely to be essential, and the network is robust to random failures but fragile to targeted attacks on hubs. this is exactly the same pattern we saw in q4 but with real biological data. hub proteins do critical central jobs, and if they break the whole interaction network collapses. this explains why some mutations or viruses are so devastating.
+
+overall what we learned is that networks are everywhere, in social systems and biological systems and technological systems. they share common patterns like power law degree distributions, the small-world property, and the presence of hubs. networks are resilient to random failures but fragile to targeted attacks on the important nodes. the structure tells you how the system works and how it can fail.
+
+team: siddhant bali (2022496) and siddharth bhaskar (2022498)
