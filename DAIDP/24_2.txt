@@ -1,0 +1,207 @@
+Skip to main content
+Microsoft
+Microsoft AI
+Get started
+Industries
+Products
+Trustworthy AI
+Learn
+Support
+
+ME
+
+Microsoft Responsible AI
+Principles and approach
+We're committed to developing AI systems in a way that is transparent, reliable, and worthy of trust.
+AI principles
+Responsible AI Standard
+Implementing responsible AI
+Transparency report
+Transparency documents
+FAQ
+Principles
+Defining what’s important
+We've identified six principles that we believe should guide AI development and use.
+
+Fairness
+AI systems should treat all people fairly.
+
+How might an AI system allocate opportunities, resources, and information in ways that are fair to the humans who use it?
+See fairness in action
+
+Reliability and safety
+AI systems should perform reliably and safely.
+
+How might a system function well for people across different use conditions and contexts, including ones that it wasn’t originally intended for?
+See reliability and safety in action
+
+Privacy and security
+AI systems should be secure and respect privacy.
+
+How might a system be designed to support privacy and security?
+See privacy and security in action
+
+Inclusiveness
+AI systems should empower everyone and engage all people, regardless of their backgrounds.
+
+ 
+
+How might a system be designed to be inclusive for people of all abilities?
+
+See inclusiveness in action
+
+Transparency
+AI systems should be understandable.
+
+How can we ensure that people correctly understand the capabilities of a system?
+See transparency in action
+
+Accountability
+People should be accountable for AI systems.
+
+ 
+
+How can we create oversight so that humans can be accountable and in control?
+
+See accountability in action
+
+A couple of women sitting at a table with a laptop.
+The Microsoft Responsible AI Standard
+Explore guidance from Microsoft on how to design, build, and test AI systems.
+Get the Standard
+Reference guide
+How Microsoft implements responsible AI
+Explore how Microsoft empowers employees across the organization to be champions of responsible AI.
+Policy
+Research
+Engineering
+We set rules for enacting responsible AI and clearly define roles and responsibilities for teams involved.
+A woman talking to a man.
+Back to tabs
+SECURITY AND COMPLIANCE
+The Microsoft 2025 Responsible AI Transparency Report
+Our annual responsible AI report reflects a commitment to openness and ethical AI development. Explore the 2025 report to learn how Microsoft:
+Builds generative AI systems responsibly.
+Makes decisions about releasing these systems.
+Helps customers build AI responsibly.
+Evolves our responsible AI program.
+
+Get the 2025 report
+Get the 2024 report
+A man looking at a computer screen.
+Transparency documents
+Transparency documents
+Understand how our AI technology works, so you can create a system that fits your needs.
+Anomaly Detector
+Analyze time series data using timestamps and numerical metrics to receive the anomalous status of each data point along with contributing variables.
+Read more
+Azure AI Content Safety
+Detect harmful content in apps and services using text, image, and multimodal APIs—plus, use custom categories for tailored content moderation needs.
+Read more
+Azure AI Face service
+Enhance efficiency, security, and customer experiences with systems that analyze people’s faces.
+Read more
+Azure AI Search
+Get AI-enhanced tools, APIs, and SDKs for building rich search experiences for diverse content in web, mobile, and enterprise apps.
+Read more
+Azure Language in Foundry Tools
+Azure AI Language in Foundry Tools is a cloud-based service that provides Natural Language Processing (NLP) features for text mining and text analysis.
+Read more
+Azure OpenAI
+Use OpenAI models to generate natural language, code, and images. Integrated content filtering and abuse detection is included.
+Read more
+Azure Video Indexer
+Analyze video and audio files with AI to generate insights like detected objects, faces, and transcriptions in more than 60 languages.
+Read more
+Click to Do
+A Windows feature that provides intelligent shortcuts to consumers so they can quickly complete a task based on what they are viewing.
+Read more
+Load more
+Frequently asked questions
+
+Expand all
+
+Collapse all
+
+Discover more
+
+Tools and practices
+Get tools to support responsible AI practices
+Explore tools
+A group of women looking at a tablet.
+AI policy and regulation
+Discover the latest perspectives on AI policy from Microsoft experts
+Explore policies
+A man and woman looking at a laptop.
+Accelerate business growth with trustworthy AI
+Learn how to accelerate AI adoption, reduce risk, and strengthen customer confidence by using AI responsibly and securely.
+Watch the webinar
+Follow Microsoft Facebook logo Twitter logo LinkedIn logo
+What's new
+Surface Pro
+Surface Laptop
+Surface Laptop Studio 2
+Copilot for organizations
+Copilot for personal use
+AI in Windows
+Explore Microsoft products
+Windows 11 apps
+Microsoft Store
+Account profile
+Download Center
+Microsoft Store support
+Returns
+Order tracking
+Certified Refurbished
+Microsoft Store Promise
+Flexible Payments
+Education
+Microsoft in education
+Devices for education
+Microsoft Teams for Education
+Microsoft 365 Education
+How to buy for your school
+Educator training and development
+Deals for students and parents
+AI for education
+Business
+Microsoft AI
+Microsoft Security
+Dynamics 365
+Microsoft 365
+Microsoft Power Platform
+Microsoft Teams
+Microsoft 365 Copilot
+Small Business
+Developer & IT
+Azure
+Microsoft Developer
+Microsoft Learn
+Support for AI marketplace apps
+Microsoft Tech Community
+Microsoft Marketplace
+Marketplace Rewards
+Visual Studio
+Company
+Careers
+About Microsoft
+Company news
+Privacy at Microsoft
+Investors
+Diversity and inclusion
+Accessibility
+Sustainability
+English (United States)
+Your Privacy Choices
+Consumer Health Privacy
+Sitemap
+Contact Microsoft
+Privacy
+Terms of use
+Trademarks
+Safety & eco
+Recycling
+About our ads
+© Microsoft 2026
+Ask Microsoft​
+Ask questions or make requests to the web AI assistant. Use the text input at the bottom to send messages.

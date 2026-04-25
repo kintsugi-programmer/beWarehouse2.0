@@ -1,0 +1,899 @@
+Federated Learning & Differential Privacy in AI Products
+🌐 Federated Learning
+• Plain Language: The AI learns from your phone or computer without taking your data away.
+Definition: Training models across multiple devices or institutions without moving raw data.
+• How it works: Local training → share model updates → central aggregation → improved global
+model.
+• Benefits: Keeps sensitive data local, reduces breach risks, enables personalization.
+
+Examples & Use Cases
+• Apple: Uses federated learning in Siri and iOS features to improve personalized suggestions
+without uploading raw voice or typing data.
+• Google: Pioneered federated learning in Gboard, where next‐word prediction and emoji
+suggestions are trained directly on users’ devices.
+• Microsoft: Provides federated learning capabilities in Azure Machine Learning, enabling
+enterprises to collaborate securely across organizations.
+• E‐Commerce: Personalized recommendations trained on-device without exposing purchase
+history.
+• Healthcare: Hospitals collaboratively train diagnostic models (e.g., cancer detection) without
+sharing patient records.
+• Finance: Banks build fraud detection models across branches without centralizing transaction
+data.
+• Kids’ Apps: Adaptive learning platforms improve models from children’s usage patterns without
+collecting raw responses.
+
+---
+🔒 Differential Privacy
+• Plain Language: Even if your data is used, no one can tell it’s yours.
+Definition: Adds mathematical “noise” to data or outputs so individual contributions remain
+hidden.
+• How it works: Ensures results are statistically valid but no single user can be identified.
+• Benefits: Strong privacy guarantees, balances accuracy with protection.
+
+Examples & Use Cases
+
+• Apple: Applies differential privacy in iOS/macOS to collect usage statistics (like emoji
+popularity or typing habits) while protecting individual identities.
+• Google: Combines differential privacy with federated learning to ensure model updates from
+devices cannot be traced back to individuals.
+• Microsoft: Offers differential privacy tools in Azure ML for secure enterprise analytics under
+regulations like GDPR and CCPA.
+• E‐Commerce: Aggregate shopping trends (e.g., popular items) while hiding individual
+purchase details.
+• Healthcare: Share population-level statistics (e.g., disease prevalence) without exposing
+patient identities.
+• Finance: Publish spending insights or credit risk trends without revealing individual accounts.
+• Kids’ Apps: Collect usage statistics (e.g., favorite games or learning modules) while protecting
+child identity.
+
+---
+✨ Combined Use
+Federated learning keeps data local, while differential privacy ensures mathematical protection
+when data or updates are shared. Together, they enable AI systems to learn from distributed
+data while safeguarding individuals.
+Example: Apple combines on‐device learning with differential privacy in iOS to improve typing
+and emoji predictions. Google uses both in Gboard and Assistant. Microsoft integrates them into
+Azure ML so banks, hospitals, and retailers can collaborate securely.
+---
+Ethical & Regulatory Context
+• Meets global privacy laws: GDPR (Europe), HIPAA (Healthcare), CCPA (California).
+• Builds trust in AI systems by protecting individuals while still enabling innovation.
+• Essential for industries handling sensitive data like health, finance, and education.
+Future Outlook
+• Apple: Expanding on-device learning with Apple Intelligence features.
+• Google: Extending federated learning beyond Gboard into Assistant and other services.
+• Microsoft: Scaling enterprise adoption with Azure ML, enabling banks, hospitals, and retailers
+to collaborate securely.
+• Trend: Expect more apps in healthcare, finance, and education to adopt these methods,
+making privacy-preserving AI the default.
+
+Key Takeaway
+Federated learning keeps data local, while differential privacy ensures mathematical protection
+when data or updates are shared. Together, they form the backbone of trustworthy,
+privacy‐preserving AI systems across industries—and are already shaping ai driven products. .
+
+Skip to content ↓
+The University of Texas at Austin
+April 25, 2026
+UT Austin News - The University of Texas at Austin
+Navigation
+Search
+Close NavigationUT Austin News - The University of Texas at Austin
+All News
+Research
+Health & Medicine
+Campus
+Academics
+Student Experience
+For Journalists
+Media Contacts
+Experts Guide
+UT Austin on Twitter X UT Austin on Instagram UT Austin on Facebook UT Austin on LinkedIn UT Austin on YouTube
+Search for content on UT Austin News - The University of Texas at Austin
+Search
+Search Button
+Research
+Mar 21, 2024
+Machine ‘Unlearning’ Helps Generative AI ‘Forget’ Copyright-Protected and Violent Content
+overview_forget
+AUSTIN, Texas — When people learn things they should not know, getting them to forget that information can be tough. This is also true of rapidly growing artificial intelligence programs that are trained to think as we do, and it has become a problem as they run into challenges based on the use of copyright-protected material and privacy issues.
+
+To respond to this challenge, researchers at The University of Texas at Austin have developed what they believe is the first “machine unlearning” method applied to image-based generative AI. This method offers the ability to look under the hood and actively block and remove any violent images or copyrighted works without losing the rest of the information in the model.
+
+“When you train these models on such massive data sets, you’re bound to include some data that is undesirable,” said Radu Marculescu, a professor in the Cockrell School of Engineering’s Chandra Family Department of Electrical and Computer Engineering and one of the leaders on the project. “Previously, the only way to remove problematic content was to scrap everything, start anew, manually take out all that data and retrain the model. Our approach offers the opportunity to do this without having to retrain the model from scratch.”
+
+
+
+Generative AI models are trained primarily with data on the internet because of the unrivaled amount of information it contains. But it also contains massive amounts of data that is protected by copyright, in addition to personal information and inappropriate content.
+
+Underscoring this issue, The New York Times recently sued OpenAI, maker of ChatGPT, arguing that the AI company illegally used its articles as training data to help its chatbots generate content.
+
+“If we want to make generative AI models useful for commercial purposes, this is a step we need to build in, the ability to ensure that we’re not breaking copyright laws or abusing personal information or using harmful content,” said Guihong Li, a graduate research assistant in Marculescu’s lab who worked on the project as an intern at JPMorgan Chase and finalized it at UT.
+
+Image-to-image models are the primary focus of this research. They take an input image and transform it — such as creating a sketch, changing a particular scene and more — based on a given context or instruction.
+
+This new machine unlearning algorithm provides the ability of a machine learning model to “forget” or remove content if it is flagged for any reason without the need for retraining the model from scratch. Human teams handle the moderation and removal of content, providing an extra check on the model and ability to respond to user feedback.
+
+Machine unlearning is an evolving branch of the field that has been primarily applied to classification models. Those models are trained to sort data into different categories, such as whether an image shows a dog or a cat.
+
+Applying machine unlearning to generative models is “relatively unexplored,” the researchers write in the paper, especially when it comes to images.
+
+The researchers will showcase their work as part of the International Conference on Learning Representations, a top machine learning conference that will take place in Vienna during May. Joining Marculescu and Li on the research team are Hsiang Hsu and Chun-Fu (Richard) Chen, both from JPMorgan Chase’s Global Technology Applied Research group.
+
+ Copy link
+Email Share Link Twitter Share Link Facebook Share Link LinkedIn Share Link
+Tags: Cockrell School of Engineering, Research, Science, Technology, Year of AI
+ Copy link
+Email Share Link Twitter Share Link Facebook Share Link LinkedIn Share Link
+Media Contact
+
+Nat Levy
+Cockrell School of Engineering
+e: nat.levy@utexas.edu
+
+The University of Texas at Austin
+Explore Latest Articles
+ College of Natural Sciences
+Apr 24, 2026
+
+Cut, Paste, Cure
+Read More Cut, Paste, Cure
+illustration of scientist with circles of DNA
+Apr 24, 2026
+
+Making Waves on the Forty Acres
+Read More Making Waves on the Forty Acres
+image of a woman standing on a balcony in the EER building
+ Cockrell School of Engineering
+Apr 22, 2026
+
+Tiny Probe Tracks Key Health Signals Simultaneously
+Read More Tiny Probe Tracks Key Health Signals Simultaneously
+researcher wearing glasses and purple gloves hold probe
+The University of Texas at Austin Formal Logo
+Subscribe to the TEXAS Newsletter
+UT Austin on Twitter X UT Austin on Instagram UT Austin on Facebook UT Austin on LinkedIn UT Austin on YouTube
+UT News Home
+For Journalists
+Media Contacts
+Experts Guide
+News Archive
+UT Austin Home
+Site Policies
+Web Privacy Policy
+Emergency Information
+Web Accessibility Policy
+Disability Resources
+© The University of Texas at Austin 2026
+
+Here’s a structured note comparing GDPR, EU AI Act, India’s DPDP Act and AI guidelines, and
+U.S. privacy/AI regulation, along with global trends that impact AI products:
+---
+European Union
+• GDPR (2018): Focuses on personal data protection, individual rights (consent, erasure,
+portability), and accountability. Any AI product processing personal data must comply.
+• EU AI Act (expected 2026): Risk-based regulation of AI systems. High-risk categories
+(healthcare, HR, finance, law enforcement) require conformity assessments, documentation,
+and human oversight. Penalties are higher than GDPR.
+• Interaction: AI systems using personal data must comply with both GDPR and AI Act
+simultaneously.
+
+---
+India
+• Digital Personal Data Protection Act (DPDP, 2023): Establishes consent-based data
+processing, rights of individuals, and obligations for data fiduciaries. Penalties can reach ₹250
+crore.
+• AI Governance Guidelines (2025): Non-binding but influential. Emphasize ethics, bias
+reduction, explainability, accountability, and responsible innovation.
+• Impact on AI Products: Companies must design AI with privacy-by-design principles and
+prepare for future binding AI-specific rules.
+
+---
+United States
+• No single federal AI law: Regulation is fragmented.
+• Privacy: Sectoral laws (HIPAA for health, GLBA for finance) and state-level laws (California’s
+CCPA/CPRA, Colorado, Connecticut).
+• AI Oversight: FTC enforces against unfair/deceptive AI practices; NIST AI Risk Management
+Framework provides voluntary guidance. Some states (e.g., Colorado) are introducing
+AI-specific rules around bias audits and transparency.
+• Impact on AI Products: Compliance is complex and varies by state and sector. Companies
+often adopt voluntary frameworks to anticipate regulation.
+
+---
+
+🌍 Global Trends
+• China: Centralized AI regulation with mandatory registration, content controls, and algorithmic
+transparency.
+• Canada: Proposed Artificial Intelligence and Data Act (AIDA) focusing on high-impact AI
+systems.
+• Japan: Voluntary AI governance guidelines emphasizing trust and innovation.
+• Common Themes: Transparency, fairness, accountability, human oversight, and risk-based
+approaches.
+
+---
+⚖️ Key Takeaways
+• EU: Comprehensive, binding, dual framework (privacy + AI risk).
+• India: Privacy law is binding, AI guidelines are advisory but shaping practice.
+• USA: Fragmented, sectoral, and state-driven; voluntary frameworks fill gaps.
+• Global: Convergence toward risk-based, rights-protective AI governance, but with different
+enforcement models.
+——-
+🎓 Case Study: Recruitment AI Tool
+Imagine a company develops an AI-powered recruitment platform that screens resumes, ranks
+candidates, and predicts job fit. The tool is deployed in Europe, India, and the U.S..
+---
+European Union
+• GDPR:• The tool must obtain explicit consent before processing personal data (e.g., resumes,
+demographic info).
+• Candidates can request erasure (“right to be forgotten”) or access to their data.
+• EU AI Act:• Recruitment AI is classified as high-risk because it impacts employment
+opportunities.
+• Requires conformity assessment, documentation of training data, bias testing, and human
+oversight (a recruiter must review AI decisions).
+• Outcome: The company must build privacy-by-design and risk management systems into the
+product before launch.
+
+---
+India
+• DPDP Act (2023):• Candidates’ personal data can only be processed with consent.
+• Data fiduciaries must ensure purpose limitation and data minimization.
+• AI Guidelines (2025):• Advisory but influential. Stress fairness, explainability, and
+accountability.
+• The recruitment AI should provide transparent explanations of why a candidate was ranked
+lower.
+• Outcome: Compliance is lighter than EU but moving toward stricter rules. Companies must
+prepare for binding AI-specific laws in the future.
+
+---
+United States
+• Federal: No single AI law.• FTC can act if the recruitment AI is biased or deceptive.
+• NIST AI Risk Management Framework offers voluntary guidance.
+• State Laws:• In California (CCPA/CPRA), candidates can request access and deletion of their
+data.
+• In New York City, employers using AI in hiring must conduct bias audits and notify candidates.
+• Outcome: Compliance varies by state. The company must adopt a patchwork approach,
+tailoring features to local rules.
+
+---
+🌍 Global Trends
+• China: Would require algorithm registration and government oversight.
+• Canada: Proposed AI & Data Act would classify recruitment AI as high-impact, requiring risk
+mitigation.
+• Japan: Voluntary guidelines encourage trustworthy AI but no binding law yet.
+
+---
+
+Summary
+
+• EU: Binding, dual compliance (privacy + AI risk).
+• India: Binding privacy law + advisory AI ethics.
+• USA: Fragmented, state-driven, sectoral rules.
+• Global: Convergence toward transparency, fairness, and accountability.
+
+——
+📘 Quiz: What App Owners Can / May / Cannot Do
+Q1. Healthcare AI in the EU
+A hospital wants to launch an AI diagnostic app. Under the EU AI Act, the app owner:
+A. Can deploy without oversight if accuracy is high
+B. May deploy only after conformity assessment and bias testing
+C. Cannot use the tool without human oversight in decision-making
+D. Both B and C
+✅ Correct Answer: B
+Rationale: The EU AI Act classifies healthcare AI as high-risk. It requires conformity
+assessments and bias testing before deployment. Human oversight is required, but the law
+doesn’t outright prohibit use without it — it mandates safeguards.
+---
+Q2. Financial Services AI in India
+A fintech app uses AI to approve loans. Under the DPDP Act:
+A. Can process financial data without consent if beneficial
+B. May process data only with explicit consent and purpose limitation
+C. Cannot deny users the right to access or erase their data
+D. Both B and C
+✅ Correct Answer: D
+Rationale: The DPDP Act requires explicit consent and purpose limitation. It also grants
+individuals rights to access and erase their data. Both conditions apply simultaneously.
+---
+Q3. E-commerce AI in the U.S. (California)
+An online store uses AI to recommend products. Under CCPA/CPRA:
+
+A. Can collect browsing data without informing users
+B. May collect data but must disclose and allow opt-out
+C. Cannot refuse service if users opt out of targeted ads
+D. Both B and C
+✅ Correct Answer: D
+Rationale: CCPA/CPRA requires disclosure and opt-out rights. Businesses also cannot penalize
+users who opt out of targeted advertising.
+---
+Q4. Kids-focused App in the EU
+A gaming app collects behavioral data from children. Under GDPR:
+A. Can freely process children’s data if anonymized
+B. May process only with parental consent and safeguards
+C. Cannot profile children for marketing purposes
+D. Both B and C
+✅ Correct Answer: C
+Rationale: GDPR provides special protection for minors. Profiling children for marketing is
+explicitly prohibited. Parental consent applies to lawful processing, but the outright prohibition on
+marketing profiling makes C the strongest answer.
+---
+Q5. Recruitment AI Across Borders
+A multinational launches a recruitment AI tool in Europe and India. The app owner:
+A. Can apply GDPR rules globally and ignore local laws
+B. May comply with EU AI Act in Europe and DPDP Act in India
+C. Cannot bypass India’s consent requirements even if GDPR is followed
+D. Both B and C
+✅ Correct Answer: D
+Rationale: Dual compliance is required. GDPR + AI Act apply in Europe, while DPDP Act
+applies in India. Consent requirements in India cannot be bypassed.
+---
+Q6. Healthcare AI in the U.S.
+A telemedicine app analyzes patient records with AI. Under HIPAA:
+A. Can share patient data with third parties if anonymized
+B. May use AI internally but must safeguard Protected Health Information (PHI)
+C. Cannot disclose identifiable patient data without authorization
+D. Both B and C
+
+✅ Correct Answer: D
+Rationale: HIPAA allows anonymized data sharing and internal AI use with safeguards. It
+prohibits disclosure of identifiable PHI without authorization.
+
+EU AI Act
+
+01
+
+Why this act?
+
+01 Social Scoring - Is it in practice?
+
+02
+
+02
+
+Self-driving cars - Is that in practice?
+
+03 Migration management - Is that in practice?
+
+04 Biometric categorization - Is that in practice?
+
+05 AI for crime prediction and monitoring - Is that in practice?
+
+03
+
+“AI should be a human-centric technology. It should serve as a tool for people,
+
+with the ultimate aim of increasing human well-being.”
+
+What kinds of AI do not fall into this “human-centric” category, and what should be done
+
+with them?
+
+04
+
+Severe Physical
+Harm/Injury
+
+Bias Misapprehension
+
+IP Violation
+
+Privacy
+Violation
+Can the dangers of
+AI be “ranked”?
+
+Unacceptable
+
+Risk
+
+Biometric
+categorization
+
+Employee management
+
+Content generation AI spam filters
+
+Limited
+Risk
+AI video games Chatbots
+
+Recruitment
+softwares
+
+Self-driving cars
+
+Facial recognition
+
+High
+Risk
+
+Migration management
+
+Voice-activated toys
+
+for kids
+
+Healthcare devices
+or systems Social scoring
+
+Low
+Risk
+
+Assistance in legal
+interpretation
+
+Deepfake generation AI Edtech
+
+operation of critical
+infrastructure
+
+Unacceptable Risk
+
+Biometric
+categorization
+
+Employee management
+
+AI spam filters
+
+Content generation
+
+Limited Risk
+Chatbots
+
+AI video games
+
+Recruitment
+softwares
+
+Facial recognition
+
+High Risk
+
+Migration management
+
+Voice-activated toys
+
+for kids
+
+Healthcare devices
+or systems
+
+Social scoring
+
+Low Risk
+
+Assistance in legal
+interpretation
+AI Edtech
+
+Deepfake generation
+
+operation of critical
+infrastructure
+
+06 Unacceptable risk
+
+AI applications that fall under this category are banned.
+
+High risk
+They are subject to obligations of quality, transparency, human supervision and security.
+They must be evaluated before they are placed on the market, as well as during their life cycle.
+The list of high-risk applications can be expanded without requiring to modify the AI Act itself.
+
+Limited risk
+These systems are subject to transparency obligations aimed at informing users that they are
+interacting with an artificial intelligence system and allowing them to exercise their choices.
+Free and open-source models whose parameters are publicly available are not regulated, with
+some exceptions.
+
+Minimal risk
+They are not regulated, and Member States are prevented from further regulating them via
+maximum harmonisation. However, a voluntary code of conduct is suggested.
+
+Which category do most AI apps lie in?
+
+07
+
+Exemptions
+
+08
+
+Research and Development
+
+National Security
+
+Law Enforcement with Safeguards
+
+Free and Open-Source Software
+
+Low-Risk Systems
+
+Transparency
+
+08
+
+Transparency is enforced except around cases where there is a need to
+
+“protect trade secrets and confidential business information.”
+
+Ambiguity
+
+Could the use of AI to target
+marketing for products like fast food
+and high-sugar soft drinks be
+considered to influence behaviors in
+harmful ways?
+
+How do we judge whether a social
+scoring system will lead to
+discrimination in a world where we’re
+used to being credit-checked and
+scored by a multitude of government
+and private bodies?
+
+01
+
+02
+
+09
+
+T
+
+h
+
+a
+
+n
+
+k
+
+y
+
+o
+
+u!Skip to content
+
+Search
+Search
+Search ...
+English
+Artificial intelligence (AI), Data Compliance, Digital transformation
+GDPR and AI Act: similarities and differences
+Home » Guides » GDPR vs. AI Act
+
+Martin Röleke
+Martin Röleke
+Lawyer
+Last update: 16 October 2024
+Reading time: 6 minutes
+As digitalisation progresses and new technologies such as artificial intelligence (AI) emerge, the regulatory framework in the European Union (EU) is becoming increasingly important. Two of the most important regulations in this context are the General Data Protection Regulation (GDPR) and the AI Act, which defines the use of AI in the EU.
+
+There are both similarities and significant differences between the two pieces of legislation. This article ventures a comparison of their objectives, areas of application and regulatory approaches.
+
+Similar objectives and principles
+Both the GDPR and the AI Act aim to protect the fundamental rights and freedoms of individuals. While the GDPR is primarily concerned with the protection of privacy, the objectives pursued by the AI Act are somewhat broader: According to Art. 1 AI Act, the AI Act is intended to ensure a high level of protection with regard to health, safety and the fundamental rights enshrined in the EU Charter, including democracy, the rule of law and environmental protection.
+
+Spatial scope of application
+Both the GDPR and the AI Act apply not only to companies from the EU, but also have a certain extraterritorial effect. Both also apply to non-European companies that operate in the EU market (market location principle).
+
+Under the AI Act, this applies, for example, to providers who are not established in the EU if they place AI systems on the market or put them into operation in the EU, as well as to providers and operators of AI systems that are based in a third country or are located in a third country if the outputs produced by the AI system are used in the EU (Art. 2 para. 1 AI Act).
+
+Material scope of application
+While the GDPR exclusively defines the protection and processing of personal data, the scope of the AI Regulation covers the development, provision and use of AI systems and AI models with a general purpose. The AI Act therefore also applies even if no personal data is processed using AI.
+
+Often, both the AI Act and the GDPR will apply to an AI system. However, there will also be cases in which only the GDPR or only the AI Act applies to an AI system.
+
+The former will be the case, for example, if personal data is processed with an AI system that poses a minimal risk and is therefore outside the scope of the AI Act (e.g. suggestion algorithm for a music streaming service, AI-supported spam filter). In this case too, however, companies must ensure that their employees have sufficient AI literacy in accordance with Art. 4 of the AI Act.
+By contrast, only the AI Act applies to an AI-supported safety component in the water, gas, heat or electricity supply (as long as no personal data is processed).
+Technology-neutral approach
+Both legal acts pursue a technology-neutral approach. This means that they do not define a specific technology, but are equally applicable to all technologies and methods – even those that have not yet been developed. For example, the policies of the GDPR were developed before the current rise of AI, but apply equally to it.
+
+This was not the case in the first draft of the AI Act: The European Commission had initially proposed that only certain AI techniques and concepts explicitly mentioned in the AI Act should be regulated. This would mean that the AI Act would not apply to any new AI methods, although the Commission would have the option of updating the list by means of delegated acts.
+
+Risk-based approach of the AI Act
+A key difference between the two sets of regulations is how they deal with risks (so-called risk-based approach). Although the GDPR takes risks into account to a lesser extent (for example, by imposing increased requirements when processing sensitive data; technical and organisational measures in accordance with Art. 32 GDPR should also be based on the risk associated with the processing), most requirements apply equally regardless of the risk of the processing (e.g. legal bases, information obligations).
+
+In contrast, the AI Act differentiates between different risk levels and divides AI systems into four categories: prohibited, high-risk, limited-risk (AI systems with a transparency risk) and minimal-risk systems. High-risk applications – such as AI systems in human resources and law enforcement – are subject to strict regulations, while some systems are not regulated at all.
+
+How to achieve AI compliance for your business!
+Transparency and accountability
+Another principle common to both sets of regulations is the requirement for transparency and accountability. In the GDPR, this is implemented through commitments such as the information obligations (Art. 13 GDPR) and the right to information (Art. 15 GDPR). Companies must also always be able to demonstrate compliance with the obligations under the GDPR (Art. 5 (2) GDPR).
+
+The AI Act also emphasises transparency. For example, providers of high-risk AI systems must provide operators with instructions for use so that they can appropriately interpret and use the outputs of AI systems (Art. 13 AI Act). Further transparency requirements can be found in Art. 50 AI Act with regard to AI systems with a transparency risk.
+
+It must also be possible to prove compliance with the requirements of the AI Act. Technical documentation in accordance with Art. 11 AI Act and logs to be created in accordance with Art. 12 AI Act serve this purpose.
+
+Supervision of both legislations
+Under the GDPR, the national supervisory authorities are responsible for enforcing the GDPR obligations. National supervisory authorities will also monitor compliance with the policies relating to AI systems, although the EU member states have yet to decide whether this will be the relevant national data protection authority or another authority. Although there are some arguments in favour of data protection authorities, it is becoming apparent that the Federal Network Agency will take on this task in Germany.
+
+The newly established AI Office, which is based at the European Commission, is responsible for enforcing AI models with a general purpose.
+
+Those who enjoy analysing the recommendations of the European Data Protection Board (EDPB) will be interested to learn that a similar body is also being set up under the AI Act. The European Committee on Artificial Intelligence, in which all EU member states will be represented, will act as a coordination platform and advisory body for the European Commission.
+
+GDPR and AI Act fines
+The structure of the maximum fines is similar in both sets of regulations: A percentage of the company’s global annual turnover in the previous year and an amount in euros are specified, with the higher amount serving as the upper limit in each specific case. The possible sanctions under the AI Act are even higher than under the GDPR (up to 7% of annual turnover or EUR 35 million).
+
+The impact on innovation and the economy
+Both the GDPR and the AI Act attempt to find an appropriate balance between the protection of fundamental rights and the promotion of innovation.
+
+Even if this aspect is less pronounced in the GDPR, there are isolated policies in this regard (such as an exemption from the obligation to keep records of processing activities for companies with fewer than 250 employees, which in practice is largely ineffective).
+
+In contrast, the AI Act provides for more policy in this regard. For example, AI real-world laboratories are to be set up in which innovative AI systems are developed, trained, validated and tested (Art. 57 ff. AI Act). The AI Act also contains certain specific measures and exemptions for SMEs and start-ups (Art. 62 et seq. AI Act). SMEs and start-ups are also somewhat privileged when it comes to fines, as the lower amount (percentage of annual turnover or euro amount) applies to them as the upper limit for calculating fines.
+
+Conclusion
+Both the GDPR and the AI Act aim to ensure the protection of fundamental rights. While the GDPR emphasises the protection of privacy, the AI Regulation takes a broader approach and also covers environmental protection and the protection of the rule of law, for example.
+
+The policies of the AI Act are often similar to those of the GDPR and it is clear that the GDPR – alongside the product liability legislation of the EU – was allowed to serve as a blueprint for the AI Act. However, while the GDPR was developed on the basis of years of experience with national data protection law, the AI Act is entering uncharted legislative territory where it remains to be seen how the regulation of rapidly advancing technology can be implemented at all.
+
+The GDPR and the AI Act have many basic principles in common, such as transparency and accountability. However, they differ in their material scope of application and in the way they deal with risks. The risk-based approach is much more pronounced in the AI Act than in the GDPR.
+
+Both sets of rules will be decisive for how Europe masters the digital transformation and the promotion of innovation in a digital future.
+
+AI Compliance
+Reach legal certainty for the development and implementation of artificial intelligence in your company.
+Find out how!
+Table of content
+Similar objectives and principles
+Spatial scope of application
+Material scope of application
+Technology-neutral approach
+Risk-based approach of the AI Act
+Transparency and accountability
+Supervision of both legislations
+GDPR and AI Act fines
+The impact on innovation and the economy
+Conclusion
+Latest News
+The EU Pay Transparency Directive
+Planned changes to the AI Act
+CJEU establishes guidelines for the abuse of the right of access
+Data Act: Planned changes through Omnibus IV
+Group turnover as a benchmark for GDPR fines
+CJEU: non-material damage, injunctive relief, assessment of damages
+
+activeMind.legal Rechtsanwälte is a law firm specialising in data protection law. With our partner firms in the UK and Switzerland, we cover all aspects of GDPR compliance and national data protection law in Europe.
+
+Munich
+activeMind.legal
+Rechtsanwaltsgesellschaft m. b. H
+Potsdamer Straße 3
+80802 Munich, Germany
+
++49 (0) 89 / 919 29 49 00
+
+Berlin
+activeMind.legal
+Rechtsanwaltsgesellschaft m. b. H
+Kurfürstendamm 56
+10707 Berlin, Germany
+
++49 (0) 30 / 770 19 10 70
+
+Services
+EU representative
+Group data protection
+Resources
+Guides and articles
+Templates and checklists
+Newsletter
+GDPR Comparison
+Data protection legislation in full text
+About
+About us
+Our experts
+Contact
+Privacy statement
+Legal notice
+Group
+activeMind AG (Germany)
+activeMind.ch (Switzerland)
+activeMind.uk (United Kingdom)
+Compliance portal
+Online learning portal
+Career portal
+© 2016-2026 activeMind.legal
+
+powered by rethink digital & KLEINWERKSTATT
+Skip to main content
+
+OneTrust recognized in Gartner® first TPRM report    
+
+Download the report
+
+OneTrust logo lockup, black
+
+Solutions
+
+Platform
+
+Resources
+
+Company
+EN
+Request demo
+Talk to sales
+Blog
+The 7 principles of privacy by design
+Incorporate Privacy by Design into your business strategy with seven foundational principles, ensuring robust privacy protections and enhancing trust as technologies like AI evolve 
+
+Kadi Coult Wharton
+Director Privacy & Data Governance Content, CIPP/E, CIPM
+
+ 
+Low-angle photo of the curved glass façade of an office building.
+Table of contents
+What is Privacy by Design?
+Principle 1: Proactive not reactive
+Principal 2: Privacy as the default setting
+Principle 3: Privacy embedded into design
+Principle 4: Full functionality
+Principle 5: End-to-end security
+Principle 6: Visibility and transparency
+Principle 7: Respect for user privacy
+Elevate your data privacy strategy
+Key questions about the Principles of PbD
+GDPR & Tech: Key considerations of Privacy by Design and AI in tech
+Learn about the impact of GDPR, privacy by design, and the future of AI regulation.
+
+Watch now 
+According to a 2023 survey by Pew Research Center, 85% of Americans believe the risks of data collection by companies outweigh the benefits, and 76% feel that there are little-to-no benefits from these data processing activities​​. Furthermore, 81% of Americans familiar with AI believe that the information companies collect will be used in ways that people aren’t comfortable with, and 80% say it will be used in ways that were not originally intended​.
+
+With the rapid advancement of technologies like AI, embedding Privacy by Design into business practices is more crucial than ever. As trust in how companies handle data continues to waver, organizations must prioritize preserving customers’ freedom of choice and control over their data as a core component of their data strategy.
+
+ 
+
+What is Privacy by Design?
+Privacy by Design means privacy is seamlessly integrated into products, services, and system designs by default. Protecting customer data becomes a guiding force in the user experience, taking the same level of importance as functionality. Privacy by Design principles may apply to entire information processes, including:
+
+System designs
+Organizational priorities
+Project objectives
+Standards and protocols
+Business practices
+Privacy by Design is a holistic approach to privacy that encompasses seven foundational principles:
+
+Proactive not reactive; Preventative not remedial
+Privacy as the default setting
+Privacy embedded into design
+Full functionality – Positive-sum, not Zero-sum
+End-to-end security – Lifecycle protection
+Visibility and transparency – Keep it open
+Respect for user privacy – Keep it user-centric
+ 
+
+Principle 1: Proactive not reactive; Preventative not remedial
+A privacy-first attitude supports a preventative approach to privacy. Instead of reacting to privacy risks or invasions when they happen, companies will actively build processes and procedures to prevent them from occurring in the first place.
+
+ 
+
+Principle 2: Privacy as the default setting
+Users shouldn’t have to worry about their privacy settings when browsing a website, opening an app, or logging into software. Privacy as Default ensures they don’t have to. It automatically sets users’ privacy to the highest level of protection, whether or not a user interacts with those settings. Such default settings include:
+
+Collection limitation: You only collect the amount and types of data you’re legally allowed to.
+Data minimization: You collect only the absolute minimum amount of data necessary. You won’t collect data just for the sake of collection or because you can.
+Use, retention & disclosure limitation: You won’t use the collected data for any other purpose than to which the user has agreed. You won’t keep data after it’s no longer needed for the purposes you stated to users, and you won’t disclose the data unless necessary to achieve the purpose for which it was collected.
+Security: You implement appropriate technical and organizational measures, such as encryption, to ensure the confidentiality, integrity, and availability of the personal data.
+ 
+
+Principle 3: Privacy embedded into design
+Protecting users’ data and privacy should now be a part of the conversation when building a website, a mobile app, or a software application. For embedded privacy to work, it can’t just be a feature tacked on at the end. It also can’t be obvious or awkwardly included so as to detract from the functionality of the program you’re designing. Every decision and new process must be filtered through a privacy-first mindset to promote both functionality and privacy protection.
+
+ 
+
+Principle 4: Full functionality – Positive-sum, not zero-sum 
+A fatalistic attitude won’t work with Privacy by Design. Those who argue trade-offs must be made with the user experience or with security protocols have a zero-sum attitude. Those who work to integrate privacy into every design element seamlessly take a positive-sum approach. These innovators will see their brands grow in a world where privacy is increasingly a market mover, not just an issue of legal compliance.
+
+ 
+
+Principle 5: End-to-end security – Lifecycle protection
+From the point at which users provide personal data, to when it can be destroyed after serving its purpose — and everything in between — Privacy by Design ensures the security of this data through the processing lifecycle. This full lifecycle protection is where the interdisciplinary nature of Privacy by Design shines. It leans heavily on security best practices to provide end-to-end data protection. Security also ensures data remains confidential, true to its original form, and accessible during its time with the company.
+
+ 
+
+Principle 6: Visibility and transparency – Keep it open 
+Openness with users about your privacy policies and procedures builds accountability and trust. Privacy by Design means documenting and communicating actions clearly, consistently, and transparently. It presents a shared attitude of privacy as a duty, and one your team takes seriously. That promise should be supported by an accessible and effective complaint submission and resolution process, as well as independent verification of your policies and promises to users.
+
+ 
+
+Principle 7: Respect for user privacy – Keep it user-centric 
+Respect for user privacy involves always having the users’ privacy interests in mind and providing the necessary safeguards and features to protect such interests. This respect inspires every design decision and understands that the best user experience puts privacy first. This includes putting the power in the hands of the user to manage their own data and actively seeking their engagement in the process.
+
+ 
+
+Elevate your data privacy strategy
+Implementing Privacy by Design is crucial for your organization's data protection strategy. The right privacy automation software can elevate your program from mere compliance to a strategic business asset.
+
+As technologies like AI continue to advance, embedding Privacy by Design into your business practices is more important than ever. Privacy Automation adapts to your needs, ensuring agile compliance and responsible use of emerging technologies. Our platform automates privacy workflows, integrates regulatory insights, and manages consent, enabling you to build trust and innovate ethically.
+
+Ready to take your data privacy program to the next level? Request a demo today to see how OneTrust can support your transformation and help you stay ahead in the evolving privacy landscape.
+ 
+
+Key questions about the Principles of Privacy by Design
+ 
+
+Why is Privacy by Design important in emerging technologies like AI?
+
+
+
+
+How does Privacy by Design relate to GDPR compliance?
+
+
+
+
+What steps can organizations take to implement Privacy by Design?
+
+
+
+You may also like
+
+On-demand webinars
+
+Consent & Preferences
+Tackling privacy and personalization: Fireside chat with PwC and the NFL
+Our expert panel looks at how consent and preference management empowers consumers, creates engaging custom experiences, and helps companies comply with global regulations.
+
+February 04, 2026
+Learn more
+
+On-demand webinars
+
+Privacy Automation
+Privacy automation 101: Simplifying data mapping and risk assessments
+Join this webinar to learn how OneTrust helps you automate Data Mapping and Privacy Risk Assessments and how to overcome maintenance challenges.
+
+September 25, 2024
+Learn more
+
+On-demand webinars
+
+Data Discovery & Classification
+Enhancing Data Governance: OneTrust and Snowflake strategies for data-driven businesses
+Join us for a webinar with Jim Warner and Alex Cash to explore how Snowflake and OneTrust can revolutionize your data governance strategy, helping you maintain data quality, ensure compliance, and exceed marketing ROI in 2024.
+
+September 24, 2024
+Learn more
+OneTrust logo symbol, white
+Top Searches
+Trust Center
+Consent & Preferences
+Third-Party Management
+AI Governance
+News
+OneTrust Newsroom
+OneTrust appoints John Heyman as CEO
+Resources
+Glossary of AI Governance, Privacy & Data Risk Terms
+Resources
+Demo Videos
+Company
+About Us
+OneTrust Global Offices
+Careers
+Newsroom
+Legal and Compliance Information
+Glossary
+AI DPIA
+AI Risk Management
+Data privacy
+DORA
+EU General Data Protection Regulation (GDPR)
+Contact Us
+Contact Us
+Request Demo
+Platform
+Platform
+Pricing and Packaging
+OneTrust Integrations
+©2026 OneTrust
+
+Privacy Overview
+Privacy Notice
+Cookie Notice
+Trust Center
+Your Privacy Choices
+Manage Your Communication Preferences
+
+OneTrust is a Forrester Wave™ Leader
+We've been named a Leader in The Forrester Wave™ for Privacy Management Software, Q4 2025.
+Read the report highlights now.
+

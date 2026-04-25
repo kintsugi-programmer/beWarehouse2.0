@@ -1,0 +1,361 @@
+
+Sign up
+Request a demo
+
+Tags
+ai-prototyping
+Published on
+Jan 8, 2025
+AI Design System Guidelines: 6 Examples from Industry Leaders (+ How to Build Your Own)
+Explore 6 design systems with innovative AI guidelines, showcasing best practices for transparency, usability, and trust in AI integration.
+Authors
+avatar
+Name and Role
+Nezar Mansour
+Content Writer
+
+Artificial Intelligence is transforming how we build digital products, introducing natural language interfaces, predictive features, and unprecedented automation. But as teams rush to integrate AI capabilities, a critical question emerges: how do we design AI experiences that users can trust and understand?
+
+The answer lies in comprehensive AI design guidelines. Leading organizations are now documenting AI-specific patterns in their design systems—covering everything from transparency and explainability to error handling and bias mitigation. These guidelines ensure AI features feel intentional, trustworthy, and human-centered rather than experimental add-ons.
+
+In this guide, we'll explore six pioneering design systems that have established AI guidelines, extract actionable best practices, and show how modern platforms like Supernova are making it easier to implement AI patterns while maintaining design system consistency.
+
+Why AI Design Guidelines Matter
+Before diving into examples, consider what's at stake without clear AI guidelines:
+
+User Trust Issues:
+
+Users don't know when they're interacting with AI
+No explanation for AI-generated recommendations
+Unclear accountability when AI makes mistakes
+Inconsistent Experiences:
+
+Different AI patterns across product features
+Conflicting visual treatments for AI elements
+No standard for AI error states or loading indicators
+Development Inefficiency:
+
+Teams rebuild AI components from scratch
+No reusable patterns for common AI interactions
+Difficult to maintain AI features across product updates
+AI design guidelines solve these problems by establishing patterns for transparency, interaction models, visual language, and error handling. Let's see how industry leaders approach this challenge.
+
+1. IBM Carbon Design System: Transparency Through Visual Identity
+
+Carbon for AI is an extension of the Carbon Design System, created to give AI-generated content in IBM products a visually distinct identity while ensuring transparency and trust. The framework not only helps users recognize when AI is involved but also integrates explainability into workflows to clarify how decisions are made. By emphasizing consistency and accessibility, Carbon for AI enables seamless interaction with AI across IBM’s product ecosystem.
+
+Key AI Guidelines:
+Transparency & Trust:
+
+Use dedicated AI labels to mark AI-generated content
+Apply consistent light effects and gradients that signal AI involvement
+Provide clear access to explainability features
+Progressive Explainability:
+
+Start with summarized explanations in popovers
+Offer deeper insights through progressive disclosure
+Layer information from "What" to "Why" to "How"
+Consistency Across Touchpoints:
+
+Standardize AI visual styling across all IBM products
+Create recognition patterns that build user confidence
+Maintain accessibility in all AI interface elements
+Implementing AI Guidelines in Your System: Supernova's collaborative documentation platform lets you document AI-specific components, patterns, and usage guidelines in the same place as your core design system. Teams can add interactive examples, code snippets, and decision trees that guide developers through AI implementation.
+
+When prototyping AI features with Supernova's AI-powered platform, you can build AI components that follow Carbon's transparency principles—complete with AI labels, progressive disclosure patterns, and consistent visual treatments—all generated from your existing design system.
+
+2. Emplifi Soul Design System: Eight AI Interaction Patterns
+‍
+
+Emplifi’s Soul Design System focuses on creating AI-driven applications that enhance workflows and deliver value through intuitive and seamless user experiences. The system documents eight interaction patterns that guide how AI can integrate into user workflows to provide tailored assistance.
+
+The Eight AI Interaction Patterns:
+1. User-Initiated AI Actions
+
+Users activate AI functions explicitly
+AI provides output based on custom or automatic input
+Examples: AI writing assistants, content generation
+2. Contextual AI Assistance
+
+AI offers recommendations based on current context
+Suggestions appear at relevant moments in workflows
+Examples: Smart replies, auto-complete
+3. Predictive Insights
+
+AI analyzes data to forecast outcomes
+Proactive notifications of important patterns
+Examples: Trend predictions, anomaly detection
+4. Conversational Interfaces
+
+Natural language interactions with AI
+Back-and-forth dialogue for complex tasks
+Examples: Chatbots, voice assistants
+5. AI-Enhanced Search
+
+Semantic search understanding intent
+AI-powered result ranking and filtering
+Examples: Intelligent content discovery
+6. Automated Workflows
+
+AI completes routine tasks automatically
+Background processing without user intervention
+Examples: Auto-categorization, smart scheduling
+7. AI-Augmented Decision Making
+
+AI provides data synthesis for decisions
+Human maintains final decision authority
+Examples: Recommendation engines with explanations
+8. Collaborative AI
+
+AI works alongside humans on creative tasks
+Iterative refinement of AI outputs
+Examples: Design tools, code assistants
+Best Practices from Emplifi:
+Match patterns to user goals: Choose interaction models based on what users are trying to accomplish
+Provide context-appropriate assistance: AI should understand where users are in their workflow
+Enable user control: Users should be able to accept, modify, or dismiss AI suggestions
+3. SAP Fiori Design System: Explainable AI for Enterprise
+‍
+
+SAP Fiori Design System emphasizes "Explainable AI" to foster trust and transparency in business-critical applications. By providing users with context-specific insights into AI decisions, SAP ensures that users feel confident and in control of their interactions with intelligent systems. This approach is particularly important in scenarios with high complexity, volatility, or regulatory requirements, where understanding AI-driven outcomes is essential.
+
+Explainability Framework:
+Three Layers of Explanation:
+
+What: The AI decision or recommendation (surface level)
+Why: The reasoning behind the decision (intermediate)
+How: The technical process and data used (deep level)
+Role-Based Explanations:
+
+Simplified explanations for general users
+Technical details for data scientists and auditors
+Regulatory-compliant audit trails for compliance teams
+High-Stakes Scenarios:
+
+Detailed traceability for audit requirements
+Clear accountability chains for AI decisions
+Regulatory compliance documentation built-in
+SAP's AI Design Principles:
+Progressive Disclosure:
+
+Start with minimal information
+Allow users to drill deeper as needed
+Don't overwhelm users with technical details upfront
+Context-Aware Explanations:
+
+Explanations match the importance of the decision
+High-stakes decisions provide more detail automatically
+Users can always access full explanations if desired
+Traceable AI Actions:
+
+Clear history of AI recommendations
+Ability to review past decisions
+Support for regulatory audits
+Documentation for Complex AI Features: Supernova's Ask AI feature allows team members to query your design system documentation in natural language. When documenting complex explainability patterns like SAP's, teams can ask "How do we implement progressive disclosure for AI?" and get instant answers from your documented guidelines.
+
+4. PatternFly AI Guidelines: Human-Centered AI Design
+‍
+
+PatternFly focuses on making AI interactions intuitive, explainable, and accessible. Its guidelines prioritize user awareness, ensuring that AI components are clearly identified within the interface. This transparency allows users to engage confidently with AI, supported by tools that simplify complex AI processes.
+
+Core AI Design Principles:
+1. Solve Real User Problems
+
+AI should address genuine needs, not showcase technology
+Improve efficiency and personalize experiences
+Avoid adding AI features solely for competitive reasons
+2. Augment Human Abilities
+
+AI enhances what humans can do
+Never fully replace human judgment
+Support collaboration between humans and AI
+3. Build Trust Through Transparency
+
+Clearly identify when AI is being used
+Explain limitations honestly
+Provide paths to human support when needed
+4. Mitigate Bias Proactively
+
+Test with diverse user groups
+Monitor for discriminatory outcomes
+Build inclusive AI from the start
+5. Verify AI Outputs
+
+Include human review steps for critical actions
+Provide confidence scores when appropriate
+Allow users to report incorrect AI behavior
+Implementation Guidelines:
+Visual Identification:
+
+Clear badges or labels for AI-generated content
+Consistent iconography across AI features
+Distinct styling that doesn't overpower the interface
+Error Handling:
+
+Graceful degradation when AI fails
+Clear error messages explaining what went wrong
+Easy access to alternative non-AI workflows
+User Control:
+
+Options to disable or limit AI features
+Ability to provide feedback on AI quality
+Settings to customize AI behavior
+5. ServiceNow Horizon: AI in Enterprise Workflows
+
+ServiceNow Horizon addresses the integration of AI within enterprise workflows, emphasizing seamless usability and control. By providing clear routes to understanding AI processes, the system fosters confidence in its applications. ServiceNow’s guidelines also emphasize designing for transparency, ensuring users can engage with AI in a way that feels natural and intuitive.
+
+Best Practices for Enterprise AI:
+Change Management:
+
+Introduce AI features gradually
+Provide training and documentation
+Monitor adoption and address concerns
+Trust Building:
+
+Show AI accuracy metrics when appropriate
+Allow users to verify AI recommendations
+Provide clear paths to escalate to humans
+Performance Monitoring:
+
+Track AI feature usage and satisfaction
+Measure impact on workflow efficiency
+Continuously improve based on feedback
+6. Microsoft HAX Toolkit: 18 Evidence-Based Guidelines
+‍
+
+The Microsoft HAX Toolkit offers 18 evidence-based guidelines to design user-centric AI experiences. These guidelines provide structured advice for every stage of interaction with AI, from initial use to ongoing engagement, focusing on transparency, adaptability, and trust-building.
+
+The 18 HAX AI Guidelines (Highlights):
+Initial Experience (Guidelines 1-6):
+
+Make clear what the system can do
+Make clear how well the system can do what it can do
+Time services based on context
+Show contextually relevant information
+Match relevant social norms
+Mitigate social biases
+**During Interaction (Guidelines 7-12):**7. Support efficient invocation8. Support efficient dismissal9. Support efficient correction10. Scope services when in doubt11. Make clear why the system did what it did12. Remember recent interactions
+
+**Over Time (Guidelines 13-18):**13. Learn from user behavior14. Update and adapt cautiously15. Encourage granular feedback16. Convey the consequences of user actions17. Provide global controls18. Notify users about changes
+
+Building Your Own AI Design Guidelines: A Practical Framework
+Based on the patterns from these six design systems, here's a framework for creating AI guidelines in your organization:
+
+Step 1: Establish Core AI Principles
+Define your foundational beliefs about AI in products:
+
+Transparency (Will you always disclose AI usage?)
+Human control (Can users disable or override AI?)
+Explainability (How much detail will you provide?)
+Error handling (What happens when AI fails?)
+Bias mitigation (How will you address fairness?)
+Step 2: Document AI Interaction Patterns
+Catalog the ways AI appears in your products:
+
+Generative AI (content creation, suggestions)
+Predictive AI (forecasts, recommendations)
+Conversational AI (chatbots, voice)
+Automated AI (background processing)
+Augmentative AI (enhancing human work)
+For each pattern, document:
+
+When to use it
+Visual treatment
+User control options
+Error states
+Accessibility requirements
+Step 3: Create Visual Language for AI
+Establish consistent visual indicators:
+
+AI badges or labels
+Loading states for AI processing
+Confidence indicators (when appropriate)
+Explainability UI components
+Error state designs
+Step 4: Define Explainability Standards
+Based on your use cases, determine:
+
+What level of explanation is required
+How to structure explanations (What/Why/How)
+Role-based explanation depths
+Audit trail requirements
+Step 5: Address Accessibility and Inclusion
+Ensure AI features work for everyone:
+
+Screen reader support for AI labels
+Alternative workflows when AI fails
+Testing with diverse user groups
+Bias detection and mitigation processes
+Step 6: Document Implementation Guidance
+Provide practical guidance for teams:
+
+Code examples for AI components
+Design files with AI patterns
+Decision trees for choosing patterns
+Checklists for AI feature launches
+Start Building Your AI Guidelines: Use Supernova's documentation platform to organize your AI guidelines with the same structure you use for regular components. The flexible editor supports complex hierarchies, code examples, and interactive prototypes—everything needed for comprehensive AI documentation.
+
+Start Building Better AI Experiences
+AI is transforming product development, but great AI experiences don't happen by accident. They require thoughtful guidelines, consistent implementation, and platforms that make it easy to do the right thing.
+
+Whether you're documenting your first AI pattern or scaling AI across an enterprise, the combination of clear guidelines and modern tooling ensures your AI features are trustworthy, consistent, and genuinely useful.
+
+Ready to streamline your AI design system?
+
+Request a Demo to see how Supernova helps teams document AI guidelines, prototype AI features with real design system components, and generate production-ready code that follows your standards.
+
+Related Resources
+How Design Systems Unlock the Power of Vibe Coding
+Why Product Managers Need Design System Knowledge for Better Prototyping
+Design System Versioning Examples
+Previous Article
+Supernova 2024 Year in Review
+Next Article
+The Future of AI-assisted Design Systems: Predictions and Use Cases
+Sign up for Supernova newsletter
+you@company.com
+
+Subscribe
+Stay up to date
+Follow @supernova_io on X (formerly Twitter) for the latest news, design systems tips, and product updates.
+
+See what's new
+Track what we build as we rapidly evolve Supernova, turning your feedback into features and ideas into reality.
+
+Join our Slack community
+Join Supernova Friends on Slack to connect and learn with other design system practitioners.
+
+Platform
+Build prototype
+Write with AI
+Documentation
+Design system
+Ask AI or browse
+Code automation
+Integrations
+Resources
+Blog
+ROI calculator
+Learn Supernova
+FAQ
+Slack Community
+Developers
+Product
+2025 Wrap-up
+Pricing
+Enterprise
+Customers
+Changelog
+Status
+Company
+Careers
+Trust center
+Privacy Policy
+Terms & Conditions
+Master Subscription Agreement
+© 2026 Supernova.io Inc.
+
+AI Design System Guidelines: 6 Examples from Industry Leaders (+ How to Build Your Own) | Supernova.io
+
+
+https://youtu.be/RHJvMn9VLoA?si=36bMDX5XHD7jUUlzone phrase I like from the AI well there people some say we we sort of grew language models rather than built them they're like an organic being that we discovered and we don't know what they can do like we didn't make them for a purpose we made them and now we're like what is this object or what is this like organism type thing so it's really strange because we know they have all the kind of like latent possibility in them but we're not quite sure how to bring that out there's so much to learn about what it takes to design great AI experiences so I've been keeping a running list of all the different mental models that designers heck of a lot smarter than me are sharing with me in these interviews the more that I talk to people who are thinking about this stuff every single day while working on products like Claude perplexity dot Humane one thing is becoming increasingly clear that everything is changing so fast but even if you took a freeze frame and just looked at the state of the world today there is still so much that we don't know yet Kyle Turman has this great phrase they say even if the models never got better even if Claude 3 was it Claud 3.5 was it for all time there's probably still like years of design work left because there just all these things that the model can do that people don't know how to get it just is it's opaque it requires this like Dark Art of prompting you have to understand all of these different concepts and and Technical ideas and so there's a lot of like interesting design problem that clip was from Joel lewenstein who's leading product design for Claude and a lot of those interesting design problems that he's talking about stem from the reality that designers have way less control over the enduser experience now as a result we kind of have to take a step back because we can't think about user flows and Journeys quite the same way most existing software is something like being on a train or a Subway right there's a series of stops you can Define the journey ahead of time you could map the entire space you could say it's the New York City metro right it's like there are only 47 stops in this system I know how you get to each one right I think the current Paradigm is more like being dropped in the middle of a field with no map or Trails you can do anything just the number of degrees of freedom you have is almost literally infinite and that it's language based this is like both the astonishing power and opportunity of L it's also like pretty intimidating I think the challenge of a design team working in this space is to provide just enough wayfinding and Pathways that people feel comfortable but to not lock them into like a monor rail system and so there's existing patterns that work here you know suggestions templates you can give them guidance light guidance heavy guidance cow paths that maybe like guide them gently big roads with barriers where you're like you seem pretty stuck here we're going to like funnel you down this path so at least you get somewhere and then for the people who feel really comfortable there's always walking through the field in a direction that no one has asked you to go down real quick message and then we can jump back into it so I've been using this new product to do research called genway it uses AI powered interviewers to help you gather qualitative data at basically an infinite scale so I've actually been interviewing listeners of this show all over the world I tell the AI what I'm hoping to learn and then it has a dynamic conversation with each person genway then organizes all of the key insights for me automatically so I learned more in a two we study than I had in a year and a half prior needless to say I am totally hooked and if you want to take your research to the next level head to dive. club/ genway to get 2 months free that's GN w a y I've been anticipating today for quite some time because raycast notes are finally here now their old floating notes product was my go-to for quick captures but they've truly taken it to the next level there's markdown for formatting keyboard shortcuts multiple notes you can even create a quick link to a specific note and assign a hotkey to it so that way you can quickly open it up from anywhere in a single keystroke it's just another way that raycast helps me stay in flow while I work so if you're not using it already seriously I can recommend this product enough head to dive. club/ raycast to get started that's r a y c a s okay now on to the episode designing products with infinite degrees of freedom kind of changes the way that software teams operate and also how we even think about design deliverables because we can't design every single outcome in figma it's literally impossible just take perplexity for example here's their head of design Henry giving us a little inside look no matter what the user wants to see we should represent that information in its most perfect form let's say I want to a stock price of Nvidia I could show you that in markdown with just text right I could bold the the latest stock price and I could do a bullet list of the history but it would be a lot better if I showed you a graph that you could then interact with right that's like a much better representation of that information designers are thinking about this experience but they're not communicating it with mockups they're communicating it with guidance it becomes much more of a collaborative end to-end product crafting process rather than like design handoff to engineering because you cannot design all the cases just explain what the user is going to get and what the vision for the product experience is and then you and the engineers you build it together in a very collaborative conversational process it is a UI systems problem right you're building the system you're giving it tools to use and hoping that it works most of the time that's the best you can do I want to underline the phrase giving it the tools to use because as a designer now you're responsible for equipping the AI to dynamically meet user needs on the Fly that's why I love this next metaphor from George kenberg about what it's like designing the Humane AI pin the term prompt engineering gets thrown around a lot I kind of think prompt design is more of an interesting term like I'm designing this kitchen and the model is the chef and I have to put the right things in the kitchen in the right place so that the model can make whatever the customer orders cuz we don't know what they're going to order and that's where a lot of the trial and error of like oh crap somebody came in and ordered this thing and we didn't have like a lemon peeler and so I need to like add a Lim and this a very abstract example A lot of times the iteration was just like the where s off the rails and being like Oh we need to like add this kind of tool or like oh we should add you know this pre-processing step in the pipeline so that we have this piece of information here that if we need it we have it it's experienc design no different than thinking through why did this person fall off this onboarding flow to extend on George's metaphor if you're designing a commercial kitchen then you have to work backwards from your understanding of what the heck can this Chef even make and the fact is that it's all always changing because as Joel from anthropic puts it working with AI is a bit like watching your child grow up I have a 6-year-old a 3-year-old and a 4-month-old and there's this just magical experience of being a parent especially for your oldest where they figure out a problem for the first time I mean it can be as simple as they've never managed to open the box of ice cream cones before and then they do or they're learning to read or they're making these logical connection things that you've never seen and you've never taught them and then I'll to my wife and be like did you know he could do that and she's like no this is amazing and that really is what it feels like sitting on top of these models like our just astounding research team is like pushing the state-of-the-art these models are rolling off the assembly line we're all poking and prodding and we're like huh I didn't know it could solve this level of problem before what does this open up there's a key phrase in there that I want to call attention to Jo almost without even thinking about it says we're all poking and prodding kind of almost like playing with the AI a bit which reminds me of another metaphor that Jason Yuen the co-founder of dot shared with me to understand the new material you have to play with it you have to take it out of the Play-Doh box and go like this you can't like draw a little picture and show your like Engineers like hey can you make the Play-Doh do that and they're like no but the Playdoh can do this The Playdoh can stretch have you considered that you know it's like you just have to play with it I think the best designers maintain a sense of play playfulness they like to play George kinberg hit on this idea too really stressing the importance of viewing AI as a new material that we get to design with I kind of look at it as this like alien space metal that has like crash landed on the planet and like it's a new material it's like a new thing that as designers we get to work with and the only way you really understand a material super well is by just experimenting with it and like trying stuff and just like continuing to like push the envelope of like what can this thing do you know like imagine if you had the first time you saw wood you're like what do I do with wood you know you would start trying things and you'd be like oh if I bend it this way it breaks but if I like heat it up with steam and bend it around this other thing I can make these like really cool curved edges you just have to go deep on these matal and just try a lot of stuff to see where they break and to see where they don't break now you might be hearing this and thinking but like what does it look like to actually quote unquote design with these models and I get it I was right there with you so here's a quick story from Joel to shed a bit more light on what it looks like I have a fun story there so we were working on a feature that basically does this right like it looks at a chat it says here are three next steps we think you might want to do the designer working on on it s in she brought it to crit she shows it it's kind of like the the UI the rectangles are like pretty straightforward it's little suggestion chips that appear underneath the chat she showed some examples you're like yeah that's pretty good like that makes sense those are good next steps we should think about you know when and how to roll this out and the crit was sort of tailing off just because it was good like there wasn't a lot to say and then someone was like can you show us the prompt that you used to ask this other instance of Claude to make the right suggestions and she brings up this seven page prompt with like all of these instructions and examples and little tweaks and like the art of prompting is like this Dark Art and she had just she had iterated I think she said like 75 or 100 there's like hundreds of iterations trying different combination of prompts looking at it seeing if it made sense all to get this thing that was just elegant and simple for a user and so this was another sort of like big Awakening moment for me switching into the AI world is prompting is part of the design process and designers need to know how to do it now I'm pretty confident that we're going to have a lot of fun as designers exploring AI as a new material but if you zoom out all of this technological innovation it's creating endless opportunities for designers to make things start companies solve totally new types of user problems so I want to end with one last metaphor from Colin Dunn who's the founder of visual electric because when electricity was first invented nobody was thinking about the microwave yet we're heading towards a future where there's going to be many Foundation models that are available and are going to become increasingly specialized for different purposes and they'll be available either through open source or an API we see that as like the sort of electricity layer if you think about it as a metaphor like those are the electricity companies and they're Pro they're providing this new form of power to the world and what we want to do is we want to build the appliances that are going to go in people's homes so now you have electricity and the first thing that you do is you replace all your candles with lights right that's the obvious thing to do nobody was thinking about the dishwasher or the microwave or the refrigerator when electricity was invented those were new kinds of appliances that only made sense in the context of every home is now wired so we think there's an incredible future and world to explore that is entirely agnostic from the foundation model and it sits at the sort of application layer hey it's red don't forget if you want to go even deeper each week I send an email out to over 10,000 designers with bonus resources and key takeaways from these conversations so head to dive. club/ mail to sign up okay I'll see you next week

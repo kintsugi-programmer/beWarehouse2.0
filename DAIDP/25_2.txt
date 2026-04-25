@@ -1,0 +1,60 @@
+Mental Models for AI Design
+This handout summarizes key mental models to guide in designing within the AI world.
+---
+1. Human-in-the-Loop
+• Core Idea: AI systems should include human oversight at critical points.
+• Why It Matters: Ensures accountability, adaptability, and trustworthiness.
+• Example: A medical AI suggests diagnoses, but a doctor makes the final call.
+
+---
+2. Occam’s Razor
+• Core Idea: Favor simplicity when multiple design paths exist.
+• Why It Matters: Simple systems are easier to interpret, maintain, and debug.
+• Example: A chatbot that answers FAQs directly instead of over-engineering with complex
+reasoning.
+
+---
+3. Systems Thinking
+• Core Idea: AI is part of a larger ecosystem, not a standalone tool.
+• Why It Matters: Helps anticipate ripple effects across users, organizations, and society.
+• Example: Designing a recommendation engine while considering its impact on user behavior
+and business ethics.
+
+---
+4. AI as Electricity
+• Core Idea: Treat AI as a foundational technology, like electricity.
+• Why It Matters: Encourages thinking beyond immediate replacements to entirely new
+innovations.
+• Analogy: Early electricity replaced candles with lightbulbs, but later enabled microwaves and
+washing machines.
+• Example: AI not only automates tasks but creates new possibilities
+
+---
+5. Designing for Possibilities (Open-Ended Maps)
+• Core Idea: Don’t design with rigid, finite goals—design for exploration.
+• Why It Matters: Supports adaptability and discovery of unexpected opportunities.
+• Analogy: Instead of a metro map with fixed stops, imagine landing in an open field or ocean
+with only a partial map.
+• Example: Building an AI toolkit that allows users to experiment and find new applications.
+
+---
+6. Second-Order Effects
+• Core Idea: Think beyond immediate outcomes to anticipate ripple effects.
+• Why It Matters: AI systems often create social, economic, and ethical consequences.
+• Example: Think about impact on privacy, ethics, and security. A generative AI tool might make
+it easy to create fake content. The design choices — such as watermarking outputs, limiting
+misuse, or encouraging transparency — directly influence whether the system discourages
+harmful behavior or enables it.
+---
+Prompt Design
+In essence, the shift from prompt engineering to prompt design represents a move from simply
+fine‐tuning inputs for efficiency to thoughtfully shaping the entire interaction. While prompt
+engineering focuses on the technical tweaks to get a desired output, prompt design is about
+crafting the interaction itself—it’s a holistic framework that encourages richer, more creative, and
+more meaningful AI interactions. This approach doesn’t just optimize outputs; it shapes the
+journey, ensuring that the AI becomes a partner in exploration rather than just a tool for
+answers.
+---
+Key Takeaway
+AI design is not just about solving today’s problems—it’s about creating platforms, ecosystems,
+and possibilities that shape tomorrow.
