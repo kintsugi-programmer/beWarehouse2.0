@@ -1966,3 +1966,221 @@ Variables store different kinds of information necessary for game logic. They ar
     *   *Examples:* `TargetEnemy`, `DoorRef`
 *   **Array:** Stores a list or collection of multiple items.
     *   *Examples:* `Inventory`, `EnemyList`
+
+# 10 Prototypes and Prototyping in Design Research
+![alt text](image-12.png)
+
+  - **Authors:** Stephan Wensveen (Eindhoven University of Technology) and Ben Matthews (The University of Queensland).
+  - **Overview of Design Research**
+    - A defining feature of many forms of design research is that they involve designing and deploying prototypes.
+    - The unique character of design research, compared to other fields, relates specifically to focusing on designed things as key components of the research process.
+    - Prior research (e.g., Houde & Hill 1997; Lim, Stolterman & Tenenberg 2008; Lichter et al. 1994) thoroughly documented prototypes as vehicles **for design** practice.
+      - Houde & Hill defined prototypes as any representation of a design idea and identified three dimensions of design questions explored at Apple: 'Role', 'Look and Feel', and 'Implementation'.
+      - Lim et al. defined prototypes as 'filters' traversing a design space and 'manifestations' of ideas that externalize concepts.
+    - This document shifts the focus to prototypes as vehicles **for research**—specifically research about, for, and through design.
+    - **Constructive Design Research:** Defined by Koskinen et al. (2011) as research that imagines and builds new things, and then describes and explains those constructions.
+    - The goal is to present a typology of the different roles that designed things play in design research, eroding the idea that "research through design" is just a single method.
+
+- **Research and Practice**
+  - The relationship between design research (aiming to produce knowledge concerning design) and design practice (conceiving and building new forms/systems) is frequently blurry.
+  - **Research needing practice:** Some research questions cannot be answered without designing something. For example, researching how to design aesthetic interactions requires actually building them, as Ross (2008) did.
+  - **Practice resulting in research:** Outcomes of design practice can constitute research if contextualized within a research field. 
+    - **Example:** 'Curlybot' (Frei, Su, Mikhak & Ishii 2000), a three-wheeled programmable robot, was presented as a new class of computational toy. The research contribution was not the product itself, but how it exemplified a new interactive space where complex mathematical concepts could be experienced.
+  - **Confusion of methods:** Design methods and research methods often get confused. 
+    - **Example:** Cultural probes (Gaver, Dunne & Pacenti 1999) started as a design method for inspiration (like moodboards) but later morphed into research-oriented kits for gathering ethnographic user data.
+  - The distinction is vital because prototypes used for research have a completely different set of properties and objectives (making contributions to knowledge) compared to prototypes used for generating commercial products.
+  - **Behind the scenes:** Authors draw on their own and their students' cases to reveal the messy, open-ended back-story of prototyping, showing how intentional or serendipitous findings actually happen compared to glossy published accounts.
+
+- **Four Roles of Prototypes and Prototyping Processes**
+  - The authors identify four different roles.
+  - **Roles 1, 2, and 3** focus on the functions of the **prototype** itself as a research vehicle.
+  - **Role 4** focuses on the **process of prototyping** as a vehicle for inquiry.
+  - The sequence starts with the most scientifically recognizable method (lab experiments) and progresses to methods more familiar to design practitioners.
+
+  - **Role 1: The Prototype as an Experimental Component**
+    - **Concept:** Prototypes function as a necessary component in formal, controlled lab experiments (e.g., usability tests, experiential trials) to test specific hypotheses.
+    - **Methodology:** Drawing on Lim et al.'s concept of 'filtering dimensions' (appearance, functionality, interactivity), researchers treat dimensions of the prototype as independent variables. These are systematically varied to measure their effect on dependent variables while keeping other dimensions constant.
+    - **Examples of Role 1:**
+      - **Camera Interfaces (Frens 2006):** Frens kept the physical dimensions (size, shape) of a camera unchanged but systematically varied the interactivity across four interfaces (Rich Actions, Mixed Actions, Light Controls, Conventional Buttons) to test users' evaluation of pragmatic and hedonic qualities.
+      - **Interactive Toys (Stienstra 2003):** Tested developmental psychology theories regarding gender preferences in play (gross motor vs. fine motor). She built three functionally identical toys acting as interfaces for a maze game, but varied the physical scale: body-sized gestures, hand-sized magnetic manipulations, and room-sized running/climbing actions.
+      - **Intelligent Lamp (Ross 2008):** Maintained a single, neutral physical lamp body (static shape, materials, colors) but tested three different interactive behaviors targeting specific social values: Helpfulness, Social Power, and Creativity.
+      - **Alarm Clock (Wensveen 2002):** Explored tangible interaction principles to see if a product could recognize users' emotions based on how they set the alarm. The prototype was kept constant, but the *context of use* (users' affective states, induced via validated film clips) was systematically varied. The experiment successfully proved the hypothesis and serendipitously discovered that users in a positive state created more aesthetically pleasing, symmetrical slider patterns.
+    - **Nature of the Hypothesis:** In cases like Frens and Stienstra, the prototype *is* a physical hypothesis embodying a theoretical proposition. In Wensveen's case, the hypothesis lies in the combination of the artifact's multiple interaction possibilities plus the experimental conditions.
+
+  - **Role 2: The Prototype as a Means of Inquiry**
+    - **Concept:** Prototypes are deployed as research instruments to collect, record, and measure phenomena, acting as open-ended explorations of unsettled design/use spaces. Unlike experiments, no specific hypotheses are tested.
+    - **Examples of Role 2:**
+      - **Technology Probes (Hutchinson et al. 2003):** Small, functional devices (MessageProbe, VideoProbe) placed into households acting as communication portals between relatives. They functioned as research instruments by electronically logging data on usage (how long, by whom) and as interventions into family communication practices. *(Note: Hutchinson explicitly avoided calling them "prototypes" to distance them from commercial products, but they fit the universal definition used here)*.
+      - **Provotypes (Mogensen 1992; Boer & Donovan 2012):** Prototypes designed intentionally to provoke reactions, challenge assumptions, and expose taken-for-granted values.
+        - **Boer's Render-Lamp:** A provotype introduced to challenge the building industry's assumption that indoor climate comfort is just an optimal aggregate of objective parameters (light, temperature, humidity). The lamp measured five parameters and represented them abstractly through dynamic lighting. Deployed in homes and workplaces, it successfully sparked reflection and shifted the organizational mindset from objectively measuring climate to subjectively supporting users' climate practices.
+
+  - **Role 3: The Prototype as a Research Archetype**
+    - **Concept:** Prototypes serve as physical embodiments of research concepts, theoretical understandings, or design spaces. Their role is primarily illustrative, elaborative, or ostensive. The actual process of building them is generally invisible or inessential to the research contribution.
+    - **Examples of Role 3:**
+      - **Curlybot (Frei et al. 2000):** Serves as an archetype for a new class of interactive toys.
+      - **Faraday Chair (Dunne 1999):** An acrylic, rectangular shielding prism on an aluminum frame, so small an adult must assume a fetal position inside, equipped with a snorkel for air. It reifies a techno-ideological agenda about ambient electromagnetic radiation, serving as an archetype for a "hertzian" design space focused on criticality, estrangement, and dysfunction.
+      - **Tangible Products (Djajadiningrat et al. 2004, 2007):** A series of prototypes clarifying the design possibilities of perceptual-motor skills. Example artifacts include a VCR that physically displays its playing state, and an alarm clock that visually reveals it was set in a state of haste. The general theory and the specific prototype examples form a hermeneutic circle, mutually explaining each other.
+
+  - **Role 4: The Process of Prototyping as a Vehicle for Inquiry**
+    - **Concept:** The actual, stepwise process of making the artifact serves as a method of inquiry. The process is documented, analyzed, and critically assessed, with the contribution to knowledge tied directly to *how* the artifact was crafted.
+    - **Examples of Role 4:**
+      - **Glassmaking Research (Newbury 1996):** A doctoral project developing a new theory for Hellenistic and Roman mosaic glass production. The candidate used practical experimentation to test intuition against existing archaeological theories. The practice of making the glass was both the research method and the discovery outcome.
+      - **Robot Arm (Scrivener 2000):** Designing an engineering robot arm to pick up an egg without breaking it. Codifiable knowledge (material selection, algorithms) is extracted iteratively. The principles cannot be discovered without the iterative process of building, testing, and reconfiguring prototypes.
+      - **Participatory Prototyping (Horst 2011):** While hired to build a prototype programmable radiator thermostat for usability testing, Horst designed the software so its functionality and interactivity could be modified in near real-time. He ran "live prototyping" sessions involving users and internal company stakeholders (sales, marketing, hardware). The ability to change the code instantly turned the prototype into a "platform for participation," altering the original interface specifications dynamically. The research contribution was the collaborative prototyping process itself.
+      - **Co-design Activities:** Fields like participatory design extensively use the prototyping process (e.g., Greenbaum & Kyng 1992, Sanders 2000, Mitchell & Buur 2010) to experiment with new formats for user participation.
+
+- **Discussion and Key Takeaways**
+  - "Research through design" encompasses diverse methods and approaches, and should not be viewed as a singular methodology (Mattelmäki & Matthews 2009).
+  - **Overlapping Roles:** In reality, the boundaries between the four roles blur, and a single prototype often serves multiple roles across different stages of research.
+    - **Stienstra's Toys:** Appeared as an experimental component in her thesis, as a means of inquiry in later papers, and as a research archetype in subsequent publications.
+    - **Frens' Camera:** Initially used numerous cardboard models as a *means of inquiry* to traverse the design space (Goel & Pirolli 1992; Moran & Carroll 1996). One cardboard model was identified as a *research archetype* for 'rich interaction'. Finally, it was evolved into a fully working electronic camera serving as an *experimental component* to compare interfaces.
+    - **Wensveen's Alarm Clock:** A large set of early prototypes functioned as a *means of inquiry* to explore the conceptual space. The final clock functioned simultaneously as a *research archetype* (featuring clear functionality and colors) and an *experimental component* (incorporating data-logging electronics but sacrificing preferred light features).
+    - **Deckers' Work:** Separated the roles between two artifacts. The 'PeP pillar' was used strictly as an *experimental component* (stripped of context to test perceptual crossing), while the 'PeR carpet' was built as a *research archetype* (demonstrating product potential).
+  - **Design Prototypes vs. Research Prototypes:** Prototypes for design are valued based on how reliably they model concepts for product refinement. Prototypes for research are valued based on what they contribute to a scientific inquiry.
+  - Simply having design skills to construct an artifact is necessary but not sufficient for research. A research prototype must become an object of analysis, figure in an argument, and demonstrate a new contribution to knowledge.
+
+- **Comparative Overview of Roles (Table 1 Summary)**
+  - **Role 1: Experimental Component**
+    - **Purpose & Role:** Test of specific hypotheses. Systematic variations of prototype or context of use.
+    - **Special considerations:** Design of the experiment is equally crucial.
+    - **Data:** Primarily quantitative data (e.g., data logging, questionnaire).
+    - **Method of Analysis:** Statistical analysis.
+    - **Type of contribution:** Empirical, Theoretical.
+    - **Published Examples:** Interactive Toys (Stienstra 2003), Interactive Lamp Behavior (Ross 2008), Camera interfaces (Frens 2006).
+  - **Role 2: Means of Inquiry**
+    - **Purpose & Role:** Open-ended exploration. Instrument to collect, record, and measure phenomena.
+    - **Special considerations:** Often combined with doing interviews.
+    - **Data:** Qualitative (e.g., interviews) and/or quantitative (e.g., data logging).
+    - **Method of Analysis:** Ethnographic analysis.
+    - **Type of contribution:** Empirical.
+    - **Published Examples:** Technology Probes (Hutchinson et al. 2003), Provotypes (Boer et al. 2012).
+  - **Role 3: Research Archetype**
+    - **Purpose & Role:** Illustration or demonstration. Physical embodiment of research concept, understanding, or design research space.
+    - **Special considerations:** Critical perspective is equally crucial.
+    - **Data:** Designed artifacts that form the basis of critical analysis.
+    - **Method of Analysis:** Expository analysis.
+    - **Type of contribution:** Conceptual, Methodological.
+    - **Published Examples:** Faraday Chair (Dunne 1999), Tangible Products (Djajadiningrat et al. 2004).
+  - **Role 4: Vehicle for Inquiry**
+    - **Purpose & Role:** Driver for the research direction. Research contribution is tied to the process of crafting the artifacts.
+    - **Special considerations:** Process is documented, analyzed, and critically assessed.
+    - **Data:** Qualitative case study.
+    - **Method of Analysis:** Case analysis.
+    - **Type of contribution:** Methodological.
+    - **Published Examples:** Participatory Prototyping (Horst 2011), Co-design literature.
+
+## 11 Unreal Engine 5 Educational Resources and Tutorials
+![alt text](image-11.png)
+  - **YouTube Playlists**
+    - **UE Interaction Systems**
+      - **Type:** Playlist
+      - **Link:** https://youtube.com/playlist?list=PLNwKK6OwH7eVj0NU_ImdvPXEmVFyWfd8E&si=zpVLK8XwUxnnYbm6
+    - **AI Enemy**
+      - **Type:** Playlist
+      - **Link:** https://youtube.com/playlist?list=PLNwKK6OwH7eW1n49TW6-FmiZhqRn97cRy&si=YN5bHZNhq-TgTvI8
+    - **GAS Systems**
+      - **Type:** Playlist
+      - **Link:** https://youtube.com/playlist?list=PLNwKK6OwH7eVaq19HBUEL3UnPAfbpcUSL&si=qs1Mpjlb3gP563GH
+  - **Author's Note**
+    - Feel free to ask for more such tutorials!!
+  - **Standalone YouTube Video Tutorials**
+    - **Unreal Engine 5 Beginner Tutorial Create AAA Quality UI and HUD**
+      - **Format:** YouTube video
+      - **Duration:** 1 hour 18 minutes
+    - **How to Make a Combat System in UE5**
+      - **Format:** YouTube video
+      - **Duration:** 3 hours 49 minutes
+    - **Modular Control Rigs - Unreal Engine 5.4 Tutorial**
+      - **Format:** YouTube video
+      - **Duration:** 9 minutes
+    - **How To Animate in Unreal Engine 5 | FULL SERIES!**
+      - **Format:** YouTube video
+      - **Duration:** 1 hour 11 minutes
+    - **How to Make a Simple Pick Up System in Unreal Engine 5 - Beginner Tutorial**
+      - **Format:** YouTube video
+      - **Duration:** 23 minutes
+    - **How to Add Moss into a Mesh using PCG in Unreal Engine 5**
+      - **Format:** YouTube video
+      - **Duration:** 9 minutes
+    - **How To Create A Cutscene To Gameplay Transition - Unreal Engine 5 Tutorial**
+      - **Format:** YouTube video
+      - **Duration:** 25 minutes
+    - **How to Swap Character when pressing a Button in Unreal Engine 5**
+      - **Format:** YouTube video
+      - **Duration:** 7 minutes
+    - **UE5: Create Destructible Objects That Explode on Impact (Step-by-Step)**
+      - **Format:** YouTube video
+      - **Duration:** 9 minutes
+
+## 12 Designing Games: Principles of Ludic Communication and Cognitive Game Design
+![alt text](image-10.png)
+  - **Metaphor**
+    - **Definition:** To communicate faster wrap mechanics into fiction. This is called **metaphor**.
+    - **Function:** **METAPHOR** is giving something new the appearance of something familiar in order to make it easier to understand.
+    - **Scope:** The entire fiction layer of a game is a giant metaphor.
+    - **Application Example:** Games like *Super Mario Bros.* apply this by using familiar visuals to explain how the game world works.
+    - **Interaction Mappings (Virtual vs. Physical Actions):**
+      - **Metaphor: The mind is a container**
+        - **Virtual Action:** Virtual "thoughts" are put in / out of a virtual mind.
+        - **Physical Action:** Physical card moves in/out of a virtual area.
+      - **Metaphor: Happiness is a substance**
+        - **Virtual Action:** Virtual "happiness" is poured out of a container on people.
+        - **Physical Action:** Physical card tilts the virtual container.
+      - **Metaphor: Love is a force**
+        - **Virtual Action:** Virtual boys are attracted to a girl like magnets.
+        - **Physical Action:** Physical card moves the virtual girl.
+      - **Metaphor: Grades (ex: "C", "D") are objects**
+        - **Virtual Action:** Virtual grade objects are blocked from falling on a test.
+        - **Physical Action:** Physical card movement blocks the virtual grades.
+      - **Metaphor: Pitch is upward movement**
+        - **Virtual Action:** Pitch of a virtual instrument increases / decreases.
+        - **Physical Action:** Physical card moves up / down.
+      - **Metaphor: Power is active movement**
+        - **Virtual Action:** Power of a virtual gun increases.
+        - **Physical Action:** Physical card carrying gun is shaken.
+
+  - **Signal and Noise**
+    - **Understanding the Signal:** 
+      - Every piece of information the player gets is part of a **signal**.
+      - The signal is divided into different channels: Visual information from a screen & Audio information from speakers, perhaps haptic or other feedback.
+      - Players use their natural human ability to filter, prioritize, and interpret information to try to understand what the signal means.
+    - **Understanding Noise:**
+      - If the interpretation process fails, parts of the signal degrade into **noise**.
+      - **Causes of Noise:** There are two main causes of noise: **complex art** and **overcrowded signals**.
+
+  - **Visual Hierarchy**
+    - **Core Concept:** Everything is displayed at once, but more important pieces of information are made more visible so that people notice them first.
+    - **Priority Rules:** Things that are **bigger, closer, brighter, and faster** get noticed first.
+    - **Visual Tools:** Designers can establish hierarchy by varying **Color, Texture, Shape, Direction, and Size**.
+    - **In-Game Example:** 
+      - Enemies in front of the player are very important, so they are represented by large, visible, identifiable characters in the middle of the screen. 
+      - More distant enemies are less important, and also smaller on-screen.
+    - **The 3D Space Advantage:** Note that this natural relationship between distance, relevance, and visibility is one of the properties of 3D space that makes it an elegant basis for a video game.
+
+  - **Redundancy**
+    - **Definition:** Redundancy means that even if the player misses half of the content in the game, he still gets enough to understand the critical parts.
+    - **Four Types of Redundancy:**
+      - **Homogenous Redundancy:** Repeating the same message multiple times in the same way.
+      - **Diverse Redundancy:** Communicating the same information multiple times in different ways.
+      - **Quadruple Redundancy:** Means that the message will probably get through, even in a high-pressure situation.
+      - **Passive Redundancy:** Is the use of secondary messages only when the primary message fails.
+
+  - **Indirect Control**
+    - **Definition:** Guiding the player behavior without the player realizing that they’re being guided.
+    - **The 3 Methods of Indirect Control:**
+      - **NUDGING:** Changing player behavior by changing how choices are presented, without changing the choices themselves.
+      - **PRIMING:** Activating concepts in the player’s mind to influence their future behavior.
+      - **SOCIAL IMITATION:** When the player naturally imitates the actions of others.
+
+## 13 Types of Interfaces
+![alt text](image-9.png)
+  - **Diegetic interface**
+    - **Definition**: Projected in the game level and seen from the point of view of the character.
+  - **Non Diegetic interface**
+    - **Definition**: Overlaid on the screen.
+  - **Meta interface**
+    - **Definition**: It overlays the world aesthetics to convey information to the players.
+    - **Example**: Blood spatter on the screen.
+  - **Spatial interface**
+    - **Definition**: They break out of the game aesthetics but provide details to the player.
+    - **Example**: Wayfinding systems.
